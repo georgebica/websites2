@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto Tester Timişoara — ITP, Diagnoză & Reparaţii Rapide | 0769 183 386</title>
+<meta name="description" content="Staţie ITP Timişoara — inspecţie tehnică, diagnoză OBD, pre-ITP şi reparaţii uşoare. Strada Nera 41. Programări 0769 183 386. Luni–Sâmbătă.">
+<meta name="keywords" content="ITP Timişoara, staţie ITP Timişoara, inspecţie tehnică Timişoara, diagnoză auto Timişoara, pre-ITP Timişoara, Auto Tester Timişoara">
+<meta name="robots" content="index,follow">
+<meta name="author" content="Auto Tester Timişoara">
+<link rel="canonical" href="">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:site_name" content="Auto Tester Timişoara">
+<meta property="og:title" content="Auto Tester Timişoara — ITP, Diagnoză & Reparaţii Rapide">
+<meta property="og:description" content="Staţie ITP autorizată în Timişoara. Inspecţie rapidă, diagnoză profesionistă, raport clar.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Auto Tester Timişoara">
+<meta name="twitter:description" content="Inspecţie tehnică periodică, pre-ITP şi diagnoză auto. Strada Nera 41.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        navy: { 950: '#080d1a', 900: '#0e1530', 800: '#162045', 700: '#1f2c5e' },
+        cyan: { 400: '#22d3ee', 500: '#06b6d4', 600: '#0891b2' },
+        cream: '#fef9ed',
+        bone: '#f5f0e1',
+        warning: '#fbbf24'
+      },
+      fontFamily: {
+        display: ['Bebas Neue', 'sans-serif'],
+        sans: ['Manrope', 'sans-serif']
+      }
+    }
+  }
+}
+</script>
+<style>
+  body { font-family: 'Manrope', sans-serif; background: #fef9ed; color: #0e1530; }
+  .display { font-family: 'Bebas Neue'; letter-spacing: 0.01em; }
+  .gradient-navy { background: linear-gradient(135deg, #080d1a 0%, #1f2c5e 100%); }
+  .diag-line { background: linear-gradient(90deg, transparent, #22d3ee, transparent); height: 1px; }
+  .gauge { background: conic-gradient(#22d3ee 0deg 280deg, #1f2c5e 280deg 360deg); border-radius: 50%; }
+  .ticket-edge {
+    background-image: radial-gradient(circle, transparent 8px, #fef9ed 8.5px);
+    background-size: 24px 24px;
+    background-position: 0 -12px;
+    background-repeat: repeat-x;
+  }
+  .blink-dot { animation: blink 1.4s infinite; }
+  @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+</style>
+</head>
+<body>
+
+<!-- Top status bar -->
+<div class="gradient-navy text-cream text-xs py-2 px-4 flex justify-between items-center">
+  <span class="flex items-center gap-2"><span class="w-2 h-2 bg-cyan-400 rounded-full blink-dot"></span> Staţie deschisă · Programări recomandate</span>
+  <a href="tel:0769183386" class="hidden md:inline hover:text-cyan-400">0769 183 386</a>
+</div>
+
+<!-- Header -->
+<header class="bg-cream sticky top-0 z-40 border-b border-navy-900/10">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <div class="w-12 h-12 gradient-navy text-cyan-400 flex items-center justify-center font-bold rounded">
+        <i class="fa-solid fa-gauge-high text-xl"></i>
+      </div>
+      <div>
+        <div class="display text-2xl text-navy-900 leading-none">AUTO TESTER</div>
+        <div class="text-[10px] tracking-[0.3em] text-navy-700 uppercase">Staţie ITP · Timişoara</div>
+      </div>
+    </a>
+    <nav class="hidden lg:flex gap-8 text-sm font-semibold text-navy-900">
+      <a href="#itp" class="hover:text-cyan-600">ITP</a>
+      <a href="#servicii" class="hover:text-cyan-600">Servicii</a>
+      <a href="#proces" class="hover:text-cyan-600">Cum decurge</a>
+      <a href="#preg" class="hover:text-cyan-600">Pregătire</a>
+      <a href="#contact" class="hover:text-cyan-600">Contact</a>
+    </nav>
+    <a href="tel:0769183386" class="hidden md:inline-flex items-center gap-2 bg-navy-900 text-cyan-400 px-5 py-2.5 rounded font-semibold text-sm">
+      <i class="fa-solid fa-phone"></i> Programare
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="gradient-navy text-cream relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10" style="background-image:radial-gradient(circle at 1px 1px, #22d3ee 1px, transparent 0); background-size: 32px 32px;"></div>
+  <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 grid lg:grid-cols-12 gap-10 items-center relative">
+    <div class="lg:col-span-7" data-aos="fade-right">
+      <div class="inline-flex items-center gap-3 mb-6 bg-cyan-400/10 border border-cyan-400/30 px-4 py-2 rounded-full text-cyan-400 text-xs uppercase tracking-widest font-semibold">
+        <i class="fa-solid fa-circle-check"></i> Staţie ITP autorizată RAR
+      </div>
+      <h1 class="display text-6xl md:text-8xl leading-[0.9] mb-6">
+        ITP rapid.<br>
+        <span class="text-cyan-400">Diagnoză corectă.</span><br>
+        Răspuns clar.
+      </h1>
+      <p class="text-lg text-bone/80 max-w-xl mb-10">
+        Inspecţie tehnică periodică, pre-ITP şi diagnoză OBD în Timişoara. Te scoatem cu raport şi explicaţii — nu cu un teanc de termeni pe care nu îi înţelegi.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <a href="tel:0769183386" class="bg-cyan-400 text-navy-950 px-7 py-4 rounded font-bold flex items-center gap-3 hover:bg-cyan-500 transition">
+          <i class="fa-solid fa-phone"></i> 0769 183 386
+        </a>
+        <a href="https://wa.me/40769183386" class="border-2 border-cream/30 text-cream px-7 py-4 rounded font-bold flex items-center gap-3 hover:bg-cream hover:text-navy-950 transition">
+          <i class="fa-brands fa-whatsapp"></i> Trimite talonul
+        </a>
+      </div>
+
+      <div class="mt-12 grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="bg-navy-800/50 border border-navy-700 rounded-lg p-4 backdrop-blur">
+          <i class="fa-solid fa-clock text-cyan-400 text-xl mb-1"></i>
+          <div class="font-bold text-sm">~ 30 min</div>
+          <div class="text-xs text-bone/60">durata medie ITP</div>
+        </div>
+        <div class="bg-navy-800/50 border border-navy-700 rounded-lg p-4 backdrop-blur">
+          <i class="fa-solid fa-stamp text-cyan-400 text-xl mb-1"></i>
+          <div class="font-bold text-sm">Certificat RAR</div>
+          <div class="text-xs text-bone/60">eliberat pe loc</div>
+        </div>
+        <div class="bg-navy-800/50 border border-navy-700 rounded-lg p-4 backdrop-blur">
+          <i class="fa-solid fa-screwdriver-wrench text-cyan-400 text-xl mb-1"></i>
+          <div class="font-bold text-sm">Reparaţii minore</div>
+          <div class="text-xs text-bone/60">direct la staţie</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:col-span-5 relative" data-aos="fade-left">
+      <!-- Dashboard mock card -->
+      <div class="bg-navy-800/60 backdrop-blur border border-cyan-400/20 rounded-2xl p-6 shadow-2xl">
+        <div class="flex items-center justify-between mb-5">
+          <div>
+            <div class="text-xs text-bone/50 uppercase tracking-widest">Diagnostic Live</div>
+            <div class="font-bold text-lg">Bay #2 · În inspecţie</div>
+          </div>
+          <span class="bg-cyan-400/20 text-cyan-400 text-xs px-3 py-1 rounded-full">RUN</span>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-5">
+          <div class="bg-navy-900 rounded-lg p-4">
+            <div class="text-xs text-bone/50 mb-1">FRÂNE</div>
+            <div class="display text-3xl text-cyan-400">98%</div>
+            <div class="h-1 bg-navy-800 mt-2 rounded"><div class="h-full bg-cyan-400 rounded" style="width:98%"></div></div>
+          </div>
+          <div class="bg-navy-900 rounded-lg p-4">
+            <div class="text-xs text-bone/50 mb-1">EMISII</div>
+            <div class="display text-3xl text-cyan-400">PASS</div>
+            <div class="h-1 bg-navy-800 mt-2 rounded"><div class="h-full bg-cyan-400 rounded" style="width:88%"></div></div>
+          </div>
+          <div class="bg-navy-900 rounded-lg p-4">
+            <div class="text-xs text-bone/50 mb-1">SUSPENSIE</div>
+            <div class="display text-3xl text-warning">75%</div>
+            <div class="h-1 bg-navy-800 mt-2 rounded"><div class="h-full bg-warning rounded" style="width:75%"></div></div>
+          </div>
+          <div class="bg-navy-900 rounded-lg p-4">
+            <div class="text-xs text-bone/50 mb-1">FAR / IL.</div>
+            <div class="display text-3xl text-cyan-400">OK</div>
+            <div class="h-1 bg-navy-800 mt-2 rounded"><div class="h-full bg-cyan-400 rounded" style="width:95%"></div></div>
+          </div>
+        </div>
+        <div class="bg-navy-900 rounded-lg p-4 flex items-center gap-3">
+          <i class="fa-solid fa-circle-info text-cyan-400"></i>
+          <div class="text-sm">Raport disponibil în <b class="text-cyan-400">~ 8 minute</b></div>
+        </div>
+      </div>
+      <div class="absolute -bottom-6 -right-6 bg-cyan-400 text-navy-950 rounded-xl px-6 py-4 hidden md:block">
+        <div class="display text-3xl">4.4★</div>
+        <div class="text-xs font-bold">111 review-uri Google</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ITP highlight -->
+<section id="itp" class="bg-cream py-20">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-10 items-center">
+    <div class="lg:col-span-5" data-aos="fade-up">
+      <span class="text-xs uppercase tracking-[0.4em] text-cyan-600 font-bold">Inspecţie tehnică</span>
+      <h2 class="display text-5xl md:text-6xl text-navy-950 leading-none mt-4 mb-6">Treci ITP-ul fără bătaie de cap.</h2>
+      <p class="text-navy-900/70 mb-8 text-lg">Suntem o staţie autorizată RAR pentru autoturisme şi vehicule comerciale uşoare. Vii cu programare, ieşi cu raport printat şi explicat clar — fără termeni inutili.</p>
+      <ul class="space-y-3">
+        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-cyan-600 mt-1"></i><span><b>Verificare completă în ~30 minute</b> — frâne, suspensie, direcţie, lumini, emisii.</span></li>
+        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-cyan-600 mt-1"></i><span><b>Raport detaliat</b> cu toate punctele controlate şi recomandări.</span></li>
+        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-cyan-600 mt-1"></i><span><b>Reparaţii minore pe loc</b> dacă găsim defecte uşoare (bec, ştergător, ax bară).</span></li>
+        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-cyan-600 mt-1"></i><span><b>Plată card şi NFC</b> — fără drumuri suplimentare la bancomat.</span></li>
+      </ul>
+    </div>
+    <div class="lg:col-span-7" data-aos="fade-up" data-aos-delay="200">
+      <div class="bg-white border border-navy-900/10 rounded-2xl overflow-hidden shadow-lg">
+        <img src="https://images.unsplash.com/photo-1486006920555-c77dcf18193c?w=1200&q=80" alt="Staţie inspecţie tehnică" class="w-full h-72 object-cover">
+        <div class="p-8 grid grid-cols-3 gap-4 text-center">
+          <div>
+            <div class="display text-4xl text-cyan-600">M1</div>
+            <div class="text-xs text-navy-900/60">Autoturisme</div>
+          </div>
+          <div class="border-x border-navy-900/10">
+            <div class="display text-4xl text-cyan-600">N1</div>
+            <div class="text-xs text-navy-900/60">Comerciale &lt;3.5t</div>
+          </div>
+          <div>
+            <div class="display text-4xl text-cyan-600">L</div>
+            <div class="text-xs text-navy-900/60">Motociclete</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICII -->
+<section id="servicii" class="bg-navy-950 text-cream py-24 relative">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-10 mb-14 items-end">
+      <div data-aos="fade-up">
+        <span class="text-xs uppercase tracking-[0.4em] text-cyan-400 font-bold">Servicii</span>
+        <h2 class="display text-5xl md:text-7xl leading-none mt-4">Tot ce ţine maşina ta în trafic.</h2>
+      </div>
+      <p class="text-bone/70 lg:text-lg" data-aos="fade-up" data-aos-delay="100">Pe lângă ITP, facem diagnoză OBD aprofundată, citim coduri de eroare şi îţi rezolvăm defectele uzuale fără să te plimbăm de la un atelier la altul.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-navy-900 border border-navy-700 rounded-xl p-7 hover:border-cyan-400 transition group" data-aos="fade-up">
+        <div class="w-14 h-14 bg-cyan-400/10 text-cyan-400 rounded-xl flex items-center justify-center mb-5">
+          <i class="fa-solid fa-clipboard-check text-2xl"></i>
+        </div>
+        <h3 class="display text-2xl mb-3">Inspecţie tehnică ITP</h3>
+        <p class="text-bone/70 text-sm">Toate punctele cerute de RAR, plus inspecţie vizuală preliminară. Raport digital şi listat.</p>
+      </div>
+
+      <div class="bg-navy-900 border border-navy-700 rounded-xl p-7 hover:border-cyan-400 transition" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-14 h-14 bg-cyan-400/10 text-cyan-400 rounded-xl flex items-center justify-center mb-5">
+          <i class="fa-solid fa-magnifying-glass-chart text-2xl"></i>
+        </div>
+        <h3 class="display text-2xl mb-3">Pre-ITP</h3>
+        <p class="text-bone/70 text-sm">Verificare completă cu max o săptămână înainte. Îţi spunem ce să rezolvi ca să nu pierzi banii pe re-inspecţie.</p>
+      </div>
+
+      <div class="bg-navy-900 border border-navy-700 rounded-xl p-7 hover:border-cyan-400 transition" data-aos="fade-up" data-aos-delay="200">
+        <div class="w-14 h-14 bg-cyan-400/10 text-cyan-400 rounded-xl flex items-center justify-center mb-5">
+          <i class="fa-solid fa-microchip text-2xl"></i>
+        </div>
+        <h3 class="display text-2xl mb-3">Diagnoză OBD</h3>
+        <p class="text-bone/70 text-sm">Citire coduri eroare, ştergere după reparaţie, verificare module ABS, ESP, airbag, motor.</p>
+      </div>
+
+      <div class="bg-navy-900 border border-navy-700 rounded-xl p-7 hover:border-cyan-400 transition" data-aos="fade-up">
+        <div class="w-14 h-14 bg-cyan-400/10 text-cyan-400 rounded-xl flex items-center justify-center mb-5">
+          <i class="fa-solid fa-car-burst text-2xl"></i>
+        </div>
+        <h3 class="display text-2xl mb-3">Verificare frâne</h3>
+        <p class="text-bone/70 text-sm">Stand de frânare cu rulouri. Măsurare eficienţă pe fiecare roată în parte, raport tipărit.</p>
+      </div>
+
+      <div class="bg-navy-900 border border-navy-700 rounded-xl p-7 hover:border-cyan-400 transition" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-14 h-14 bg-cyan-400/10 text-cyan-400 rounded-xl flex items-center justify-center mb-5">
+          <i class="fa-solid fa-smog text-2xl"></i>
+        </div>
+        <h3 class="display text-2xl mb-3">Test emisii</h3>
+        <p class="text-bone/70 text-sm">Diesel şi benzină. Aparatură etalonată, test gaze de evacuare conform normelor în vigoare.</p>
+      </div>
+
+      <div class="bg-navy-900 border border-navy-700 rounded-xl p-7 hover:border-cyan-400 transition" data-aos="fade-up" data-aos-delay="200">
+        <div class="w-14 h-14 bg-cyan-400/10 text-cyan-400 rounded-xl flex items-center justify-center mb-5">
+          <i class="fa-solid fa-toolbox text-2xl"></i>
+        </div>
+        <h3 class="display text-2xl mb-3">Reparaţii uşoare</h3>
+        <p class="text-bone/70 text-sm">Schimbări becuri, ştergătoare, lichide, articulaţii uzate. Repari pe loc, treci ITP în acelaşi drum.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCES -->
+<section id="proces" class="bg-cream py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-14" data-aos="fade-up">
+      <span class="text-xs uppercase tracking-[0.4em] text-cyan-600 font-bold">Cum decurge</span>
+      <h2 class="display text-5xl md:text-6xl text-navy-950 mt-4">4 paşi, sub 30 de minute.</h2>
+    </div>
+
+    <div class="relative">
+      <div class="hidden lg:block absolute top-12 left-0 right-0 diag-line"></div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white border border-navy-900/10 rounded-2xl p-7 relative" data-aos="fade-up">
+          <div class="w-24 h-24 mx-auto -mt-16 mb-4 gauge flex items-center justify-center">
+            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center display text-3xl text-navy-950">01</div>
+          </div>
+          <h4 class="display text-2xl text-navy-950 text-center mb-2">Programare</h4>
+          <p class="text-sm text-navy-900/70 text-center">Suni sau scrii pe WhatsApp. Confirmăm slot şi documentele necesare.</p>
+        </div>
+        <div class="bg-white border border-navy-900/10 rounded-2xl p-7" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-24 h-24 mx-auto -mt-16 mb-4 gauge flex items-center justify-center">
+            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center display text-3xl text-navy-950">02</div>
+          </div>
+          <h4 class="display text-2xl text-navy-950 text-center mb-2">Recepţie</h4>
+          <p class="text-sm text-navy-900/70 text-center">Primim talon, carte identitate auto, asigurare. Inspecţie vizuală iniţială.</p>
+        </div>
+        <div class="bg-white border border-navy-900/10 rounded-2xl p-7" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-24 h-24 mx-auto -mt-16 mb-4 gauge flex items-center justify-center">
+            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center display text-3xl text-navy-950">03</div>
+          </div>
+          <h4 class="display text-2xl text-navy-950 text-center mb-2">Inspecţie</h4>
+          <p class="text-sm text-navy-900/70 text-center">Treci pe stand frânare, suspensii, lumini, emisii. Tot ce cere RAR.</p>
+        </div>
+        <div class="bg-white border border-navy-900/10 rounded-2xl p-7" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-24 h-24 mx-auto -mt-16 mb-4 gauge flex items-center justify-center">
+            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center display text-3xl text-navy-950">04</div>
+          </div>
+          <h4 class="display text-2xl text-navy-950 text-center mb-2">Raport & ştampilă</h4>
+          <p class="text-sm text-navy-900/70 text-center">Primeşti raportul tipărit, ştampila pe talon şi explicaţiile aferente.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PREGĂTIRE -->
+<section id="preg" class="py-24 bg-bone">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <div data-aos="fade-right">
+      <img src="https://images.unsplash.com/photo-1632823471565-1ecdf1a3a83c?w=1000&q=80" alt="Pregătire ITP" class="rounded-2xl w-full">
+    </div>
+    <div data-aos="fade-left">
+      <span class="text-xs uppercase tracking-[0.4em] text-cyan-600 font-bold">Pregătire</span>
+      <h2 class="display text-5xl md:text-6xl text-navy-950 leading-none mt-4 mb-6">Vino pregătit, pleci la timp.</h2>
+      <div class="space-y-4">
+        <div class="bg-white border-l-4 border-cyan-500 p-5 rounded-r-xl">
+          <h4 class="font-bold text-navy-950 mb-1"><i class="fa-solid fa-id-card text-cyan-500 mr-2"></i>Acte necesare</h4>
+          <p class="text-sm text-navy-900/70">Talon, carte identitate auto, asigurare RCA în vigoare. Eventual ITP-ul precedent.</p>
+        </div>
+        <div class="bg-white border-l-4 border-cyan-500 p-5 rounded-r-xl">
+          <h4 class="font-bold text-navy-950 mb-1"><i class="fa-solid fa-droplet text-cyan-500 mr-2"></i>Verifică înainte</h4>
+          <p class="text-sm text-navy-900/70">Lichide motor şi parbriz, presiune anvelope, becuri faţă/spate, ştergătoare în stare bună.</p>
+        </div>
+        <div class="bg-white border-l-4 border-cyan-500 p-5 rounded-r-xl">
+          <h4 class="font-bold text-navy-950 mb-1"><i class="fa-solid fa-broom text-cyan-500 mr-2"></i>Goleşte portbagajul</h4>
+          <p class="text-sm text-navy-900/70">Pentru cântărire reală şi acces la roata de rezervă, scoate bagajele şi obiectele grele.</p>
+        </div>
+        <div class="bg-white border-l-4 border-cyan-500 p-5 rounded-r-xl">
+          <h4 class="font-bold text-navy-950 mb-1"><i class="fa-solid fa-clock text-cyan-500 mr-2"></i>Vino cu 5–10 min mai devreme</h4>
+          <p class="text-sm text-navy-900/70">Aşa primim maşina la slotul programat, fără presiune pentru tine sau pentru următorul client.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RECENZII -->
+<section class="py-24 bg-navy-900 text-cream">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-14" data-aos="fade-up">
+      <span class="text-xs uppercase tracking-[0.4em] text-cyan-400 font-bold">Recenzii Google</span>
+      <h2 class="display text-5xl md:text-6xl mt-4">4.4 / 5 din 111 evaluări</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-navy-800 rounded-2xl p-7 border border-navy-700" data-aos="fade-up">
+        <div class="text-cyan-400 mb-3">★★★★★</div>
+        <p class="italic text-bone/80 mb-4">"Recomand, sunt profesionişti, mi-au găsit problema rapid şi la un cost foarte bun. Locaţie centrală şi diagnoze profesionale."</p>
+        <div class="text-sm font-bold">razvi razvan</div>
+      </div>
+      <div class="bg-navy-800 rounded-2xl p-7 border border-navy-700" data-aos="fade-up" data-aos-delay="100">
+        <div class="text-cyan-400 mb-3">★★★★★</div>
+        <p class="italic text-bone/80 mb-4">"Om de treabă, face treaba rapid şi eficient."</p>
+        <div class="text-sm font-bold">Armand Ursachi</div>
+      </div>
+      <div class="bg-navy-800 rounded-2xl p-7 border border-navy-700" data-aos="fade-up" data-aos-delay="200">
+        <div class="text-cyan-400 mb-3">★★★★★</div>
+        <p class="italic text-bone/80 mb-4">"Diagnoze corecte, oameni punctuali şi calitate-preţ foarte ok."</p>
+        <div class="text-sm font-bold">mihai humeniuc</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAM + MAP -->
+<section class="py-24 bg-cream">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-10">
+    <div class="lg:col-span-5" data-aos="fade-right">
+      <span class="text-xs uppercase tracking-[0.4em] text-cyan-600 font-bold">Program & locaţie</span>
+      <h2 class="display text-5xl text-navy-950 leading-none mt-4 mb-6">Strada Nera 41, Timişoara.</h2>
+      <p class="text-navy-900/70 mb-6">Suntem aproape de Calea Şagului, cu acces uşor şi parcare în faţa staţiei. Recomandăm programare telefonică.</p>
+      <div class="bg-white border border-navy-900/10 rounded-2xl divide-y divide-navy-900/10">
+        <div class="flex justify-between p-4"><span>Luni – Vineri</span><span class="font-bold text-cyan-600">09:00 – 18:00</span></div>
+        <div class="flex justify-between p-4"><span>Sâmbătă</span><span class="font-bold text-cyan-600">09:00 – 15:00</span></div>
+        <div class="flex justify-between p-4"><span>Duminică</span><span class="text-navy-900/50">Închis</span></div>
+      </div>
+      <div class="mt-6 space-y-3">
+        <div class="flex gap-3 items-center"><i class="fa-solid fa-location-dot text-cyan-600"></i><span>Strada Nera 41, 200300 Timişoara</span></div>
+        <div class="flex gap-3 items-center"><i class="fa-solid fa-phone text-cyan-600"></i><a href="tel:0769183386" class="font-bold">0769 183 386</a></div>
+        <div class="flex gap-3 items-center"><i class="fa-solid fa-credit-card text-cyan-600"></i><span>Card · Numerar · NFC</span></div>
+      </div>
+    </div>
+    <div class="lg:col-span-7" data-aos="fade-left">
+      <iframe src="https://www.google.com/maps?q=45.752773,21.208802&hl=ro&z=17&output=embed" class="w-full h-[480px] rounded-2xl border border-navy-900/10" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contact" class="gradient-navy text-cream py-20">
+  <div class="max-w-5xl mx-auto px-6 text-center" data-aos="zoom-in">
+    <h2 class="display text-5xl md:text-7xl leading-tight mb-5">Programează ITP-ul acum.</h2>
+    <p class="text-bone/80 text-lg mb-10 max-w-2xl mx-auto">Nu mai amâna până în luna expirării. Sloturi disponibile săptămâna aceasta.</p>
+    <div class="flex flex-wrap gap-4 justify-center">
+      <a href="tel:0769183386" class="bg-cyan-400 text-navy-950 px-8 py-4 rounded font-bold text-lg flex items-center gap-3"><i class="fa-solid fa-phone"></i> 0769 183 386</a>
+      <a href="https://wa.me/40769183386" class="border-2 border-cream text-cream px-8 py-4 rounded font-bold text-lg flex items-center gap-3"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-navy-950 text-bone/60 py-12 pb-24 md:pb-12 border-t border-navy-700">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+    <div>
+      <div class="display text-2xl text-cream mb-3">AUTO TESTER TIMIŞOARA</div>
+      <p class="text-sm">Staţie ITP autorizată RAR. Inspecţie tehnică, diagnoză şi reparaţii minore în acelaşi loc.</p>
+    </div>
+    <div>
+      <div class="font-bold text-cream mb-3">Servicii</div>
+      <ul class="space-y-1 text-sm">
+        <li>Inspecţie tehnică ITP</li>
+        <li>Pre-ITP & diagnoză</li>
+        <li>Test frâne pe stand</li>
+        <li>Test emisii diesel/benzină</li>
+      </ul>
+    </div>
+    <div>
+      <div class="font-bold text-cream mb-3">Contact</div>
+      <ul class="space-y-1 text-sm">
+        <li><a href="tel:0769183386" class="hover:text-cyan-400">0769 183 386</a></li>
+        <li>Strada Nera 41, Timişoara</li>
+        <li>Lun–Vin 09–18 · Sâm 09–15</li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-6 mt-8 pt-6 border-t border-navy-700 text-xs">© 2026 Auto Tester Timişoara · Toate drepturile rezervate.</div>
+</footer>
+
+<!-- Sticky bottom -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 bg-navy-950 border-t-2 border-cyan-400 grid grid-cols-2 z-50">
+  <a href="tel:0769183386" class="bg-cyan-400 text-navy-950 py-4 text-center font-bold"><i class="fa-solid fa-phone mr-2"></i>Sună</a>
+  <a href="https://wa.me/40769183386" class="text-cream py-4 text-center font-bold border-l-2 border-cyan-400"><i class="fa-brands fa-whatsapp mr-2"></i>WhatsApp</a>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({once:true,duration:700,offset:80});</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutomotiveBusiness",
+  "name": "Auto Tester Timişoara",
+  "telephone": "+40769183386",
+  "image": "https://images.unsplash.com/photo-1486006920555-c77dcf18193c?w=1200",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Strada Nera 41",
+    "addressLocality": "Timişoara",
+    "postalCode": "200300",
+    "addressCountry": "RO"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 45.752773, "longitude": 21.208802 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "15:00" }
+  ],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.4", "reviewCount": "111" },
+  "priceRange": "$$"
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style id="mobile-no-hscroll">
+/* mobile-no-hscroll-v1 */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+  position: relative;
+}
+@media (max-width: 767px) {
+  body * { max-width: 100vw; }
+}
+</style>
+
+<title>Con-Sam-Pro - Birou de Proiectare &#238;n Timi&#537;oara | 0723 290 103</title>
+<meta name="description" content="Con-Sam-Pro Timi&#537;oara — birou de arhitectur&#259; &#537;i proiectare. DTAC, design interior, supraveghere &#537;antier, retrofit. Suna&#539;i 0723 290 103.">
+<meta name="keywords" content="arhitect Timisoara, birou proiectare Timisoara, Con-Sam-Pro, design interior Timisoara, DTAC, supraveghere santier">
+<meta name="robots" content="index,follow">
+<meta name="author" content="Con-Sam-Pro">
+<link rel="canonical" href="https://consampro.ro/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:site_name" content="Con-Sam-Pro">
+<meta property="og:title" content="Con-Sam-Pro — Birou Proiectare Timi&#537;oara">
+<meta property="og:description" content="Arhitectur&#259;, design interior, DTAC &#537;i supraveghere &#537;antier &#238;n Timi&#537;oara.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Con-Sam-Pro Timi&#537;oara">
+<meta name="twitter:description" content="Birou de arhitectur&#259; &#537;i proiectare &#238;n Timi&#537;oara.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        paper: '#F5F2E9',
+        offwhite: '#FAF8F1',
+        ink5: '#0E0E0E',
+        char2: '#1F1F1F',
+        smoke: '#5C5C5C',
+        olive: '#7A8442',
+        oliveD: '#5D662F',
+        moss2: '#3D4520',
+        rust2: '#A35728'
+      },
+      fontFamily: {
+        display: ['Libre Caslon Display', 'serif'],
+        sans: ['Space Grotesk', 'sans-serif'],
+        mono: ['IBM Plex Mono', 'monospace']
+      }
+    }
+  }
+}
+</script>
+<style>
+body { background: #F5F2E9; color: #0E0E0E; font-family: 'Space Grotesk', sans-serif; }
+.display { font-family: 'Libre Caslon Display', serif; }
+.mono { font-family: 'IBM Plex Mono', monospace; }
+.tight { letter-spacing: -0.025em; line-height: 0.92; }
+.line-rule { background: #0E0E0E; height: 2px; }
+.draw-grid { background-image: linear-gradient(#0E0E0E08 1px, transparent 1px), linear-gradient(90deg, #0E0E0E08 1px, transparent 1px); background-size: 32px 32px; }
+.bracket-l::before { content: '['; color: #7A8442; margin-right: 8px; font-family: 'IBM Plex Mono', monospace; }
+.bracket-r::after { content: ']'; color: #7A8442; margin-left: 8px; font-family: 'IBM Plex Mono', monospace; }
+.cta-btn { transition: all 0.3s ease; }
+.cta-btn:hover { transform: translateY(-2px); }
+.svc-block { transition: all 0.4s ease; }
+.svc-block:hover { background: #0E0E0E; color: #F5F2E9; }
+.svc-block:hover .svc-meta { color: #7A8442; border-color: #7A8442; }
+.svc-block:hover .arr3 { color: #7A8442; transform: translateX(8px); }
+.arr3 { transition: all 0.4s; }
+</style>
+</head>
+<body class="bg-paper">
+
+<!-- NAV -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-paper/90 backdrop-blur-md border-b border-ink5/10">
+  <div class="max-w-7xl mx-auto px-5 md:px-10 py-4 flex justify-between items-center">
+    <a href="#" class="flex items-center gap-3">
+      <div class="text-ink5 mono text-xs font-medium">[con] [sam] [pro]</div>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-sm text-ink5 mono font-medium">
+      <a href="#servicii" class="hover:text-olive transition">.servicii</a>
+      <a href="#abordare" class="hover:text-olive transition">.abordare</a>
+      <a href="#etape" class="hover:text-olive transition">.etape</a>
+      <a href="#contact" class="hover:text-olive transition">.contact</a>
+    </nav>
+    <a href="tel:0723290103" class="hidden sm:inline-flex items-center gap-2 bg-ink5 text-paper px-5 py-2.5 text-sm mono hover:bg-olive transition">
+      <i class="fas fa-phone text-xs"></i> 0723 290 103
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="pt-32 md:pt-40 pb-16 md:pb-24 relative draw-grid">
+  <div class="max-w-7xl mx-auto px-5 md:px-10 relative">
+    <div class="mono text-xs text-smoke mb-6 flex flex-wrap gap-x-6 gap-y-1" data-aos="fade-up">
+      <span>FIG. 01 / BIROU DE PROIECTARE</span>
+      <span>LOCATION: TIMI&#536;OARA, RO</span>
+      <span>EST. 45.7624&deg; N, 21.2607&deg; E</span>
+      <span>STATUS: ACTIVE</span>
+    </div>
+    <div class="grid grid-cols-12 gap-6 items-end">
+      <div class="col-span-12 lg:col-span-9" data-aos="fade-up" data-aos-delay="100">
+        <h1 class="display tight text-[3.5rem] sm:text-[5rem] md:text-[7.5rem] lg:text-[9.5rem] text-ink5">
+          Proiectare<br>
+          <span class="text-olive">cu rost.</span><br>
+          Detaliu cu gri j&#259;.
+        </h1>
+      </div>
+      <div class="col-span-12 lg:col-span-3 lg:pb-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="line-rule mb-5"></div>
+        <p class="text-smoke text-sm mono leading-relaxed">
+          Birou de arhitectur&#259; &#238;n Timi&#537;oara. Proiect&#259;m, autoriz&#259;m, supraveghem. Pentru reziden&#539;ial, mici comerciale &#537;i renov&#259;ri.
+        </p>
+        <div class="line-rule mt-5"></div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-12 gap-6 mt-16">
+      <div class="col-span-12 md:col-span-7" data-aos="fade-up" data-aos-delay="300">
+        <p class="text-ink5 text-xl md:text-2xl leading-snug font-medium max-w-2xl">
+          Ne ocup&#259;m de partea pe care nu ar trebui s&#259; o &#238;nv&#259;&#539;a&#539;i niciodat&#259;: <span class="text-olive">norme, rezistente, autoriza&#539;ii, &#537;antier</span>. Voi r&#259;m&#226;ne&#539;i cu decizia &#537;i casa.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 mt-9">
+          <a href="tel:0723290103" class="inline-flex items-center justify-center gap-2 bg-ink5 text-paper px-7 py-4 mono font-medium cta-btn hover:bg-olive">
+            <i class="fas fa-phone"></i> [SUNA&#538;I] 0723 290 103
+          </a>
+          <a href="https://wa.me/40723290103" class="inline-flex items-center justify-center gap-2 border-2 border-ink5 text-ink5 px-7 py-4 mono font-medium cta-btn hover:bg-ink5 hover:text-paper">
+            <i class="fab fa-whatsapp"></i> [WA] Trimite&#539;i schi&#539;a
+          </a>
+        </div>
+      </div>
+      <div class="col-span-12 md:col-span-5">
+        <div class="aspect-[4/5] overflow-hidden bg-ink5" data-aos="fade-left" data-aos-delay="400">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=70" class="w-full h-full object-cover grayscale" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LINE / META -->
+<section class="bg-ink5 text-paper py-6 border-y-2 border-olive">
+  <div class="max-w-7xl mx-auto px-5 md:px-10 grid grid-cols-2 md:grid-cols-4 gap-y-3 mono text-xs">
+    <div class="flex items-baseline gap-3"><span class="text-olive">01</span><span class="text-paper/70">PROIECTARE</span></div>
+    <div class="flex items-baseline gap-3"><span class="text-olive">02</span><span class="text-paper/70">DTAC + DTOE</span></div>
+    <div class="flex items-baseline gap-3"><span class="text-olive">03</span><span class="text-paper/70">DESIGN INTERIOR</span></div>
+    <div class="flex items-baseline gap-3"><span class="text-olive">04</span><span class="text-paper/70">SUPRAVEGHERE</span></div>
+  </div>
+</section>
+
+<!-- SERVICII -->
+<section id="servicii" class="py-24 md:py-32">
+  <div class="max-w-7xl mx-auto px-5 md:px-10">
+    <div class="grid grid-cols-12 gap-6 mb-12">
+      <div class="col-span-12 md:col-span-1 mono text-xs text-olive">/ I.</div>
+      <div class="col-span-12 md:col-span-5">
+        <h2 class="display tight text-5xl md:text-6xl text-ink5" data-aos="fade-up">Servicii<br><span class="text-olive">de birou.</span></h2>
+      </div>
+      <div class="col-span-12 md:col-span-5 md:col-start-8 md:pt-6" data-aos="fade-up" data-aos-delay="100">
+        <p class="text-smoke text-base leading-relaxed">Cinci capitole care &#238;mpreun&#259; aduc o cas&#259; de la idee la cheie. &#206;nso&#539;im proiectul p&#226;n&#259; &#238;n recep&#539;ie.</p>
+      </div>
+    </div>
+
+    <div class="border-t-2 border-ink5">
+      <a href="tel:0723290103" class="svc-block grid grid-cols-12 gap-4 items-start py-8 px-2 border-b border-ink5/15">
+        <div class="col-span-12 md:col-span-2 mono text-xs svc-meta border-l-2 border-olive pl-3 text-smoke">
+          [01]<br>PROIECTARE
+        </div>
+        <div class="col-span-10 md:col-span-7">
+          <h3 class="display text-3xl md:text-4xl tight">Arhitectur&#259; &amp; Concept</h3>
+          <p class="text-smoke text-sm mt-2 max-w-2xl">Locuin&#539;e, apartamente, mici cl&#259;diri comerciale — de la prima schi&#539;&#259; p&#226;n&#259; la planuri preg&#259;tite pentru execu&#539;ie.</p>
+        </div>
+        <div class="col-span-2 md:col-span-3 text-right arr3 text-ink5"><i class="fas fa-arrow-right text-2xl"></i></div>
+      </a>
+      <a href="tel:0723290103" class="svc-block grid grid-cols-12 gap-4 items-start py-8 px-2 border-b border-ink5/15">
+        <div class="col-span-12 md:col-span-2 mono text-xs svc-meta border-l-2 border-olive pl-3 text-smoke">
+          [02]<br>AUTORIZA&#538;IE
+        </div>
+        <div class="col-span-10 md:col-span-7">
+          <h3 class="display text-3xl md:text-4xl tight">Documenta&#539;ie Tehnic&#259;</h3>
+          <p class="text-smoke text-sm mt-2 max-w-2xl">DTAC, DTOE, DTAD — documenta&#539;ia complet&#259; pentru autoriza&#539;ia de construire &#537;i autoriza&#539;ia de demolare.</p>
+        </div>
+        <div class="col-span-2 md:col-span-3 text-right arr3 text-ink5"><i class="fas fa-arrow-right text-2xl"></i></div>
+      </a>
+      <a href="tel:0723290103" class="svc-block grid grid-cols-12 gap-4 items-start py-8 px-2 border-b border-ink5/15">
+        <div class="col-span-12 md:col-span-2 mono text-xs svc-meta border-l-2 border-olive pl-3 text-smoke">
+          [03]<br>INTERIOR
+        </div>
+        <div class="col-span-10 md:col-span-7">
+          <h3 class="display text-3xl md:text-4xl tight">Design Interior &amp; Spa&#539;ial</h3>
+          <p class="text-smoke text-sm mt-2 max-w-2xl">Compartiment&#259;ri, finisaje, lumin&#259;, mobilier integrat — interioare g&#226;ndite ca extensie a planului arhitectural.</p>
+        </div>
+        <div class="col-span-2 md:col-span-3 text-right arr3 text-ink5"><i class="fas fa-arrow-right text-2xl"></i></div>
+      </a>
+      <a href="tel:0723290103" class="svc-block grid grid-cols-12 gap-4 items-start py-8 px-2 border-b border-ink5/15">
+        <div class="col-span-12 md:col-span-2 mono text-xs svc-meta border-l-2 border-olive pl-3 text-smoke">
+          [04]<br>&#536;ANTIER
+        </div>
+        <div class="col-span-10 md:col-span-7">
+          <h3 class="display text-3xl md:text-4xl tight">Supraveghere &#537;i Coordonare</h3>
+          <p class="text-smoke text-sm mt-2 max-w-2xl">Vizite pe &#537;antier, decizii &#238;n timp real, coordonare cu antreprenorul. Proiectul ajunge ce a fost desenat.</p>
+        </div>
+        <div class="col-span-2 md:col-span-3 text-right arr3 text-ink5"><i class="fas fa-arrow-right text-2xl"></i></div>
+      </a>
+      <a href="tel:0723290103" class="svc-block grid grid-cols-12 gap-4 items-start py-8 px-2 border-b border-ink5/15">
+        <div class="col-span-12 md:col-span-2 mono text-xs svc-meta border-l-2 border-olive pl-3 text-smoke">
+          [05]<br>RETROFIT
+        </div>
+        <div class="col-span-10 md:col-span-7">
+          <h3 class="display text-3xl md:text-4xl tight">Retrofit &amp; Renovare</h3>
+          <p class="text-smoke text-sm mt-2 max-w-2xl">Solu&#539;ii pentru cl&#259;diri existente — reorganizare spa&#539;ial&#259;, eficien&#539;&#259; energetic&#259;, modernizare integral&#259;.</p>
+        </div>
+        <div class="col-span-2 md:col-span-3 text-right arr3 text-ink5"><i class="fas fa-arrow-right text-2xl"></i></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABORDARE -->
+<section id="abordare" class="py-24 md:py-32 bg-ink5 text-paper">
+  <div class="max-w-7xl mx-auto px-5 md:px-10">
+    <div class="grid grid-cols-12 gap-6 mb-14">
+      <div class="col-span-12 md:col-span-1 mono text-xs text-olive">/ II.</div>
+      <div class="col-span-12 md:col-span-7" data-aos="fade-up">
+        <h2 class="display tight text-5xl md:text-6xl">Abordarea<br><span class="text-olive">noastr&#259;.</span></h2>
+      </div>
+      <div class="col-span-12 md:col-span-4 md:pt-6" data-aos="fade-up" data-aos-delay="100">
+        <p class="text-paper/75 text-base leading-relaxed">Trei principii pe care nu le compromit&#259;m, indiferent de proiect.</p>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-olive/30 border border-olive/20">
+      <div class="bg-ink5 p-8" data-aos="fade-up">
+        <div class="mono text-xs text-olive mb-4">[ A. CONTEXT ]</div>
+        <h4 class="display text-3xl mb-3 tight">Citim terenul.</h4>
+        <p class="text-paper/70 text-sm leading-relaxed">Lumin&#259;, vecin&#259;t&#259;&#539;i, vegeta&#539;ie, viitor — citim contextul &#238;nainte de a desena.</p>
+      </div>
+      <div class="bg-ink5 p-8" data-aos="fade-up" data-aos-delay="100">
+        <div class="mono text-xs text-olive mb-4">[ B. DETALIU ]</div>
+        <h4 class="display text-3xl mb-3 tight">Detaliul are sens.</h4>
+        <p class="text-paper/70 text-sm leading-relaxed">Fiecare grosime, fiecare rost, fiecare tencuial&#259; e o decizie. Nu &#238;nt&#226;mpl&#259;ri.</p>
+      </div>
+      <div class="bg-ink5 p-8" data-aos="fade-up" data-aos-delay="200">
+        <div class="mono text-xs text-olive mb-4">[ C. EXECU&#538;IE ]</div>
+        <h4 class="display text-3xl mb-3 tight">Mergem la &#537;antier.</h4>
+        <p class="text-paper/70 text-sm leading-relaxed">Un proiect bun se pierde &#238;ntr-un &#537;antier prost coordonat. R&#259;m&#226;nem prezen&#539;i.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ETAPE -->
+<section id="etape" class="py-24 md:py-32 bg-offwhite">
+  <div class="max-w-7xl mx-auto px-5 md:px-10">
+    <div class="grid grid-cols-12 gap-6 mb-14">
+      <div class="col-span-12 md:col-span-1 mono text-xs text-olive">/ III.</div>
+      <div class="col-span-12 md:col-span-7" data-aos="fade-up">
+        <h2 class="display tight text-5xl md:text-6xl text-ink5">Etapele<br><span class="text-olive">unui proiect.</span></h2>
+      </div>
+    </div>
+    <div class="space-y-px bg-ink5/15">
+      <div class="bg-offwhite p-8 grid grid-cols-12 gap-4 items-center" data-aos="fade-up">
+        <div class="col-span-2 md:col-span-1 display tight text-6xl text-olive">01</div>
+        <div class="col-span-10 md:col-span-3 display text-2xl">Discu&#539;ie ini&#539;ial&#259;</div>
+        <div class="col-span-12 md:col-span-8 text-smoke text-sm">Vizit&#259; pe teren sau &#238;nt&#226;lnire la birou. Discu&#539;ie liber&#259; despre obiective, buget, calendar.</div>
+      </div>
+      <div class="bg-offwhite p-8 grid grid-cols-12 gap-4 items-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-span-2 md:col-span-1 display tight text-6xl text-olive">02</div>
+        <div class="col-span-10 md:col-span-3 display text-2xl">Studiu &amp; concept</div>
+        <div class="col-span-12 md:col-span-8 text-smoke text-sm">Schi&#539;e, scenarii spa&#539;iale, alegerea direc&#539;iei. &#206;ntre 2 &#537;i 4 s&#259;pt&#259;m&#226;ni.</div>
+      </div>
+      <div class="bg-offwhite p-8 grid grid-cols-12 gap-4 items-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-span-2 md:col-span-1 display tight text-6xl text-olive">03</div>
+        <div class="col-span-10 md:col-span-3 display text-2xl">DTAC</div>
+        <div class="col-span-12 md:col-span-8 text-smoke text-sm">Documenta&#539;ie pentru autoriza&#539;ia de construire — depunem la prim&#259;rie &#537;i urm&#259;rim aviz&#259;rile.</div>
+      </div>
+      <div class="bg-offwhite p-8 grid grid-cols-12 gap-4 items-center" data-aos="fade-up" data-aos-delay="300">
+        <div class="col-span-2 md:col-span-1 display tight text-6xl text-olive">04</div>
+        <div class="col-span-10 md:col-span-3 display text-2xl">Proiect Tehnic</div>
+        <div class="col-span-12 md:col-span-8 text-smoke text-sm">Plan&#537;e de execu&#539;ie cu detalii constructive — preg&#259;tite pentru antreprenor.</div>
+      </div>
+      <div class="bg-offwhite p-8 grid grid-cols-12 gap-4 items-center" data-aos="fade-up" data-aos-delay="400">
+        <div class="col-span-2 md:col-span-1 display tight text-6xl text-olive">05</div>
+        <div class="col-span-10 md:col-span-3 display text-2xl">&#536;antier &amp; recep&#539;ie</div>
+        <div class="col-span-12 md:col-span-8 text-smoke text-sm">Vizite periodice, decizii &#238;n teren, recep&#539;ie pe etape. R&#259;m&#226;nem p&#226;n&#259; la cap&#259;t.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 md:py-32">
+  <div class="max-w-7xl mx-auto px-5 md:px-10">
+    <div class="grid grid-cols-12 gap-10">
+      <div class="col-span-12 lg:col-span-5" data-aos="fade-right">
+        <div class="mono text-xs text-olive mb-3">/ IV. CONTACT</div>
+        <h2 class="display tight text-5xl md:text-6xl text-ink5 mb-7">Programa&#539;i o<br><span class="text-olive">discu&#539;ie</span>.</h2>
+        <p class="text-smoke text-base leading-relaxed mb-8 max-w-md">Prima discu&#539;ie este informativ&#259; — v&#259; ar&#259;t&#259;m drumul de la teren la cheie &#537;i ce decizii merit&#259; luate primele.</p>
+
+        <div class="space-y-4 mono">
+          <a href="tel:0723290103" class="block bg-paper border-2 border-ink5 p-5 hover:bg-ink5 hover:text-paper transition group">
+            <div class="text-xs text-olive mb-1">[telefon]</div>
+            <div class="display text-2xl">0723 290 103</div>
+          </a>
+          <div class="bg-paper border-2 border-ink5 p-5">
+            <div class="text-xs text-olive mb-1">[adres&#259;]</div>
+            <div class="text-ink5 text-sm leading-relaxed">Calea Doroban&#539;ilor 20<br>300298 Timi&#537;oara</div>
+          </div>
+          <div class="bg-paper border-2 border-ink5 p-5">
+            <div class="text-xs text-olive mb-1">[program]</div>
+            <div class="text-ink5 text-sm">Luni — Vineri: 09:00 — 17:00</div>
+            <div class="text-smoke text-sm">S&#226;mb&#259;t&#259; — Duminic&#259;: &#238;nchis</div>
+          </div>
+        </div>
+
+        <div class="flex gap-3 mt-7">
+          <a href="tel:0723290103" class="flex-1 inline-flex items-center justify-center gap-2 bg-ink5 text-paper px-6 py-4 mono font-medium cta-btn hover:bg-olive">
+            <i class="fas fa-phone"></i> Suna&#539;i
+          </a>
+          <a href="https://wa.me/40723290103" class="flex-1 inline-flex items-center justify-center gap-2 bg-olive text-paper px-6 py-4 mono font-medium cta-btn hover:bg-oliveD">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="col-span-12 lg:col-span-7" data-aos="fade-left">
+        <div class="bg-ink5 p-3">
+          <iframe src="https://www.google.com/maps?q=45.762392,21.260692&hl=ro&z=17&output=embed" width="100%" height="540" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="mt-3 mono text-xs text-smoke flex justify-between">
+          <span>LAT 45.762392&deg; N</span>
+          <span>LNG 21.260692&deg; E</span>
+          <span>EPSG:4326</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="py-20 bg-olive text-paper">
+  <div class="max-w-4xl mx-auto px-5 md:px-10 text-center" data-aos="fade-up">
+    <div class="mono text-xs text-paper/70 mb-3">[ &#206;NCEPE&#538;I AICI ]</div>
+    <h3 class="display tight text-5xl md:text-7xl">
+      Proiectul vostru<br>
+      &#238;ncepe cu<br>
+      <span class="text-ink5">o discu&#539;ie.</span>
+    </h3>
+    <a href="tel:0723290103" class="inline-flex items-center gap-3 mt-9 bg-ink5 text-paper px-8 py-5 mono font-medium hover:bg-char2 transition text-lg">
+      <i class="fas fa-phone"></i> 0723 290 103
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-ink5 text-paper/65 py-12">
+  <div class="max-w-7xl mx-auto px-5 md:px-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <div>
+        <div class="mono text-sm text-paper">[con] [sam] [pro]</div>
+        <p class="text-paper/45 text-sm leading-relaxed mt-3">Birou de arhitectur&#259; &#537;i proiectare &#238;n Timi&#537;oara. Reziden&#539;ial, mici comerciale, retrofit.</p>
+      </div>
+      <div>
+        <h5 class="mono text-sm text-olive mb-3">// SERVICII</h5>
+        <ul class="space-y-1.5 text-sm">
+          <li>Proiectare arhitectural&#259;</li>
+          <li>Documenta&#539;ie tehnic&#259; / DTAC</li>
+          <li>Design interior</li>
+          <li>Supraveghere &#537;antier</li>
+          <li>Retrofit &amp; renovare</li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="mono text-sm text-olive mb-3">// CONTACT</h5>
+        <ul class="space-y-1.5 text-sm">
+          <li><a href="tel:0723290103" class="hover:text-olive">0723 290 103</a></li>
+          <li>Calea Doroban&#539;ilor 20</li>
+          <li>300298 Timi&#537;oara</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-6 border-t border-paper/10 mono text-xs text-paper/40 flex flex-col sm:flex-row justify-between items-center gap-2">
+      <span>&copy; 2026 Con-Sam-Pro. Timi&#537;oara, RO.</span>
+      <span>[ ARHITECTUR&#258; / DTAC / INTERIOR / &#536;ANTIER ]</span>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE BAR -->
+<div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-ink5 grid grid-cols-2 border-t-2 border-olive">
+  <a href="tel:0723290103" class="flex items-center justify-center gap-2 py-4 text-paper mono">
+    <i class="fas fa-phone"></i> [SUN&#258;]
+  </a>
+  <a href="https://wa.me/40723290103" class="flex items-center justify-center gap-2 py-4 bg-olive text-paper mono">
+    <i class="fab fa-whatsapp"></i> [WA]
+  </a>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({ duration: 800, once: true, offset: 60 });</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Con-Sam-Pro",
+  "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=70",
+  "description": "Birou de arhitectur&#259; &#537;i proiectare &#238;n Timi&#537;oara. Servicii: proiectare, DTAC, design interior, supraveghere &#537;antier, retrofit.",
+  "url": "https://consampro.ro/",
+  "telephone": "+40723290103",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calea Doroban&#539;ilor 20",
+    "addressLocality": "Timi&#537;oara",
+    "postalCode": "300298",
+    "addressCountry": "RO"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 45.762392, "longitude": 21.260692 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:00" }
+  ],
+  "areaServed": "Timi&#537;oara"
+}
+</script>
+
+</body>
+</html>

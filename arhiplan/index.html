@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>arhiPLAN - Birou de Arhitectur&#259; &#537;i Documenta&#539;ii Permise Bra&#537;ov | 0723 322 103</title>
+<meta name="description" content="Birou de arhitectur&#259; &#238;n Bra&#537;ov: concept, planimetrii, documenta&#539;ii pentru autoriza&#539;ie de construire, case, apartamente &#537;i spa&#539;ii comerciale. Sun&#259; 0723 322 103.">
+<meta name="keywords" content="arhitect Brasov, proiectare arhitectura Brasov, autorizatie construire Brasov, arhiplan, birou arhitectura">
+<meta name="robots" content="index,follow">
+<meta name="author" content="arhiPLAN">
+<link rel="canonical" href="https://arhiplan.ro/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:site_name" content="arhiPLAN">
+<meta property="og:title" content="arhiPLAN - Birou de arhitectur&#259; &#238;n Bra&#537;ov">
+<meta property="og:description" content="Proiecte de arhitectur&#259; &#537;i documenta&#539;ii pentru autoriza&#539;ie de construire. Bra&#537;ov.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="arhiPLAN - Birou de arhitectur&#259; Bra&#537;ov">
+<meta name="twitter:description" content="Concept, planimetrii &#537;i documenta&#539;ii pentru autoriza&#539;ie. Bra&#537;ov.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#0E0E10',
+        ink2: '#16161A',
+        ash: '#22232A',
+        line: '#2C2D34',
+        cream: '#F4F1EA',
+        bone: '#E9E4D9',
+        amber: '#D88C3F',
+        amberDark: '#B5732A',
+        sage: '#94A38B',
+        muted: '#8A8A93'
+      },
+      fontFamily: {
+        display: ['Syne', 'sans-serif'],
+        sans: ['DM Sans', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace']
+      }
+    }
+  }
+}
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; background: #0E0E10; color: #F4F1EA; }
+  .display { font-family: 'Syne', sans-serif; letter-spacing: -0.025em; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(244,241,234,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(244,241,234,0.04) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+  .tick { background-image: repeating-linear-gradient(90deg, #D88C3F 0 1px, transparent 1px 12px); height: 1px; }
+  .corner::before, .corner::after, .corner > i::before, .corner > i::after { content:''; position:absolute; width:14px; height:14px; border:1px solid #D88C3F; }
+  .corner::before { top:-1px; left:-1px; border-right:0; border-bottom:0; }
+  .corner::after { top:-1px; right:-1px; border-left:0; border-bottom:0; }
+  .corner > i.cl::before { bottom:-1px; left:-1px; border-right:0; border-top:0; position:absolute; width:14px; height:14px; border-color:#D88C3F; border-style:solid; border-width:1px; }
+  .corner > i.cr::before { bottom:-1px; right:-1px; border-left:0; border-top:0; position:absolute; width:14px; height:14px; border-color:#D88C3F; border-style:solid; border-width:1px; }
+  .scroll-x::-webkit-scrollbar { display:none }
+</style>
+</head>
+<body class="bg-ink text-cream">
+
+<!-- TOP STRIP -->
+<div class="border-b border-line bg-ink2 text-xs mono py-2.5 hidden md:block">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between text-muted">
+    <span>[ DOC-2026 / arhiPLAN ATELIER &middot; BV ]</span>
+    <span class="flex items-center gap-6">
+      <span><i class="far fa-clock mr-2 text-amber"></i>LU&#8211;VI 09:00&#8211;17:00</span>
+      <a href="tel:0723322103" class="text-cream hover:text-amber transition"><i class="fas fa-phone mr-2 text-amber"></i>0723 322 103</a>
+      <span><i class="fas fa-location-dot mr-2 text-amber"></i>BV / Pictor N. Grigorescu 4</span>
+    </span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="sticky top-0 z-40 bg-ink/85 backdrop-blur-md border-b border-line">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#" class="flex items-baseline gap-2">
+      <span class="display text-3xl font-bold text-cream">arhi</span><span class="display text-3xl font-light text-amber">PLAN</span>
+    </a>
+    <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-cream/80">
+      <a href="#capacitati" class="hover:text-amber transition mono uppercase text-xs tracking-widest">/ Capacit&#259;&#539;i</a>
+      <a href="#dosar" class="hover:text-amber transition mono uppercase text-xs tracking-widest">/ Dosar</a>
+      <a href="#proces" class="hover:text-amber transition mono uppercase text-xs tracking-widest">/ Proces</a>
+      <a href="#contact" class="hover:text-amber transition mono uppercase text-xs tracking-widest">/ Contact</a>
+    </div>
+    <a href="tel:0723322103" class="hidden md:inline-flex items-center gap-2 bg-amber text-ink px-5 py-2.5 rounded-sm text-sm font-semibold hover:bg-cream transition">
+      <i class="fas fa-phone-volume"></i>Cere ofert&#259;
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="relative grid-bg overflow-hidden border-b border-line">
+  <div class="max-w-7xl mx-auto px-6 pt-14 md:pt-24 pb-24">
+    <!-- Top tag row -->
+    <div class="flex flex-wrap items-center justify-between gap-3 mb-12">
+      <div class="mono text-xs text-muted tracking-widest">RO &middot; BV &middot; 45.6378 N &middot; 25.6151 E</div>
+      <div class="mono text-xs text-amber tracking-widest">EST. 2019 &middot; ATELIER ACTIV</div>
+    </div>
+
+    <div class="grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-8" data-aos="fade-up">
+        <div class="mono text-xs text-amber tracking-[0.4em] mb-5">// 01 INTRO</div>
+        <h1 class="display text-5xl md:text-7xl lg:text-[5.8rem] leading-[0.95] font-bold">
+          De la prima<br>
+          schi&#539;&#259; p&#226;n&#259; la<br>
+          <span class="text-amber italic font-light">autoriza&#539;ia semnat&#259;.</span>
+        </h1>
+        <p class="mt-8 text-lg text-cream/70 max-w-xl leading-relaxed">
+          Birou de arhitectur&#259; &#238;n Bra&#537;ov. Concept, planimetrii, documenta&#539;ii tehnice &#537;i dosar complet pentru autoriza&#539;ie de construire &#8212; case, apartamente, renov&#259;ri &#537;i spa&#539;ii comerciale.
+        </p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-3">
+          <a href="tel:0723322103" class="group inline-flex items-center justify-center gap-3 bg-amber text-ink px-7 py-4 rounded-sm font-semibold hover:bg-cream transition">
+            <i class="fas fa-phone"></i> 0723 322 103 <i class="fas fa-arrow-right text-xs opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition"></i>
+          </a>
+          <a href="https://wa.me/40723322103" class="inline-flex items-center justify-center gap-3 border border-cream text-cream px-7 py-4 rounded-sm font-semibold hover:bg-cream hover:text-ink transition">
+            <i class="fab fa-whatsapp text-lg"></i> Trimite proiectul pe WhatsApp
+          </a>
+        </div>
+
+        <div class="mt-12 grid grid-cols-3 gap-3 max-w-xl">
+          <div class="border border-line p-4">
+            <div class="mono text-[10px] text-amber">/ DOC.A</div>
+            <div class="display text-2xl font-semibold mt-1">PUZ &middot; PUD</div>
+            <div class="text-xs text-muted mt-1">Documenta&#539;ii urbanistice</div>
+          </div>
+          <div class="border border-line p-4">
+            <div class="mono text-[10px] text-amber">/ DOC.B</div>
+            <div class="display text-2xl font-semibold mt-1">DTAC</div>
+            <div class="text-xs text-muted mt-1">Autoriza&#539;ie construire</div>
+          </div>
+          <div class="border border-line p-4">
+            <div class="mono text-[10px] text-amber">/ DOC.C</div>
+            <div class="display text-2xl font-semibold mt-1">PT &middot; DE</div>
+            <div class="text-xs text-muted mt-1">Proiect tehnic &amp; execu&#539;ie</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-4 relative" data-aos="fade-left" data-aos-delay="200">
+        <div class="relative bg-ink2 border border-line p-3 corner"><i class="cl"></i><i class="cr"></i>
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=700&auto=format&fit=crop&sat=-100" alt="Plan&#537;e arhitectur&#259; arhiPLAN" class="w-full h-[420px] object-cover grayscale opacity-90">
+          <div class="absolute top-5 left-5 mono text-[10px] text-amber bg-ink/85 px-2 py-1">FILE: HOUSE-V03.dwg</div>
+          <div class="absolute bottom-5 right-5 mono text-[10px] text-amber bg-ink/85 px-2 py-1">SCALE 1:100</div>
+        </div>
+        <div class="mt-3 mono text-[10px] text-muted flex justify-between">
+          <span>FRAME 03 / 12</span><span>RECENT WORK</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- CAPACITIES -->
+<section id="capacitati" class="py-20 md:py-28 bg-ink2 border-b border-line">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14" data-aos="fade-up">
+      <div>
+        <div class="mono text-xs text-amber tracking-[0.4em] mb-4">// 02 CAPACIT&#258;&#538;I</div>
+        <h2 class="display text-4xl md:text-6xl font-bold leading-tight">Ce putem proiecta<br><span class="text-amber italic font-light">pentru tine.</span></h2>
+      </div>
+      <p class="text-cream/65 max-w-md">Acoperim &#238;ntreg fluxul de la teren la cheie. Po&#539;i veni cu un schi&#539;&#259; pe &#537;erve&#539;el sau cu un PUZ deja aprobat &#8212; pornim de oriunde.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-line border border-line">
+      <div class="bg-ink2 p-7 hover:bg-ink transition group" data-aos="fade-up">
+        <div class="flex justify-between items-start mb-6">
+          <i class="fas fa-house-chimney text-amber text-3xl"></i>
+          <span class="mono text-[10px] text-muted">/01</span>
+        </div>
+        <h3 class="display text-xl font-semibold">Locuin&#539;e individuale</h3>
+        <p class="text-cream/65 text-sm mt-3 leading-relaxed">Case unifamiliale, vile &#537;i case &#238;n &#537;ir. Concept arhitectural complet, optimizat pentru terenul t&#259;u.</p>
+      </div>
+      <div class="bg-ink2 p-7 hover:bg-ink transition group" data-aos="fade-up" data-aos-delay="50">
+        <div class="flex justify-between items-start mb-6">
+          <i class="fas fa-building text-amber text-3xl"></i>
+          <span class="mono text-[10px] text-muted">/02</span>
+        </div>
+        <h3 class="display text-xl font-semibold">Apartamente &amp; renov&#259;ri</h3>
+        <p class="text-cream/65 text-sm mt-3 leading-relaxed">Recompartiment&#259;ri, schimb&#259;ri de destina&#539;ie, dosare pentru aviz tehnic. Reziden&#539;ial complet.</p>
+      </div>
+      <div class="bg-ink2 p-7 hover:bg-ink transition group" data-aos="fade-up" data-aos-delay="100">
+        <div class="flex justify-between items-start mb-6">
+          <i class="fas fa-shop text-amber text-3xl"></i>
+          <span class="mono text-[10px] text-muted">/03</span>
+        </div>
+        <h3 class="display text-xl font-semibold">Spa&#539;ii comerciale</h3>
+        <p class="text-cream/65 text-sm mt-3 leading-relaxed">Magazine, cafenele, birouri, clinici. Fit-out complet &#537;i autoriza&#539;ii de func&#539;ionare.</p>
+      </div>
+      <div class="bg-ink2 p-7 hover:bg-ink transition group" data-aos="fade-up" data-aos-delay="150">
+        <div class="flex justify-between items-start mb-6">
+          <i class="fas fa-stamp text-amber text-3xl"></i>
+          <span class="mono text-[10px] text-muted">/04</span>
+        </div>
+        <h3 class="display text-xl font-semibold">Documenta&#539;ie autoriza&#539;ie</h3>
+        <p class="text-cream/65 text-sm mt-3 leading-relaxed">DTAC, DTOE, DTAD &mdash; tot dosarul gata pentru depunere la prim&#259;rie.</p>
+      </div>
+      <div class="bg-ink2 p-7 hover:bg-ink transition group" data-aos="fade-up" data-aos-delay="200">
+        <div class="flex justify-between items-start mb-6">
+          <i class="fas fa-pen-ruler text-amber text-3xl"></i>
+          <span class="mono text-[10px] text-muted">/05</span>
+        </div>
+        <h3 class="display text-xl font-semibold">Proiect tehnic &amp; execu&#539;ie</h3>
+        <p class="text-cream/65 text-sm mt-3 leading-relaxed">Plan&#537;e detaliate la scara 1:50 / 1:20 &mdash; gata de pus &#238;n m&#226;na maistrului.</p>
+      </div>
+      <div class="bg-amber text-ink p-7 hover:bg-cream transition group" data-aos="fade-up" data-aos-delay="250">
+        <div class="flex justify-between items-start mb-6">
+          <i class="fas fa-comments text-ink text-3xl"></i>
+          <span class="mono text-[10px] text-ink/70">/06</span>
+        </div>
+        <h3 class="display text-xl font-bold">Consultan&#539;&#259; &#238;n faz&#259; ini&#539;ial&#259;</h3>
+        <p class="text-ink/80 text-sm mt-3 leading-relaxed font-medium">Ai un teren &#537;i nu &#537;tii ce po&#539;i face pe el? Vino cu CF-ul, plec&#259;m de acolo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOSAR / WHY US -->
+<section id="dosar" class="py-20 md:py-28 grid-bg border-b border-line">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-5" data-aos="fade-right">
+        <div class="mono text-xs text-amber tracking-[0.4em] mb-4">// 03 DE CE NOI</div>
+        <h2 class="display text-4xl md:text-5xl font-bold leading-tight">Un dosar care<br>nu se &#238;ntoarce<br><span class="text-amber italic font-light">de la prim&#259;rie.</span></h2>
+        <p class="text-cream/70 mt-6 leading-relaxed">Cele mai multe &#238;nt&#226;rzieri la autoriza&#539;ii vin din documenta&#539;ie incomplet&#259;. Lucr&#259;m cu un checklist intern de 47 de puncte &#238;nainte s&#259; &#238;&#539;i d&#259;m dosarul. F&#259;r&#259; reveniri, f&#259;r&#259; surprize.</p>
+        <a href="tel:0723322103" class="mt-8 inline-flex items-center gap-3 text-amber font-semibold border-b border-amber pb-1 hover:gap-5 transition-all">
+          Discut&#259;m proiectul t&#259;u <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="lg:col-span-7 grid sm:grid-cols-2 gap-px bg-line border border-line" data-aos="fade-left">
+        <div class="bg-ink p-7">
+          <div class="display text-6xl font-bold text-amber leading-none">47</div>
+          <div class="text-xs uppercase tracking-widest text-cream/60 mt-3">Puncte &#238;n checklistul nostru intern</div>
+          <p class="text-cream/70 text-sm mt-3">F&#259;r&#259; nimic uitat la depunere.</p>
+        </div>
+        <div class="bg-ink p-7">
+          <div class="display text-6xl font-bold text-amber leading-none">5+</div>
+          <div class="text-xs uppercase tracking-widest text-cream/60 mt-3">Ani de experien&#539;&#259; &#238;n Bra&#537;ov</div>
+          <p class="text-cream/70 text-sm mt-3">Cunoa&#537;tem PUG-ul &#537;i avizatorii local.</p>
+        </div>
+        <div class="bg-ink p-7">
+          <div class="display text-6xl font-bold text-amber leading-none">100%</div>
+          <div class="text-xs uppercase tracking-widest text-cream/60 mt-3">Comunicare prin telefon &amp; WhatsApp</div>
+          <p class="text-cream/70 text-sm mt-3">Nu te pierzi &#238;n e-mail-uri.</p>
+        </div>
+        <div class="bg-amber text-ink p-7">
+          <div class="display text-6xl font-bold leading-none">0&#8364;</div>
+          <div class="text-xs uppercase tracking-widest mt-3">Pentru consult ini&#539;ial &#537;i estimare</div>
+          <p class="text-sm mt-3 font-medium">Plate&#537;ti doar dac&#259; dec idem s&#259; lucr&#259;m.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS PIPELINE -->
+<section id="proces" class="py-20 md:py-28 bg-ink2 border-b border-line">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-14" data-aos="fade-up">
+      <div class="mono text-xs text-amber tracking-[0.4em] mb-4">// 04 PIPELINE</div>
+      <h2 class="display text-4xl md:text-5xl font-bold leading-tight">5 pa&#537;i de la teren<br>la &#537;antier deschis.</h2>
+    </div>
+
+    <div class="relative grid md:grid-cols-5 gap-6">
+      <div class="hidden md:block absolute left-0 right-0 top-12 tick"></div>
+
+      <div class="relative" data-aos="fade-up">
+        <div class="w-12 h-12 bg-amber text-ink rounded-full flex items-center justify-center display font-bold text-lg relative z-10">01</div>
+        <h3 class="display text-lg font-semibold mt-4">Vizit&#259; &amp; CF</h3>
+        <p class="text-cream/65 text-sm mt-2">Analiz&#259;m terenul, CF-ul, certificatul de urbanism.</p>
+      </div>
+      <div class="relative" data-aos="fade-up" data-aos-delay="50">
+        <div class="w-12 h-12 bg-amber text-ink rounded-full flex items-center justify-center display font-bold text-lg relative z-10">02</div>
+        <h3 class="display text-lg font-semibold mt-4">Concept</h3>
+        <p class="text-cream/65 text-sm mt-2">Schi&#539;e, volumetrii &#537;i 2 variante de implantare.</p>
+      </div>
+      <div class="relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-12 h-12 bg-amber text-ink rounded-full flex items-center justify-center display font-bold text-lg relative z-10">03</div>
+        <h3 class="display text-lg font-semibold mt-4">DTAC</h3>
+        <p class="text-cream/65 text-sm mt-2">Documenta&#539;ie complet&#259; pentru autoriza&#539;ie.</p>
+      </div>
+      <div class="relative" data-aos="fade-up" data-aos-delay="150">
+        <div class="w-12 h-12 bg-amber text-ink rounded-full flex items-center justify-center display font-bold text-lg relative z-10">04</div>
+        <h3 class="display text-lg font-semibold mt-4">Avize &amp; depunere</h3>
+        <p class="text-cream/65 text-sm mt-2">Coordon&#259;m avizele &#537;i preg&#259;tim dosarul.</p>
+      </div>
+      <div class="relative" data-aos="fade-up" data-aos-delay="200">
+        <div class="w-12 h-12 bg-cream text-ink rounded-full flex items-center justify-center display font-bold text-lg relative z-10">05</div>
+        <h3 class="display text-lg font-semibold mt-4">PT + execu&#539;ie</h3>
+        <p class="text-cream/65 text-sm mt-2">Proiect tehnic &#537;i asisten&#539;&#259; pe &#537;antier.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT + MAP -->
+<section id="contact" class="py-20 md:py-28 grid-bg">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-5" data-aos="fade-right">
+        <div class="mono text-xs text-amber tracking-[0.4em] mb-4">// 05 CONTACT</div>
+        <h2 class="display text-4xl md:text-5xl font-bold leading-tight">Trimite-ne<br>schi&#539;a sau <span class="text-amber italic font-light">CF-ul.</span></h2>
+        <p class="text-cream/70 mt-5 leading-relaxed">R&#259;spundem &#238;n aceea&#537;i zi lucr&#259;toare. Prima discu&#539;ie e f&#259;r&#259; nicio obliga&#539;ie.</p>
+
+        <div class="mt-8 space-y-4">
+          <a href="tel:0723322103" class="flex items-center gap-4 p-5 bg-ink2 border border-line hover:border-amber transition">
+            <div class="w-12 h-12 bg-amber text-ink flex items-center justify-center"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="mono text-[10px] uppercase tracking-widest text-muted">/ TEL</div>
+              <div class="font-semibold text-lg">0723 322 103</div>
+            </div>
+          </a>
+          <a href="https://wa.me/40723322103" class="flex items-center gap-4 p-5 bg-ink2 border border-line hover:border-amber transition">
+            <div class="w-12 h-12 bg-sage text-ink flex items-center justify-center"><i class="fab fa-whatsapp text-xl"></i></div>
+            <div>
+              <div class="mono text-[10px] uppercase tracking-widest text-muted">/ WHATSAPP</div>
+              <div class="font-semibold text-lg">Trimite documente direct</div>
+            </div>
+          </a>
+          <div class="flex items-center gap-4 p-5 bg-ink2 border border-line">
+            <div class="w-12 h-12 bg-cream text-ink flex items-center justify-center"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <div class="mono text-[10px] uppercase tracking-widest text-muted">/ BIROU</div>
+              <div class="font-semibold">Str. Pictor N. Grigorescu 4, Ap. 2, Bra&#537;ov</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 p-5 bg-ink2 border border-line">
+            <div class="w-12 h-12 bg-amber/20 text-amber flex items-center justify-center"><i class="far fa-clock"></i></div>
+            <div>
+              <div class="mono text-[10px] uppercase tracking-widest text-muted">/ PROGRAM</div>
+              <div class="font-semibold">Luni&#8211;Vineri 09:00&#8211;17:00</div>
+              <div class="text-xs text-muted">S&#226;mb&#259;t&#259;&#8211;Duminic&#259; &mdash; &#238;nchis</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7" data-aos="fade-left">
+        <div class="border border-line bg-ink2 p-3 corner relative"><i class="cl"></i><i class="cr"></i>
+          <iframe src="https://www.google.com/maps?q=45.637787,25.615197&hl=ro&z=17&output=embed" width="100%" height="460" style="border:0;filter:invert(0.92) hue-rotate(180deg);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="mono text-[10px] text-amber mt-2 flex justify-between">
+            <span>SITE LOCATION 45.6378 N / 25.6151 E</span>
+            <span>MAP-001</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="py-20 bg-amber text-ink">
+  <div class="max-w-5xl mx-auto px-6 text-center" data-aos="zoom-in">
+    <div class="mono text-xs tracking-[0.4em] mb-4">// 06 START PROIECT</div>
+    <h2 class="display text-4xl md:text-6xl font-bold leading-tight">Vine prim&#259;vara, vine sezonul de construc&#539;ii.</h2>
+    <p class="mt-5 text-ink/85 max-w-xl mx-auto">Cu c&#226;t intri mai repede &#238;n flux, cu at&#226;t prinzi mai bine momentul. Sun&#259;-ne s&#259; estim&#259;m timpul pentru autoriza&#539;ie.</p>
+    <div class="mt-9 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="tel:0723322103" class="bg-ink text-amber px-8 py-4 rounded-sm font-bold hover:bg-cream hover:text-ink transition inline-flex items-center justify-center gap-3">
+        <i class="fas fa-phone"></i> 0723 322 103
+      </a>
+      <a href="https://wa.me/40723322103" class="border-2 border-ink text-ink px-8 py-4 rounded-sm font-bold hover:bg-ink hover:text-amber transition inline-flex items-center justify-center gap-3">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-ink2 text-cream/60 py-12 pb-28 md:pb-12 border-t border-line">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+    <div>
+      <div class="flex items-baseline gap-2">
+        <span class="display text-3xl font-bold text-cream">arhi</span><span class="display text-3xl font-light text-amber">PLAN</span>
+      </div>
+      <p class="text-sm mt-4 leading-relaxed">Birou de arhitectur&#259; &#238;n Bra&#537;ov. Documenta&#539;ii pentru autoriza&#539;ii de construire, proiectare reziden&#539;ial&#259; &#537;i comercial&#259;.</p>
+    </div>
+    <div>
+      <h4 class="text-cream font-semibold mb-3 mono text-xs uppercase tracking-widest">/ Naviga&#539;ie</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#capacitati" class="hover:text-amber">Capacit&#259;&#539;i</a></li>
+        <li><a href="#dosar" class="hover:text-amber">Dosar &amp; metod&#259;</a></li>
+        <li><a href="#proces" class="hover:text-amber">Pipeline</a></li>
+        <li><a href="#contact" class="hover:text-amber">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-cream font-semibold mb-3 mono text-xs uppercase tracking-widest">/ Coordonate</h4>
+      <p class="text-sm"><i class="fas fa-phone text-amber mr-2"></i>0723 322 103</p>
+      <p class="text-sm mt-1"><i class="fas fa-location-dot text-amber mr-2"></i>Str. Pictor N. Grigorescu 4, Bra&#537;ov</p>
+      <p class="text-sm mt-1"><i class="far fa-clock text-amber mr-2"></i>Lu&#8211;Vi 09:00&#8211;17:00</p>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-line mono text-[10px] text-cream/40 flex flex-wrap justify-between gap-3 uppercase">
+    <span>&copy; 2026 arhiPLAN ATELIER &middot; ALL RIGHTS RESERVED</span>
+    <span>BV / RO &middot; DOC.SYS v.2.6</span>
+  </div>
+</footer>
+
+<!-- MOBILE BOTTOM BAR -->
+<div class="md:hidden fixed bottom-0 inset-x-0 bg-ink border-t border-amber z-50 grid grid-cols-2">
+  <a href="tel:0723322103" class="flex items-center justify-center gap-2 py-4 font-semibold border-r border-line text-cream">
+    <i class="fas fa-phone text-amber"></i> Sun&#259;
+  </a>
+  <a href="https://wa.me/40723322103" class="flex items-center justify-center gap-2 py-4 font-semibold bg-amber text-ink">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+  </a>
+</div>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://arhiplan.ro/#org",
+  "name": "arhiPLAN",
+  "alternateName": "ARHIPLAN POINT CONCEPT S.R.L.",
+  "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200",
+  "url": "https://arhiplan.ro/",
+  "telephone": "+40723322103",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Strada Pictor Nicolae Grigorescu 4, Ap. 2",
+    "addressLocality": "Brașov",
+    "postalCode": "500271",
+    "addressCountry": "RO"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.637787,
+    "longitude": 25.615197
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "17:00"
+  }],
+  "areaServed": ["Brașov", "Județul Brașov"],
+  "description": "Birou de arhitectură în Brașov. Concept, documentații pentru autorizație de construire, proiect tehnic și asistență de șantier."
+}
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({ duration: 800, once: true, offset: 60 });</script>
+
+</body>
+</html>

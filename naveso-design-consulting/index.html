@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NAVESO Design & Consulting - Inginerie Naval&#259; Gala&#539;i | 0757 762 205</title>
+<meta name="description" content="Consultan&#539;&#259; tehnic&#259; pentru &#537;antiere navale &#537;i armatori: arhitectur&#259; naval&#259;, calcule structurale, CAD 3D &#537;i suport pentru clasifica&#539;ie. NAVESO Gala&#539;i.">
+<meta name="keywords" content="inginerie naval&#259; Gala&#539;i, arhitectur&#259; naval&#259;, NAVESO, design structural nav&#259;, CAD nav&#259;, clasifica&#539;ie nav&#259;">
+<meta name="robots" content="index,follow">
+<meta name="author" content="NAVESO Design & Consulting">
+<link rel="canonical" href="https://naveso.ro/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:site_name" content="NAVESO Design & Consulting">
+<meta property="og:title" content="NAVESO - Inginerie Naval&#259; Gala&#539;i">
+<meta property="og:description" content="Proiectare, analiz&#259; structural&#259; &#537;i CAD pentru construc&#539;ie naval&#259; &#537;i offshore.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NAVESO - Naval Engineering Gala&#539;i">
+<meta name="twitter:description" content="Consultan&#539;&#259; inginereasc&#259; pentru flot&#259; &#537;i &#537;antier naval.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        abyss: '#0a1d2f',
+        deep: '#0e2a47',
+        navy: '#143d62',
+        steel: '#2c5b85',
+        anchor: '#5a87b3',
+        mist: '#cfd9e2',
+        chalk: '#f2f5f8',
+        ivory: '#fafbfc',
+        signal: '#e63946',
+        beacon: '#ffb627',
+        bone: '#e8d8a8'
+      },
+      fontFamily: {
+        display: ['Sora', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace']
+      }
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "NAVESO Design & Consulting",
+  "telephone": "+40757762205",
+  "priceRange": "$$$",
+  "address": {"@type":"PostalAddress","streetAddress":"Strada Br&#259;ilei 7-9","addressLocality":"Gala&#539;i","postalCode":"800021","addressCountry":"RO"},
+  "geo": {"@type":"GeoCoordinates","latitude":45.433479,"longitude":28.052473},
+  "openingHoursSpecification": [{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"17:00"}],
+  "aggregateRating": {"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"1"},
+  "areaServed": "Gala&#539;i",
+  "url": "https://naveso.ro/",
+  "serviceType": ["Arhitectur&#259; naval&#259;","Design structural nav&#259;","Servicii CAD","Suport clasifica&#539;ie","Consultan&#539;&#259; tehnic&#259;"]
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: #0a1d2f; color: #f2f5f8; }
+  .font-display { font-family: 'Sora', sans-serif; letter-spacing: -0.02em; }
+  .font-mono { font-family: 'JetBrains Mono', monospace; }
+  .text-balance { text-wrap: balance; }
+  .grid-blueprint { background-image:
+    linear-gradient(rgba(207,217,226,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(207,217,226,.05) 1px, transparent 1px);
+    background-size: 40px 40px; }
+  .grid-blueprint-bold { background-image:
+    linear-gradient(rgba(207,217,226,.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(207,217,226,.08) 1px, transparent 1px),
+    linear-gradient(rgba(207,217,226,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(207,217,226,.04) 1px, transparent 1px);
+    background-size: 80px 80px, 80px 80px, 20px 20px, 20px 20px; }
+  .wave-line { background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 12'><path d='M0,6 Q12.5,0 25,6 T50,6 T75,6 T100,6' fill='none' stroke='%23ffb627' stroke-width='1.5'/></svg>") repeat-x; height: 12px; background-size: 100px 12px; }
+  .pill { display:inline-flex; align-items:center; gap:.5rem; padding:.4rem 1rem; border-radius:0; font-size:.7rem; letter-spacing:.22em; text-transform:uppercase; font-weight:600; }
+  .border-dot { border: 1px dashed rgba(207,217,226,.3); }
+  .compass-glow { background: radial-gradient(circle at center, rgba(255,182,39,.15), transparent 60%); }
+  .data-row { display: grid; grid-template-columns: auto 1fr auto; gap: 1rem; padding: 0.6rem 0; border-bottom: 1px solid rgba(207,217,226,.1); align-items: center; }
+  .corner-ticks::before, .corner-ticks::after { content: ''; position: absolute; width: 16px; height: 16px; border: 2px solid #ffb627; }
+  .corner-ticks::before { top: 0; left: 0; border-right: 0; border-bottom: 0; }
+  .corner-ticks::after { bottom: 0; right: 0; border-left: 0; border-top: 0; }
+</style>
+</head>
+<body class="bg-abyss text-chalk antialiased">
+
+<!-- TOP NAUTICAL STRIP -->
+<div class="bg-deep border-b border-anchor/30 py-2.5">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between text-[10px] font-mono uppercase tracking-[0.2em] text-mist/70">
+    <div class="flex items-center gap-4">
+      <span class="text-beacon">●</span>
+      <span>POZI&#538;IE · 45°26'00"N · 28°03'09"E</span>
+    </div>
+    <div class="hidden md:flex items-center gap-6">
+      <span>STATUS: ON DUTY</span>
+      <span class="text-beacon">|</span>
+      <span>BUREAUS: BV / DNV / LR / RINA</span>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 bg-abyss/90 backdrop-blur-md border-b border-anchor/20">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 h-16 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <div class="w-11 h-11 bg-beacon text-abyss flex items-center justify-center">
+        <i class="fas fa-anchor text-lg"></i>
+      </div>
+      <div class="leading-tight">
+        <div class="font-display font-bold tracking-tight text-chalk">NAVESO</div>
+        <div class="text-[10px] uppercase tracking-[0.3em] text-beacon font-mono">Design & Consulting</div>
+      </div>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-mist/65">
+      <a href="#capabilit&#259;&#539;i" class="hover:text-beacon">Capabilit&#259;&#539;i</a>
+      <a href="#sectoare" class="hover:text-beacon">Sectoare</a>
+      <a href="#flux" class="hover:text-beacon">Flux proiect</a>
+      <a href="#contact" class="hover:text-beacon">Contact</a>
+    </nav>
+    <a href="tel:0757762205" class="hidden md:inline-flex items-center gap-2 bg-beacon text-abyss px-5 py-2.5 font-bold text-sm hover:bg-chalk transition">
+      <i class="fas fa-phone text-xs"></i> 0757 762 205
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative pt-12 pb-20 md:pt-16 md:pb-28 overflow-hidden">
+  <div class="absolute inset-0 grid-blueprint-bold opacity-60"></div>
+  <div class="absolute top-20 right-0 w-[500px] h-[500px] compass-glow"></div>
+
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative">
+    <div class="grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7" data-aos="fade-up">
+        <span class="pill bg-deep border border-beacon/30 text-beacon">
+          <i class="fas fa-compass"></i>
+          Birou Inginerie Naval&#259; · Gala&#539;i
+        </span>
+
+        <h1 class="font-display font-bold text-5xl md:text-7xl lg:text-[5.5rem] leading-[0.95] tracking-tight text-balance mt-7">
+          Proiect&#259;m nave care <span class="text-beacon">trec testul</span> apei.
+        </h1>
+        <div class="wave-line mt-5 w-48"></div>
+        <p class="mt-7 text-lg md:text-xl text-mist/65 max-w-xl leading-relaxed font-light">
+          NAVESO Design & Consulting este birou de inginerie naval&#259; din Gala&#539;i specializat în arhitectur&#259; naval&#259;, calcule structurale, CAD 3D &#537;i suport pentru clasifica&#539;ie internationala.
+        </p>
+
+        <div class="mt-9 flex flex-wrap gap-3">
+          <a href="tel:0757762205" class="bg-beacon text-abyss px-7 py-4 font-bold hover:bg-chalk transition inline-flex items-center gap-3">
+            <i class="fas fa-phone"></i> Discut&#259; cu un inginer
+          </a>
+          <a href="https://wa.me/40757762205" class="border border-mist/30 text-chalk px-7 py-4 font-bold hover:bg-mist/10 transition inline-flex items-center gap-3">
+            <i class="fab fa-whatsapp text-lg"></i> WhatsApp
+          </a>
+        </div>
+
+        <div class="mt-14 grid grid-cols-3 gap-3 max-w-2xl">
+          <div class="border border-anchor/30 p-4 relative corner-ticks">
+            <div class="font-mono text-[10px] uppercase tracking-[0.2em] text-beacon">DWT</div>
+            <div class="font-display font-bold text-2xl mt-1">120k+</div>
+            <div class="text-[10px] text-mist/55 mt-1">tonaj analizat</div>
+          </div>
+          <div class="border border-anchor/30 p-4 relative corner-ticks">
+            <div class="font-mono text-[10px] uppercase tracking-[0.2em] text-beacon">EXPERIEN&#538;&#258;</div>
+            <div class="font-display font-bold text-2xl mt-1">20+ ani</div>
+            <div class="text-[10px] text-mist/55 mt-1">domeniu naval</div>
+          </div>
+          <div class="border border-anchor/30 p-4 relative corner-ticks">
+            <div class="font-mono text-[10px] uppercase tracking-[0.2em] text-beacon">CERTIFIC&#258;RI</div>
+            <div class="font-display font-bold text-2xl mt-1">5+ clase</div>
+            <div class="text-[10px] text-mist/55 mt-1">cu BV, DNV, LR</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5" data-aos="fade-left" data-aos-delay="200">
+        <div class="bg-deep border border-anchor/30 rounded-none p-6 relative">
+          <div class="absolute -top-3 left-6 bg-abyss px-3 font-mono text-[10px] uppercase tracking-wider text-beacon">FI&#536;A TEHNIC&#258; · DOSAR 24-07</div>
+
+          <div class="aspect-square bg-abyss border border-anchor/40 relative grid-blueprint">
+            <!-- Ship silhouette SVG -->
+            <svg viewBox="0 0 200 200" class="w-full h-full p-6" xmlns="http://www.w3.org/2000/svg">
+              <!-- Hull -->
+              <path d="M 20 110 L 50 150 L 150 150 L 180 110 L 170 120 L 30 120 Z" fill="none" stroke="#ffb627" stroke-width="1.5"/>
+              <!-- Deck -->
+              <line x1="30" y1="110" x2="170" y2="110" stroke="#cfd9e2" stroke-width="1"/>
+              <!-- Superstructure -->
+              <rect x="80" y="80" width="40" height="30" fill="none" stroke="#cfd9e2" stroke-width="1"/>
+              <rect x="90" y="60" width="20" height="20" fill="none" stroke="#cfd9e2" stroke-width="1"/>
+              <!-- Funnel -->
+              <rect x="125" y="70" width="8" height="40" fill="none" stroke="#cfd9e2" stroke-width="1"/>
+              <!-- Bridge windows -->
+              <line x1="85" y1="90" x2="115" y2="90" stroke="#e63946" stroke-width="0.8"/>
+              <!-- Water line -->
+              <line x1="10" y1="130" x2="190" y2="130" stroke="#5a87b3" stroke-width="0.5" stroke-dasharray="2,2"/>
+              <!-- Labels -->
+              <text x="100" y="170" font-family="JetBrains Mono" font-size="6" fill="#ffb627" text-anchor="middle">LBP 145.0 m</text>
+              <text x="20" y="115" font-family="JetBrains Mono" font-size="5" fill="#cfd9e2">FP</text>
+              <text x="180" y="115" font-family="JetBrains Mono" font-size="5" fill="#cfd9e2" text-anchor="end">AP</text>
+              <!-- Compass -->
+              <circle cx="170" cy="40" r="14" fill="none" stroke="#ffb627" stroke-width="1"/>
+              <text x="170" y="32" font-family="JetBrains Mono" font-size="5" fill="#ffb627" text-anchor="middle">N</text>
+              <text x="170" y="52" font-family="JetBrains Mono" font-size="5" fill="#ffb627" text-anchor="middle">S</text>
+              <line x1="170" y1="28" x2="170" y2="52" stroke="#ffb627" stroke-width="0.5"/>
+              <line x1="158" y1="40" x2="182" y2="40" stroke="#ffb627" stroke-width="0.5"/>
+            </svg>
+          </div>
+
+          <div class="mt-5 font-mono text-xs">
+            <div class="data-row">
+              <span class="text-mist/55">PROIECT</span>
+              <span class="text-chalk text-right">Cargo · 8500 DWT</span>
+              <span class="text-beacon">✓</span>
+            </div>
+            <div class="data-row">
+              <span class="text-mist/55">CLAS&#258;</span>
+              <span class="text-chalk text-right">Bureau Veritas</span>
+              <span class="text-beacon">✓</span>
+            </div>
+            <div class="data-row">
+              <span class="text-mist/55">FAZ&#258;</span>
+              <span class="text-chalk text-right">Detail Design</span>
+              <span class="text-beacon">●</span>
+            </div>
+            <div class="data-row">
+              <span class="text-mist/55">SOFTWARE</span>
+              <span class="text-chalk text-right">NAPA · ANSYS · AutoCAD</span>
+              <span class="text-beacon">✓</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section id="capabilit&#259;&#539;i" class="py-20 md:py-28 bg-deep relative overflow-hidden">
+  <div class="absolute inset-0 grid-blueprint opacity-50"></div>
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative">
+    <div class="grid md:grid-cols-12 gap-8 mb-14 items-end">
+      <div class="md:col-span-7" data-aos="fade-up">
+        <span class="pill bg-beacon/20 text-beacon">// Capabilit&#259;&#539;i</span>
+        <h2 class="font-display font-bold text-5xl md:text-6xl mt-4 leading-[1] text-balance">
+          De la <span class="text-beacon">conceptul brut</span> la documenta&#539;ia de clasifica&#539;ie.
+        </h2>
+      </div>
+      <p class="md:col-span-5 text-mist/65 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+        Lucr&#259;m la nave noi, conversii, repara&#539;ii structurale &#537;i evalu&#259;ri pentru ach&#259;ri sau achizi&#539;ii.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-6 gap-3">
+      <article class="md:col-span-3 md:row-span-2 bg-abyss border border-anchor/30 p-9 md:p-10 relative" data-aos="fade-up">
+        <div class="font-mono text-[10px] uppercase tracking-[0.25em] text-beacon">CAP-01</div>
+        <h3 class="font-display font-bold text-3xl mt-3">Arhitectur&#259; naval&#259;</h3>
+        <p class="mt-4 text-mist/65 leading-relaxed">Linii teoretice, calcul stabilitate, bilan&#539; mas-momente, hidrodinamic&#259; preliminar&#259; pentru carene noi sau modific&#259;ri.</p>
+        <ul class="mt-6 space-y-2 text-sm text-mist/75">
+          <li class="data-row"><i class="fas fa-water text-beacon"></i><span>Liniile teoretice carenă</span><span class="text-beacon">●</span></li>
+          <li class="data-row"><i class="fas fa-scale-balanced text-beacon"></i><span>Stabilitate intact&#259; &#537;i avariat&#259;</span><span class="text-beacon">●</span></li>
+          <li class="data-row"><i class="fas fa-weight-hanging text-beacon"></i><span>Free-board &#537;i Load Line</span><span class="text-beacon">●</span></li>
+          <li class="data-row"><i class="fas fa-wave-square text-beacon"></i><span>Seakeeping preliminar</span><span class="text-beacon">●</span></li>
+        </ul>
+      </article>
+
+      <article class="md:col-span-3 bg-abyss border border-anchor/30 p-7" data-aos="fade-up" data-aos-delay="100">
+        <div class="font-mono text-[10px] uppercase tracking-[0.25em] text-beacon">CAP-02</div>
+        <h3 class="font-display font-bold text-2xl mt-3">Calcul structural</h3>
+        <p class="mt-3 text-mist/65 text-sm leading-relaxed">Scantling rule-based (BV, DNV, LR) sau analiz&#259; FEM cu ANSYS. Verificare obosire pentru noduri critice.</p>
+      </article>
+
+      <article class="md:col-span-3 bg-abyss border border-anchor/30 p-7" data-aos="fade-up" data-aos-delay="150">
+        <div class="font-mono text-[10px] uppercase tracking-[0.25em] text-beacon">CAP-03</div>
+        <h3 class="font-display font-bold text-2xl mt-3">CAD 3D &#537;i desene</h3>
+        <p class="mt-3 text-mist/65 text-sm leading-relaxed">Modele 3D AutoCAD/Cadmatic, desene de execu&#539;ie, nesting tabl&#259;, liste piese pentru &#537;antier.</p>
+      </article>
+
+      <article class="md:col-span-2 bg-navy border border-anchor/30 p-7" data-aos="fade-up">
+        <div class="font-mono text-[10px] uppercase tracking-[0.25em] text-beacon">CAP-04</div>
+        <h3 class="font-display font-bold text-xl mt-3">Suport clasifica&#539;ie</h3>
+        <p class="mt-3 text-mist/65 text-sm leading-relaxed">Pre-approval, comunicare cu surveyorul, raspunsuri la observa&#539;ii.</p>
+      </article>
+
+      <article class="md:col-span-2 bg-navy border border-anchor/30 p-7" data-aos="fade-up" data-aos-delay="100">
+        <div class="font-mono text-[10px] uppercase tracking-[0.25em] text-beacon">CAP-05</div>
+        <h3 class="font-display font-bold text-xl mt-3">Conversii &#537;i refit</h3>
+        <p class="mt-3 text-mist/65 text-sm leading-relaxed">Studii de fezabilitate pentru transformarea navelor existente.</p>
+      </article>
+
+      <article class="md:col-span-2 bg-beacon text-abyss p-7" data-aos="fade-up" data-aos-delay="200">
+        <div class="font-mono text-[10px] uppercase tracking-[0.25em]">CAP-06</div>
+        <h3 class="font-display font-bold text-xl mt-3">Project Management</h3>
+        <p class="mt-3 text-abyss/80 text-sm leading-relaxed">Coordon&#259;m comunicarea între armator, &#537;antier &#537;i autoritatea de clasifica&#539;ie.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SECTORS -->
+<section id="sectoare" class="py-20 md:py-28 bg-abyss">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-14" data-aos="fade-up">
+      <span class="pill bg-deep border border-anchor/30 text-beacon">// Sectoare deservite</span>
+      <h2 class="font-display font-bold text-5xl md:text-6xl mt-5 leading-[1] text-balance">
+        Patru tipuri de carene. <span class="text-beacon">Aceea&#537;i rigoare.</span>
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-4">
+      <div class="bg-deep border border-anchor/30 p-7 relative" data-aos="fade-up">
+        <div class="absolute top-4 right-4 font-mono text-[10px] text-mist/40">01</div>
+        <i class="fas fa-ship text-beacon text-3xl mb-5"></i>
+        <h3 class="font-display font-bold text-xl">Cargo &#537;i bulk</h3>
+        <p class="text-mist/60 text-sm mt-2 leading-relaxed">Nave de transport general, vracuri uscate, container feeders.</p>
+      </div>
+      <div class="bg-deep border border-anchor/30 p-7 relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="absolute top-4 right-4 font-mono text-[10px] text-mist/40">02</div>
+        <i class="fas fa-oil-can text-beacon text-3xl mb-5"></i>
+        <h3 class="font-display font-bold text-xl">Tanker &#537;i chemical</h3>
+        <p class="text-mist/60 text-sm mt-2 leading-relaxed">Tancuri produs, chimicale, MARPOL Annex II compliance.</p>
+      </div>
+      <div class="bg-deep border border-anchor/30 p-7 relative" data-aos="fade-up" data-aos-delay="200">
+        <div class="absolute top-4 right-4 font-mono text-[10px] text-mist/40">03</div>
+        <i class="fas fa-anchor text-beacon text-3xl mb-5"></i>
+        <h3 class="font-display font-bold text-xl">Offshore &#537;i tug</h3>
+        <p class="text-mist/60 text-sm mt-2 leading-relaxed">Remorchere, nave aprovizionare offshore, ambarca&#539;iuni service.</p>
+      </div>
+      <div class="bg-deep border border-anchor/30 p-7 relative" data-aos="fade-up" data-aos-delay="300">
+        <div class="absolute top-4 right-4 font-mono text-[10px] text-mist/40">04</div>
+        <i class="fas fa-sailboat text-beacon text-3xl mb-5"></i>
+        <h3 class="font-display font-bold text-xl">Naviga&#539;ie interioar&#259;</h3>
+        <p class="text-mist/60 text-sm mt-2 leading-relaxed">Convoaie fluvial-mar&#259;timă (CEMT), nave Dun&#259;rene, push boats.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="flux" class="py-20 md:py-28 bg-deep relative overflow-hidden">
+  <div class="absolute inset-0 grid-blueprint opacity-40"></div>
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative">
+    <div class="grid lg:grid-cols-12 gap-12 mb-14 items-end">
+      <div class="lg:col-span-8" data-aos="fade-up">
+        <span class="pill bg-beacon/20 text-beacon">// Flux proiect</span>
+        <h2 class="font-display font-bold text-5xl md:text-6xl mt-4 leading-[1] text-balance">Cinci etape, predate ca un manifest.</h2>
+      </div>
+      <p class="lg:col-span-4 text-mist/65 leading-relaxed" data-aos="fade-up" data-aos-delay="100">Fiecare etap&#259; se închide cu un livrabil semnat. Po&#539;i opri colaborarea la sfâr&#537;itul oricarei faze.</p>
+    </div>
+
+    <div class="space-y-3">
+      <div class="bg-abyss border border-anchor/30 p-6 grid md:grid-cols-12 gap-6 items-start" data-aos="fade-up">
+        <div class="md:col-span-1">
+          <div class="font-mono text-[10px] uppercase tracking-wider text-beacon">PHASE</div>
+          <div class="font-display font-bold text-3xl text-beacon">01</div>
+        </div>
+        <div class="md:col-span-3">
+          <h3 class="font-display font-bold text-xl">Brief tehnic &#537;i kick-off</h3>
+        </div>
+        <div class="md:col-span-6">
+          <p class="text-mist/65 text-sm leading-relaxed">Analiz&#259;m cerin&#539;a armatorului, rota de exploatare &#537;i constrangerile de &#537;antier. Stabilim livrabilele &#537;i milestones.</p>
+        </div>
+        <div class="md:col-span-2 font-mono text-xs text-beacon md:text-right">DURAT&#258; · 1 s&#259;pt&#259;mân&#259;</div>
+      </div>
+
+      <div class="bg-abyss border border-anchor/30 p-6 grid md:grid-cols-12 gap-6 items-start" data-aos="fade-up" data-aos-delay="100">
+        <div class="md:col-span-1">
+          <div class="font-mono text-[10px] uppercase tracking-wider text-beacon">PHASE</div>
+          <div class="font-display font-bold text-3xl text-beacon">02</div>
+        </div>
+        <div class="md:col-span-3">
+          <h3 class="font-display font-bold text-xl">Concept Design</h3>
+        </div>
+        <div class="md:col-span-6">
+          <p class="text-mist/65 text-sm leading-relaxed">Linii teoretice, layout principal, estim&#259;ri capacitate &#537;i performance. Validare cu armatorul înainte de detalii.</p>
+        </div>
+        <div class="md:col-span-2 font-mono text-xs text-beacon md:text-right">DURAT&#258; · 3-6 s&#259;pt&#259;mâni</div>
+      </div>
+
+      <div class="bg-abyss border border-anchor/30 p-6 grid md:grid-cols-12 gap-6 items-start" data-aos="fade-up" data-aos-delay="200">
+        <div class="md:col-span-1">
+          <div class="font-mono text-[10px] uppercase tracking-wider text-beacon">PHASE</div>
+          <div class="font-display font-bold text-3xl text-beacon">03</div>
+        </div>
+        <div class="md:col-span-3">
+          <h3 class="font-display font-bold text-xl">Basic Design</h3>
+        </div>
+        <div class="md:col-span-6">
+          <p class="text-mist/65 text-sm leading-relaxed">Scantling rule-based, planuri principale, calcul stabilitate complet&#259;, midship section pentru aprobare clas&#259;.</p>
+        </div>
+        <div class="md:col-span-2 font-mono text-xs text-beacon md:text-right">DURAT&#258; · 8-12 s&#259;pt&#259;mâni</div>
+      </div>
+
+      <div class="bg-abyss border border-anchor/30 p-6 grid md:grid-cols-12 gap-6 items-start" data-aos="fade-up" data-aos-delay="300">
+        <div class="md:col-span-1">
+          <div class="font-mono text-[10px] uppercase tracking-wider text-beacon">PHASE</div>
+          <div class="font-display font-bold text-3xl text-beacon">04</div>
+        </div>
+        <div class="md:col-span-3">
+          <h3 class="font-display font-bold text-xl">Detail Design &#537;i FEM</h3>
+        </div>
+        <div class="md:col-span-6">
+          <p class="text-mist/65 text-sm leading-relaxed">Desene execu&#539;ie, nesting, analiz&#259; FEM pe zone critice, weld plan &#537;i specifica&#539;ii materiale.</p>
+        </div>
+        <div class="md:col-span-2 font-mono text-xs text-beacon md:text-right">DURAT&#258; · 10-16 s&#259;pt&#259;mâni</div>
+      </div>
+
+      <div class="bg-beacon text-abyss border border-beacon p-6 grid md:grid-cols-12 gap-6 items-start" data-aos="fade-up" data-aos-delay="400">
+        <div class="md:col-span-1">
+          <div class="font-mono text-[10px] uppercase tracking-wider">PHASE</div>
+          <div class="font-display font-bold text-3xl">05</div>
+        </div>
+        <div class="md:col-span-3">
+          <h3 class="font-display font-bold text-xl">Suport &#537;antier &#537;i clasifica&#539;ie</h3>
+        </div>
+        <div class="md:col-span-6">
+          <p class="text-abyss/80 text-sm leading-relaxed">Particip&#259;m la pre-approvals, ridic&#259;ri &#537;antier, raspunsuri rapide la observa&#539;iile clasifica&#539;iei.</p>
+        </div>
+        <div class="md:col-span-2 font-mono text-xs md:text-right">PE TOAT&#258; PERIOADA</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="py-20 md:py-24 bg-abyss border-y border-anchor/20">
+  <div class="max-w-4xl mx-auto px-5 lg:px-8 text-center" data-aos="fade-up">
+    <span class="pill bg-deep border border-beacon/30 text-beacon mb-7">// Voce client</span>
+    <p class="font-display text-3xl md:text-4xl leading-snug text-balance">
+      "Un loc cu oameni profesioni&#537;ti. NAVESO a fost partenerul potrivit pentru proiectul nostru."
+    </p>
+    <div class="mt-7 flex items-center justify-center gap-4">
+      <div class="w-12 h-12 bg-beacon text-abyss rounded-full flex items-center justify-center font-display font-bold">D</div>
+      <div class="text-left">
+        <div class="font-bold">Daniel Romeo Calmuc</div>
+        <div class="text-[10px] uppercase tracking-[0.25em] text-beacon font-mono">Client Google · ★★★★★</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT + MAP -->
+<section id="contact" class="py-20 md:py-28 bg-deep">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-5" data-aos="fade-up">
+        <span class="pill bg-beacon text-abyss">// Contact</span>
+        <h2 class="font-display font-bold text-5xl md:text-6xl mt-5 leading-[1] text-balance">
+          Hai s&#259; <span class="text-beacon">trecem la carte tehnic&#259;</span>.
+        </h2>
+        <p class="mt-6 text-mist/65 leading-relaxed max-w-md">
+          Sun&#259; pentru o convorbire ini&#539;ial&#259; sau trimite NDA-ul &#537;i specifica&#539;iile pe WhatsApp. R&#259;spundem în maxim 24h cu o estimare clar&#259;.
+        </p>
+
+        <div class="mt-10 space-y-3">
+          <a href="tel:0757762205" class="block bg-abyss border border-anchor/30 p-5 hover:border-beacon transition group">
+            <div class="flex items-center gap-5">
+              <div class="w-12 h-12 bg-beacon text-abyss flex items-center justify-center"><i class="fas fa-phone"></i></div>
+              <div class="flex-1">
+                <div class="font-mono text-[10px] uppercase tracking-[0.25em] text-beacon">TEL · DIRECT</div>
+                <div class="font-display font-bold text-2xl">0757 762 205</div>
+              </div>
+              <i class="fas fa-arrow-right text-mist/40 group-hover:text-beacon group-hover:translate-x-1 transition"></i>
+            </div>
+          </a>
+          <a href="https://wa.me/40757762205" class="block bg-abyss border border-anchor/30 p-5 hover:border-beacon transition group">
+            <div class="flex items-center gap-5">
+              <div class="w-12 h-12 bg-anchor text-abyss flex items-center justify-center"><i class="fab fa-whatsapp text-lg"></i></div>
+              <div class="flex-1">
+                <div class="font-mono text-[10px] uppercase tracking-[0.25em] text-beacon">WHATSAPP · ASYNC</div>
+                <div class="font-display font-bold text-xl">Trimite spec.</div>
+              </div>
+              <i class="fas fa-arrow-right text-mist/40 group-hover:text-beacon group-hover:translate-x-1 transition"></i>
+            </div>
+          </a>
+          <div class="bg-abyss border border-anchor/30 p-5 flex items-center gap-5">
+            <div class="w-12 h-12 bg-mist text-abyss flex items-center justify-center"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <div class="font-mono text-[10px] uppercase tracking-[0.25em] text-beacon">SEDIU</div>
+              <div class="font-display font-bold text-lg">Br&#259;ilei 7-9, Gala&#539;i</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 border border-anchor/30 p-5 font-mono">
+          <div class="text-[10px] uppercase tracking-[0.25em] text-beacon mb-3">PROGRAM</div>
+          <div class="grid grid-cols-2 gap-y-2 text-xs">
+            <span class="text-mist/55">LUNI - VINERI</span><span class="font-bold">07:00 - 17:00</span>
+            <span class="text-mist/55">SAMB&#258;T&#258; - DUMINIC&#258;</span><span class="font-bold text-mist/50">CLOSED</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7" data-aos="fade-left" data-aos-delay="200">
+        <div class="overflow-hidden h-full min-h-[560px] border border-anchor/30">
+          <iframe src="https://www.google.com/maps?q=45.433479,28.052473&hl=ro&z=17&output=embed" class="w-full h-full min-h-[560px]" style="border:0;filter: grayscale(40%) invert(10%) brightness(0.85);" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="py-20 md:py-28 bg-abyss relative overflow-hidden border-t border-anchor/30">
+  <div class="absolute inset-0 grid-blueprint opacity-50"></div>
+  <div class="max-w-5xl mx-auto px-5 lg:px-8 text-center relative" data-aos="fade-up">
+    <span class="pill bg-beacon/20 text-beacon">// Urm&#259;torul pas</span>
+    <h2 class="font-display font-bold text-5xl md:text-7xl mt-5 leading-[0.95] text-balance">
+      Trimite-ne <span class="text-beacon">schi&#539;a</span>.<br>
+      Î&#539;i trimitem un plan.
+    </h2>
+    <p class="mt-6 text-mist/65 text-lg max-w-2xl mx-auto">NDA semnat în 24h, propunere tehnic&#259; &#537;i comercial&#259; în 5 zile lucr&#259;toare.</p>
+    <div class="mt-10 flex flex-wrap justify-center gap-4">
+      <a href="tel:0757762205" class="bg-beacon text-abyss px-8 py-4 font-bold hover:bg-chalk transition inline-flex items-center gap-3">
+        <i class="fas fa-phone"></i> 0757 762 205
+      </a>
+      <a href="https://wa.me/40757762205" class="border-2 border-mist/30 px-8 py-4 font-bold hover:bg-mist/10 transition inline-flex items-center gap-3">
+        <i class="fab fa-whatsapp text-xl"></i> WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-deep border-t border-anchor/20 py-12">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="grid md:grid-cols-3 gap-10 mb-10">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-beacon text-abyss flex items-center justify-center"><i class="fas fa-anchor"></i></div>
+          <div>
+            <div class="font-display font-bold text-chalk">NAVESO</div>
+            <div class="text-[10px] uppercase tracking-[0.3em] text-beacon font-mono">Design & Consulting · Gala&#539;i</div>
+          </div>
+        </div>
+        <p class="text-sm leading-relaxed text-mist/55">Birou de inginerie naval&#259; cu specializare în arhitectur&#259;, structuri &#537;i suport pentru clasifica&#539;ie.</p>
+      </div>
+      <div>
+        <div class="font-mono text-[10px] uppercase tracking-[0.3em] text-beacon mb-4 font-bold">Contact</div>
+        <ul class="space-y-2 text-sm text-mist/70 font-mono">
+          <li>// 0757 762 205</li>
+          <li>// Br&#259;ilei 7-9, Gala&#539;i</li>
+          <li>// L-V 07:00 - 17:00</li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-mono text-[10px] uppercase tracking-[0.3em] text-beacon mb-4 font-bold">Capabilit&#259;&#539;i</div>
+        <ul class="space-y-2 text-sm text-mist/70">
+          <li>Arhitectur&#259; naval&#259;</li>
+          <li>Calcul structural</li>
+          <li>CAD 3D &#537;i nesting</li>
+          <li>Suport clasifica&#539;ie BV / DNV / LR</li>
+          <li>Project management</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-anchor/20 pt-6 flex flex-col md:flex-row justify-between text-xs text-mist/40 font-mono">
+      <span>// © 2026 NAVESO DESIGN & CONSULTING · TOATE DREPTURILE REZERVATE</span>
+      <span>// engineering vessels that pass water trials</span>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY BAR -->
+<div class="md:hidden fixed bottom-0 inset-x-0 z-50 grid grid-cols-2 border-t-2 border-beacon">
+  <a href="tel:0757762205" class="py-3.5 flex items-center justify-center gap-2 font-bold bg-beacon text-abyss">
+    <i class="fas fa-phone"></i> Sun&#259;
+  </a>
+  <a href="https://wa.me/40757762205" class="py-3.5 flex items-center justify-center gap-2 font-bold bg-deep text-beacon border-l border-beacon">
+    <i class="fab fa-whatsapp text-lg"></i> WhatsApp
+  </a>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({ duration: 700, once: true, offset: 60 });</script>
+</body>
+</html>

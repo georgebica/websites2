@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catavio Prest Galați &mdash; Sticlă, Oglinzi, Pereți Duș &amp; Glasvanduri | 0236 465 400</title>
+<meta name="description" content="Catavio Prest Galați &mdash; atelier de sticlă și oglinzi. Cabine duș sticlă securizată, oglinzi la comandă, pereți de sticlă, geamuri securizate, blat masă, balustrade. Strada Traian 69.">
+<meta name="keywords" content="sticlă Galați, oglinzi la comandă Galați, cabină duș sticlă Galați, geamuri securizate, balustrade sticlă, pereți sticlă birou, glasvanduri, Catavio Prest, atelier sticlă Galați">
+<meta name="robots" content="index,follow">
+<meta name="author" content="Catavio Prest">
+<link rel="canonical" href="">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:site_name" content="Catavio Prest">
+<meta property="og:title" content="Catavio Prest &mdash; Atelier de sticlă &amp; oglinzi Galați">
+<meta property="og:description" content="Sticlă tăiată la dimensiune, oglinzi, cabine duș, balustrade, geamuri securizate. Atelier propriu. Sună 0236 465 400.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Catavio Prest &mdash; Sticlă &amp; oglinzi Galați">
+<meta name="twitter:description" content="Tăiem, șlefuim, fasonăm, montăm. Atelier de sticlă cu execuție la comandă.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        glacier: '#DBEAFE',
+        sky:     '#E0F2FE',
+        frost:   '#F0F9FF',
+        snow:    '#F8FAFC',
+        pewter:  '#475569',
+        pewter2: '#64748B',
+        slate0:  '#0F172A',
+        slate1:  '#1E293B',
+        gold:    '#B45309',
+        gold2:   '#92400E',
+        copper:  '#D4A574',
+        cyan1:   '#06B6D4',
+        ink:     '#0B1220',
+      },
+      fontFamily: {
+        display: ['Italiana', 'serif'],
+        sans:    ['Karla', 'sans-serif']
+      }
+    }
+  }
+}
+</script>
+
+<style>
+html, body { font-family:'Karla',sans-serif; background:#F8FAFC; color:#0F172A; letter-spacing:.01em; }
+.font-display { font-family:'Italiana', serif; letter-spacing:.01em; }
+
+/* Glass panel effect */
+.glass {
+  background: linear-gradient(135deg, rgba(224,242,254,.6) 0%, rgba(248,250,252,.85) 100%);
+  border: 1px solid rgba(71,85,105,.15);
+  backdrop-filter: blur(8px);
+}
+.glass-dark {
+  background: linear-gradient(135deg, rgba(15,23,42,.92) 0%, rgba(30,41,59,.92) 100%);
+  border: 1px solid rgba(255,255,255,.08);
+  backdrop-filter: blur(10px);
+}
+
+/* Reflective gradient */
+.refl {
+  background: linear-gradient(135deg, #DBEAFE 0%, #F8FAFC 35%, #F8FAFC 65%, #E0F2FE 100%);
+}
+
+/* Pane stack visual */
+.pane-stack {
+  position:relative;
+}
+.pane-stack > * {
+  background: rgba(248,250,252,.85);
+  border: 1px solid rgba(71,85,105,.18);
+  box-shadow: 0 30px 60px -30px rgba(15,23,42,.25);
+}
+
+/* Hairline */
+.hair { height:1px; background: linear-gradient(90deg, transparent, #475569, transparent); }
+
+/* Eyebrow */
+.eye {
+  font-family:'Karla',sans-serif;
+  font-size:.7rem; font-weight:600; letter-spacing:.36em; text-transform:uppercase; color:#B45309;
+}
+
+/* Display heading */
+.h-iti { font-family:'Italiana', serif; font-weight:400; letter-spacing:.005em; }
+
+/* Buttons */
+.btn-ink { background:#0F172A; color:#F8FAFC; transition:.25s; }
+.btn-ink:hover { background:#1E293B; box-shadow: 0 14px 30px -10px rgba(15,23,42,.5); }
+.btn-gold { background:#B45309; color:#F8FAFC; transition:.25s; }
+.btn-gold:hover { background:#92400E; }
+.btn-line { border:1.5px solid #0F172A; color:#0F172A; transition:.25s; }
+.btn-line:hover { background:#0F172A; color:#F8FAFC; }
+.btn-line-light { border:1px solid rgba(248,250,252,.5); color:#F8FAFC; transition:.25s; }
+.btn-line-light:hover { background:#F8FAFC; color:#0F172A; }
+
+/* Service card */
+.svc-pane {
+  background: linear-gradient(165deg, #FFFFFF 0%, #F0F9FF 100%);
+  border: 1px solid rgba(71,85,105,.18);
+  transition:.3s;
+  position:relative;
+  overflow:hidden;
+}
+.svc-pane::before {
+  content:""; position:absolute; top:0; left:-50%; width:60%; height:100%;
+  background: linear-gradient(115deg, transparent 0%, rgba(255,255,255,.6) 50%, transparent 100%);
+  transform: translateX(-30%);
+  transition: transform .8s ease;
+  pointer-events:none;
+}
+.svc-pane:hover { border-color:#B45309; box-shadow: 0 30px 60px -30px rgba(15,23,42,.25); }
+.svc-pane:hover::before { transform: translateX(160%); }
+
+/* Spec list */
+.spec-list li { padding: .9rem 0; border-bottom: 1px solid rgba(71,85,105,.15); display:flex; justify-content:space-between; align-items:center; }
+.spec-list li:last-child { border-bottom: none; }
+
+/* Domain card */
+.dom-card { transition:.3s; border:1px solid rgba(71,85,105,.18); background:#fff; overflow:hidden; }
+.dom-card:hover { transform: translateY(-4px); box-shadow:0 30px 60px -30px rgba(15,23,42,.25); }
+
+/* Decorative angle */
+.angle-deco {
+  position:absolute; width:120px; height:120px;
+  border-top: 1px solid #B45309; border-left: 1px solid #B45309;
+}
+</style>
+</head>
+
+<body class="bg-snow">
+
+<!-- Top mini bar -->
+<div class="hidden md:block bg-slate0 text-snow/80 text-xs">
+  <div class="max-w-7xl mx-auto px-6 py-2.5 flex justify-between items-center">
+    <span class="tracking-[.22em] uppercase font-medium text-copper">Atelier de sticlă din 2003 &middot; Galați</span>
+    <div class="flex items-center gap-5">
+      <span><i class="fa-solid fa-location-dot text-copper mr-1.5"></i>Strada Traian 69</span>
+      <a href="tel:0236465400" class="hover:text-copper transition"><i class="fa-solid fa-phone mr-1.5"></i>0236 465 400</a>
+    </div>
+  </div>
+</div>
+
+<!-- Nav -->
+<nav class="sticky top-0 z-40 bg-snow/95 backdrop-blur border-b border-slate0/10">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+    <a href="#" class="flex items-center gap-3">
+      <div class="w-12 h-12 glass flex items-center justify-center">
+        <span class="font-display text-3xl text-slate0">C</span>
+      </div>
+      <div class="leading-tight">
+        <div class="font-display text-2xl text-slate0">Catavio Prest</div>
+        <div class="text-[10px] tracking-[.32em] uppercase text-gold font-semibold">Sticlă &amp; Oglinzi &middot; Galați</div>
+      </div>
+    </a>
+    <div class="hidden lg:flex gap-8 text-sm font-medium text-slate1">
+      <a href="#produse" class="hover:text-gold transition">Produse</a>
+      <a href="#aplicatii" class="hover:text-gold transition">Aplicații</a>
+      <a href="#proces" class="hover:text-gold transition">Proces</a>
+      <a href="#program" class="hover:text-gold transition">Program</a>
+      <a href="#contact" class="hover:text-gold transition">Contact</a>
+    </div>
+    <a href="tel:0236465400" class="hidden md:inline-flex btn-ink px-5 py-2.5 text-sm font-semibold">
+      <i class="fa-solid fa-phone mr-2"></i>0236 465 400
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="refl relative overflow-hidden">
+  <div class="angle-deco top-12 left-6 hidden lg:block"></div>
+  <div class="angle-deco bottom-12 right-6 hidden lg:block" style="border:none; border-bottom:1px solid #B45309; border-right:1px solid #B45309;"></div>
+
+  <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 grid lg:grid-cols-12 gap-10 items-center relative">
+
+    <div class="lg:col-span-7" data-aos="fade-up">
+      <div class="eye mb-7">Atelier &middot; Galați &middot; Comenzi la dimensiune</div>
+      <h1 class="h-iti text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.04] text-slate0">
+        Sticlă, oglindă,<br>
+        <span class="italic font-display text-gold">precizie</span> &mdash; tăiate<br>
+        după casa ta.
+      </h1>
+      <p class="mt-8 text-lg text-pewter leading-[1.85] max-w-xl">
+        Catavio Prest taie, șlefuiește, fasonează și montează sticlă pentru tine, pe Strada Traian 69 din Galați. Cabine de duș, oglinzi, geamuri securizate, glasvanduri, balustrade, blaturi de masă &mdash; la dimensiune, finisate corect, montate cu grijă.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4 mt-10">
+        <a href="tel:0236465400" class="btn-ink px-7 py-4 font-semibold inline-flex items-center text-base">
+          <i class="fa-solid fa-phone mr-3"></i>0236 465 400
+        </a>
+        <a href="https://wa.me/40236465400?text=Bună,%20doresc%20o%20ofertă%20pentru%20sticlă%20la%20comandă." class="btn-line px-7 py-4 font-semibold inline-flex items-center text-base">
+          <i class="fa-brands fa-whatsapp mr-3"></i>Cere ofertă
+        </a>
+      </div>
+    </div>
+
+    <div class="lg:col-span-5 relative" data-aos="fade-up" data-aos-delay="160">
+      <!-- Stacked glass-pane visual -->
+      <div class="relative h-[480px]">
+        <div class="absolute top-0 right-0 w-3/4 h-72 glass" style="transform: rotate(2deg);"></div>
+        <div class="absolute top-12 left-0 w-3/4 h-80">
+          <img src="https://images.unsplash.com/photo-1520637836862-4d197d17c55a?auto=format&fit=crop&w=900&q=80" alt="Cabină duș sticlă securizată" class="w-full h-full object-cover" style="border:1px solid rgba(71,85,105,.2); box-shadow: 0 30px 60px -30px rgba(15,23,42,.3);">
+        </div>
+        <div class="absolute bottom-0 right-6 w-1/2 h-44 glass" style="transform: rotate(-2deg);"></div>
+        <div class="absolute bottom-3 right-12 bg-slate0 text-snow p-4 w-44">
+          <div class="text-[10px] tracking-[.32em] uppercase text-copper font-semibold">Sticlă</div>
+          <div class="font-display text-xl text-snow mt-1">securizată 8 mm</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIPURI / SPEC SUMMARY -->
+<section class="py-20 bg-snow border-y border-slate0/10">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-5">
+      <div class="eye mb-3">Tipuri lucrate în atelier</div>
+      <h2 class="h-iti text-4xl md:text-5xl text-slate0 leading-tight">Cu ce <span class="italic">lucrăm</span>.</h2>
+      <p class="text-pewter mt-5 leading-relaxed">Avem stocuri pentru cele mai cerute grosimi și calități. Pentru proiecte mai aparte &mdash; sticlă colorată, structurată, satinată, oglinzi colorate &mdash; ne ocupăm de comandă și-ți spunem termenul real.</p>
+    </div>
+
+    <div class="lg:col-span-7">
+      <ul class="spec-list">
+        <li>
+          <div>
+            <div class="font-display text-xl text-slate0">Sticlă float clară</div>
+            <div class="text-xs text-pewter mt-1">Pentru ferestre, blaturi, vitrine, mobilier</div>
+          </div>
+          <span class="text-gold font-semibold">3 / 4 / 5 / 6 / 8 / 10 mm</span>
+        </li>
+        <li>
+          <div>
+            <div class="font-display text-xl text-slate0">Sticlă securizată (tempered)</div>
+            <div class="text-xs text-pewter mt-1">Cabine duș, balustrade, scări, vitrine de magazin</div>
+          </div>
+          <span class="text-gold font-semibold">6 / 8 / 10 / 12 mm</span>
+        </li>
+        <li>
+          <div>
+            <div class="font-display text-xl text-slate0">Sticlă laminată (stratificată)</div>
+            <div class="text-xs text-pewter mt-1">Acolo unde siguranța contează: poduri, balcoane, pardoseli</div>
+          </div>
+          <span class="text-gold font-semibold">6.38 / 8.38 / 10.38 mm</span>
+        </li>
+        <li>
+          <div>
+            <div class="font-display text-xl text-slate0">Oglindă argint</div>
+            <div class="text-xs text-pewter mt-1">Băi, dressing, hol, mobilier, dulapuri</div>
+          </div>
+          <span class="text-gold font-semibold">3 / 4 / 5 / 6 mm</span>
+        </li>
+        <li>
+          <div>
+            <div class="font-display text-xl text-slate0">Sticlă mată / sablată</div>
+            <div class="text-xs text-pewter mt-1">Pereți birou, paravane, intimitate la baie</div>
+          </div>
+          <span class="text-gold font-semibold">la cerere</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUSE / SERVICES -->
+<section id="produse" class="py-24">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-12 gap-10 mb-14">
+      <div class="lg:col-span-7" data-aos="fade-up">
+        <div class="eye mb-4">Produse &amp; servicii</div>
+        <h2 class="h-iti text-4xl md:text-6xl text-slate0 leading-[1.04]">
+          Șase tipuri de lucrări,<br>
+          <span class="italic">făcute zilnic</span> în atelier.
+        </h2>
+      </div>
+      <div class="lg:col-span-5 flex items-end" data-aos="fade-up" data-aos-delay="100">
+        <p class="text-pewter leading-relaxed">Fiecare proiect începe cu o măsurătoare exactă (la fața locului sau pe planul tău), continuă cu fasonarea în atelier și se închide cu montajul corect &mdash; cu silicoane neutre, profile inox și etanșeități aliniate.</p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <article class="svc-pane p-7" data-aos="fade-up">
+        <div class="flex items-start justify-between mb-4">
+          <div class="w-14 h-14 bg-frost border border-slate0/15 flex items-center justify-center text-slate0 text-2xl">
+            <i class="fa-solid fa-shower"></i>
+          </div>
+          <span class="text-gold font-display text-3xl">/ 01</span>
+        </div>
+        <h3 class="font-display text-2xl text-slate0 mb-2">Cabine de duș</h3>
+        <p class="text-sm text-pewter leading-relaxed mb-4">Sticlă securizată 8 mm, profile inox sau aluminiu, etanșeități aliniate. Walk-in, glisante, pivotante. Montaj inclus.</p>
+        <ul class="text-xs text-pewter/90 space-y-1.5">
+          <li><i class="fa-solid fa-check text-gold mr-2"></i>Walk-in fix &amp; semi-mobile</li>
+          <li><i class="fa-solid fa-check text-gold mr-2"></i>Sisteme glisante &amp; pivotante</li>
+          <li><i class="fa-solid fa-check text-gold mr-2"></i>Sticlă tratată anti-calcar</li>
+        </ul>
+      </article>
+
+      <article class="svc-pane p-7" data-aos="fade-up" data-aos-delay="80">
+        <div class="flex items-start justify-between mb-4">
+          <div class="w-14 h-14 bg-frost border border-slate0/15 flex items-center justify-center text-slate0 text-2xl">
+            <i class="fa-regular fa-square"></i>
+          </div>
+          <span class="text-gold font-display text-3xl">/ 02</span>
+        </div>
+        <h3 class="font-display text-2xl text-slate0 mb-2">Oglinzi la comandă</h3>
+        <p class="text-sm text-pewter leading-relaxed mb-4">Pentru baie, dressing, dulapuri, hol. Cu sau fără șlefuire, cu margini fasonate, găuri pentru iluminat sau prindere.</p>
+        <ul class="text-xs text-pewter/90 space-y-1.5">
+          <li><i class="fa-solid fa-check text-gold mr-2"></i>Tăiere la dimensiune precisă</li>
+          <li><i class="fa-solid fa-check text-gold mr-2"></i>Margini șlefuite, polizate, fasonate</li>
+          <li><i class="fa-solid fa-check text-gold mr-2"></i>Găuri pentru LED/fixare</li>
+        </ul>
+      </article>
+
+      <article class="svc-pane p-7" data-aos="fade-up" data-aos-delay="160">
+        <div class="flex items-start justify-between mb-4">
+          <div class="w-14 h-14 bg-frost border border-slate0/15 flex items-center justify-center text-slate0 text-2xl">
+            <i class="fa-solid fa-grip-lines"></i>
+          </div>
+          <span class="text-gold font-display text-3xl">/ 03</span>
+        </div>
+        <h3 class="font-display text-2xl text-slate0 mb-2">Pereți de sticlă &amp; glasvanduri</h3>
+        <p class="text-sm text-pewter leading-relaxed mb-4">Pentru birouri, magazine, restaurante. Sticlă securizată, profile aluminiu, uși de sticlă cu balamale și mânere alese de tine.</p>
+        <ul class="text-xs text-pewter/90 space-y-1.5">
+          <li><i class="fa-solid fa-check text-gold mr-2"></i>Pereți despărțitori birou</li>
+          <li><i class="fa-solid fa-check text-gold mr-2"></i>Glasvanduri vitrine comerț</li>
+          <li><i class="fa-solid fa-check text-gold mr-2"></i>Uși sticlă cu / fără cadru</li>
+        </ul>
+      </article>
+
+      <article class="svc-pane p-7" data-aos="fade-up">
+        <div class="flex items-start justify-between mb-4">
+          <div class="w-14 h-14 bg-frost border border-slate0/15 flex items-center justify-center text-slate0 text-2xl">
+            <i class="fa-solid fa-stairs"></i>
+          </div>
+          <span class="text-gold font-display text-3xl">/ 04</span>
+        </div>
+        <h3 class="font-display text-2xl text-slate0 mb-2">Balustrade din sticlă</h3>
+        <p class="text-sm text-pewter leading-relaxed mb-4">Pentru scări, terase, mezanine, balcoane. Sticlă securizată sau laminată, prinsă în profile sau cu cleme inox.</p>
+        <ul class="text-xs text-pewter/90 space-y-1.5">
+          <li><i class="fa-solid fa-check text-gold mr-2"></i>Balustrade scară interioară</li>
+          <li><i class="fa-solid fa-check text-gold mr-2"></i>Parapete terasă &amp; balcon</li>
+          <li><i class="fa-solid fa-check text-gold mr-2"></i>Cleme inox &amp; profile aluminiu</li>
+        </ul>
+      </article>
+
+      <article class="svc-pane p-7" data-aos="fade-up" data-aos-delay="80">
+        <div class="flex items-start justify-between mb-4">
+          <div class="w-14 h-14 bg-frost border border-slate0/15 flex items-center justify-center text-slate0 text-2xl">
+            <i class="fa-solid fa-window-restore"></i>
+          </div>
+          <span class="text-gold font-display text-3xl">/ 05</span>
+        </div>
+        <h3 class="font-display text-2xl text-slate0 mb-2">Geamuri &amp; reparații</h3>
+        <p class="text-sm text-pewter leading-relaxed mb-4">Înlocuim geamuri sparte, livrăm geamuri termopan noi pentru ferestre existente, reparăm pachete cu condens.</p>
+        <ul class="text-xs text-pewter/90 space-y-1.5">
+          <li><i class="fa-solid fa-check text-gold mr-2"></i>Geamuri float clare la dimensiune</li>
+          <li><i class="fa-solid fa-check text-gold mr-2"></i>Pachete termopan duble &amp; triple</li>
+          <li><i class="fa-solid fa-check text-gold mr-2"></i>Reparații condens între foi</li>
+        </ul>
+      </article>
+
+      <article class="svc-pane p-7" data-aos="fade-up" data-aos-delay="160">
+        <div class="flex items-start justify-between mb-4">
+          <div class="w-14 h-14 bg-frost border border-slate0/15 flex items-center justify-center text-slate0 text-2xl">
+            <i class="fa-solid fa-table"></i>
+          </div>
+          <span class="text-gold font-display text-3xl">/ 06</span>
+        </div>
+        <h3 class="font-display text-2xl text-slate0 mb-2">Blaturi &amp; sticlă mobilier</h3>
+        <p class="text-sm text-pewter leading-relaxed mb-4">Blat masă din sticlă temperată, etajere, ușițe vitrină, sticlă protecție mobilier. Margini polizate la perfecțiune.</p>
+        <ul class="text-xs text-pewter/90 space-y-1.5">
+          <li><i class="fa-solid fa-check text-gold mr-2"></i>Blaturi masă rotunde / drepte</li>
+          <li><i class="fa-solid fa-check text-gold mr-2"></i>Etajere vitrină &amp; raft sticlă</li>
+          <li><i class="fa-solid fa-check text-gold mr-2"></i>Sticlă mată / sablată decorativă</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- APLICATII / DOMAINS -->
+<section id="aplicatii" class="py-24 bg-glacier/40">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center max-w-2xl mx-auto mb-14" data-aos="fade-up">
+      <div class="eye mb-4">Aplicații</div>
+      <h2 class="h-iti text-4xl md:text-5xl text-slate0 leading-tight">Pentru cine <span class="italic">lucrăm.</span></h2>
+      <p class="text-pewter mt-5 leading-relaxed">Atelierul nostru servește simultan beneficiari finali și constructori, designeri, hoteluri, magazine. Adaptăm finisajul, profilele și termenul după contextul tău.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <article class="dom-card" data-aos="fade-up">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=600&q=80" alt="Apartamente rezidențiale" class="w-full h-44 object-cover">
+        <div class="p-6">
+          <div class="text-[10px] tracking-[.28em] uppercase text-gold font-semibold mb-2">Rezidențial</div>
+          <h4 class="font-display text-2xl text-slate0 mb-2">Acasă &amp; apartament</h4>
+          <p class="text-sm text-pewter leading-relaxed">Cabine duș, oglinzi baie, pereți dressing, blaturi sticlă, paravane terasă.</p>
+        </div>
+      </article>
+
+      <article class="dom-card" data-aos="fade-up" data-aos-delay="80">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=600&q=80" alt="Hoteluri și restaurante" class="w-full h-44 object-cover">
+        <div class="p-6">
+          <div class="text-[10px] tracking-[.28em] uppercase text-gold font-semibold mb-2">HoReCa</div>
+          <h4 class="font-display text-2xl text-slate0 mb-2">Hotel &amp; restaurant</h4>
+          <p class="text-sm text-pewter leading-relaxed">Glasvanduri, paravane între mese, oglinzi-decor, balustrade scară, vitrine.</p>
+        </div>
+      </article>
+
+      <article class="dom-card" data-aos="fade-up" data-aos-delay="160">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Birouri și spații office" class="w-full h-44 object-cover">
+        <div class="p-6">
+          <div class="text-[10px] tracking-[.28em] uppercase text-gold font-semibold mb-2">Office</div>
+          <h4 class="font-display text-2xl text-slate0 mb-2">Birouri &amp; săli</h4>
+          <p class="text-sm text-pewter leading-relaxed">Pereți despărțitori, săli de meeting cu sticlă mată, uși batante și glisante.</p>
+        </div>
+      </article>
+
+      <article class="dom-card" data-aos="fade-up" data-aos-delay="240">
+        <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=600&q=80" alt="Vitrine magazine" class="w-full h-44 object-cover">
+        <div class="p-6">
+          <div class="text-[10px] tracking-[.28em] uppercase text-gold font-semibold mb-2">Comercial</div>
+          <h4 class="font-display text-2xl text-slate0 mb-2">Magazine &amp; vitrine</h4>
+          <p class="text-sm text-pewter leading-relaxed">Vitrine securizate, uși acces sticlă, balustrade, panouri decorative interior.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCES -->
+<section id="proces" class="py-24 bg-snow">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-12 gap-12 items-center">
+
+      <div class="lg:col-span-5" data-aos="fade-right">
+        <div class="eye mb-4">Cum lucrăm</div>
+        <h2 class="h-iti text-4xl md:text-5xl text-slate0 leading-tight">De la <span class="italic">măsurătoare</span> la montaj.</h2>
+        <p class="mt-6 text-pewter leading-relaxed">Pașii sunt simpli, dar fiecare contează. Nu trimitem niciodată sticlă fără măsurătoare confirmată &mdash; asta evită surprize la montaj și taie costuri mai mari pe piesele care nu intră.</p>
+      </div>
+
+      <div class="lg:col-span-7 space-y-6" data-aos="fade-left">
+
+        <div class="flex gap-5">
+          <div class="font-display text-5xl text-gold leading-none w-16 flex-shrink-0">01</div>
+          <div>
+            <h4 class="font-display text-2xl text-slate0 mb-1">Discutăm proiectul</h4>
+            <p class="text-sm text-pewter leading-relaxed">Telefon, WhatsApp sau direct la atelier. Spune ce vrei să faci, trimite poze sau plan, primești o estimare cu plus/minus.</p>
+          </div>
+        </div>
+
+        <div class="hair"></div>
+
+        <div class="flex gap-5">
+          <div class="font-display text-5xl text-gold leading-none w-16 flex-shrink-0">02</div>
+          <div>
+            <h4 class="font-display text-2xl text-slate0 mb-1">Măsurătoare la fața locului</h4>
+            <p class="text-sm text-pewter leading-relaxed">Pentru cabine duș, balustrade, pereți de sticlă &mdash; venim, măsurăm, semnăm fișa. Pentru piese mici poți aduce dimensiunile.</p>
+          </div>
+        </div>
+
+        <div class="hair"></div>
+
+        <div class="flex gap-5">
+          <div class="font-display text-5xl text-gold leading-none w-16 flex-shrink-0">03</div>
+          <div>
+            <h4 class="font-display text-2xl text-slate0 mb-1">Tăiere &amp; fasonare</h4>
+            <p class="text-sm text-pewter leading-relaxed">Tăiem la dimensiune, șlefuim sau fasonăm marginile, găurim unde e cazul. Sticla securizată merge la fabrică pentru tratament termic.</p>
+          </div>
+        </div>
+
+        <div class="hair"></div>
+
+        <div class="flex gap-5">
+          <div class="font-display text-5xl text-gold leading-none w-16 flex-shrink-0">04</div>
+          <div>
+            <h4 class="font-display text-2xl text-slate0 mb-1">Montaj &amp; predare</h4>
+            <p class="text-sm text-pewter leading-relaxed">Echipa noastră vine cu sculele și materialele necesare. Montăm cu silicon neutru, profile aliniate, etanșeități curate. Plecăm cu locul curățat după noi.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAM + MAP -->
+<section id="program" class="py-24 bg-glacier/30">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-8">
+
+    <div class="lg:col-span-5 bg-slate0 text-snow p-9" data-aos="fade-right">
+      <div class="text-[10px] tracking-[.32em] uppercase text-copper font-semibold mb-3">Atelier &middot; Galați</div>
+      <h2 class="h-iti text-4xl text-snow mb-4">Strada Traian 69</h2>
+      <p class="text-snow/75 leading-relaxed mb-7">Vino la atelier să vezi probele de sticlă și oglindă, finisajele de margine, profilele pentru cabine duș. Te ajutăm să alegi ce se potrivește cu casa ta.</p>
+
+      <div class="text-sm">
+        <div class="flex justify-between py-2.5 border-b border-snow/10"><span>Luni</span><span class="font-display text-copper text-lg">09:00 &ndash; 17:00</span></div>
+        <div class="flex justify-between py-2.5 border-b border-snow/10"><span>Marți</span><span class="font-display text-copper text-lg">09:00 &ndash; 17:00</span></div>
+        <div class="flex justify-between py-2.5 border-b border-snow/10"><span>Miercuri</span><span class="font-display text-copper text-lg">09:00 &ndash; 17:00</span></div>
+        <div class="flex justify-between py-2.5 border-b border-snow/10"><span>Joi</span><span class="font-display text-copper text-lg">09:00 &ndash; 17:00</span></div>
+        <div class="flex justify-between py-2.5 border-b border-snow/10"><span>Vineri</span><span class="font-display text-copper text-lg">09:00 &ndash; 17:00</span></div>
+        <div class="flex justify-between py-2.5 border-b border-snow/10"><span>Sâmbătă</span><span class="font-display text-snow/40 text-lg">Închis</span></div>
+        <div class="flex justify-between py-2.5"><span>Duminică</span><span class="font-display text-snow/40 text-lg">Închis</span></div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-3 mt-7">
+        <a href="tel:0236465400" class="btn-gold text-center py-3 text-sm font-semibold"><i class="fa-solid fa-phone mr-2"></i>Sună</a>
+        <a href="https://wa.me/40236465400" class="btn-line-light text-center py-3 text-sm font-semibold"><i class="fa-brands fa-whatsapp mr-2"></i>WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="lg:col-span-7 border border-slate0/10" data-aos="fade-left">
+      <iframe
+        src="https://www.google.com/maps?q=45.43798,28.04969&hl=ro&z=17&output=embed"
+        class="w-full h-full min-h-[520px]" style="border:0"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT CTA -->
+<section id="contact" class="py-24 bg-slate0 text-snow relative overflow-hidden">
+  <div class="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-gold/15 blur-3xl"></div>
+  <div class="max-w-5xl mx-auto px-6 text-center relative">
+    <div class="eye mb-5" style="color:#D4A574;">Următorul pas</div>
+    <h2 class="h-iti text-4xl md:text-6xl leading-[1.05]">
+      Trimite dimensiunile.<br>
+      <span class="italic text-copper">Primești prețul.</span>
+    </h2>
+    <p class="text-snow/85 max-w-2xl mx-auto mt-6 text-lg leading-relaxed">
+      Sună sau trimite pe WhatsApp dimensiunile aproximative, o poză cu locul și ce-ți dorești. Revenim cu o estimare. Pentru lucrările care merită vizita, venim la fața locului fără cost.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4 mt-10">
+      <a href="tel:0236465400" class="btn-gold px-8 py-4 font-semibold inline-flex items-center text-base">
+        <i class="fa-solid fa-phone mr-3"></i>0236 465 400
+      </a>
+      <a href="https://wa.me/40236465400?text=Bună,%20vreau%20o%20ofertă%20de%20la%20Catavio%20Prest." class="bg-snow text-slate0 hover:bg-copper hover:text-snow transition px-8 py-4 font-semibold inline-flex items-center text-base">
+        <i class="fa-brands fa-whatsapp mr-3"></i>WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-ink text-snow/80">
+  <div class="max-w-7xl mx-auto px-6 py-14 grid md:grid-cols-3 gap-10">
+    <div>
+      <div class="flex items-center gap-3 mb-5">
+        <div class="w-12 h-12 glass-dark flex items-center justify-center">
+          <span class="font-display text-3xl text-snow">C</span>
+        </div>
+        <div>
+          <div class="font-display text-2xl text-snow">Catavio Prest</div>
+          <div class="text-[10px] tracking-[.32em] uppercase text-copper font-semibold">Sticlă &amp; Oglinzi Galați</div>
+        </div>
+      </div>
+      <p class="text-sm leading-relaxed">Atelier de sticlă și oglinzi în Galați. Tăiere, fasonare, securizare, montaj. Strada Traian 69.</p>
+    </div>
+    <div>
+      <div class="text-[10px] tracking-[.32em] uppercase text-copper font-semibold mb-4">Produse</div>
+      <ul class="text-sm space-y-2">
+        <li>Cabine duș sticlă</li>
+        <li>Oglinzi la comandă</li>
+        <li>Pereți sticlă &amp; glasvanduri</li>
+        <li>Balustrade sticlă</li>
+        <li>Geamuri &amp; reparații</li>
+        <li>Blaturi &amp; mobilier sticlă</li>
+      </ul>
+    </div>
+    <div>
+      <div class="text-[10px] tracking-[.32em] uppercase text-copper font-semibold mb-4">Contact</div>
+      <ul class="text-sm space-y-3">
+        <li><i class="fa-solid fa-phone text-copper mr-2"></i><a href="tel:0236465400" class="hover:text-copper">0236 465 400</a></li>
+        <li><i class="fa-brands fa-whatsapp text-copper mr-2"></i><a href="https://wa.me/40236465400" class="hover:text-copper">WhatsApp</a></li>
+        <li><i class="fa-solid fa-location-dot text-copper mr-2"></i>Strada Traian 69, Galați</li>
+        <li><i class="fa-regular fa-clock text-copper mr-2"></i>L&ndash;V 09:00 &ndash; 17:00</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-snow/10">
+    <div class="max-w-7xl mx-auto px-6 py-5 text-xs text-snow/50 flex flex-col sm:flex-row justify-between gap-2">
+      <span>&copy; <span id="yr"></span> Catavio Prest S.R.L. Toate drepturile rezervate.</span>
+      <span>Galați &middot; Sticlă &amp; Oglinzi</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mobile bar -->
+<div class="fixed bottom-0 left-0 right-0 md:hidden z-50 bg-slate0 text-snow grid grid-cols-2 border-t-4 border-gold">
+  <a href="tel:0236465400" class="flex items-center justify-center py-4 font-semibold text-sm border-r border-snow/15">
+    <i class="fa-solid fa-phone mr-2 text-copper"></i>Sună
+  </a>
+  <a href="https://wa.me/40236465400" class="flex items-center justify-center py-4 font-semibold text-sm">
+    <i class="fa-brands fa-whatsapp mr-2 text-copper"></i>WhatsApp
+  </a>
+</div>
+<div class="md:hidden h-16"></div>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Catavio Prest S.R.L.",
+  "description": "Atelier de sticlă și oglinzi din Galați. Tăiere, fasonare, securizare și montaj pentru cabine duș, oglinzi, balustrade, glasvanduri, geamuri și blaturi sticlă.",
+  "telephone": "+40236465400",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Strada Traian 69",
+    "addressLocality": "Galați",
+    "postalCode": "800112",
+    "addressCountry": "RO"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.43798,
+    "longitude": 28.04969
+  },
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:00"}
+  ]
+}
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 900, once: true, offset: 80 });
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

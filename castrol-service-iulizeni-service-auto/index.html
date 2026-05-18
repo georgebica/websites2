@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style id="mobile-no-hscroll">
+/* mobile-no-hscroll-v1 */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+  position: relative;
+}
+@media (max-width: 767px) {
+  body * { max-width: 100vw; }
+}
+</style>
+
+<title>Iulizeni Service Auto Galați &mdash; Schimb Ulei Castrol, Mecanică &amp; Diagnoză | 0744 756 108</title>
+<meta name="description" content="Service auto Iulizeni pe Drumul de Centură Galați. Schimb ulei rapid cu lubrifianți Castrol, mecanică, diagnoză, climă, anvelope. Echipă profesionistă, intervenție rapidă.">
+<meta name="keywords" content="service auto Galați, schimb ulei Castrol Galați, mecanic Galați, diagnoză auto Galați, Iulizeni service, anvelope Galați, climă auto Galați, Drumul de Centură">
+<meta name="robots" content="index,follow">
+<meta name="author" content="Iulizeni Service Auto">
+<link rel="canonical" href="">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:site_name" content="Iulizeni Service Auto">
+<meta property="og:title" content="Iulizeni Service Auto &mdash; Castrol Service Galați">
+<meta property="og:description" content="Mașina ta intră, iese cu treaba făcută. Schimb ulei Castrol, mecanică, diagnoză, climă. 4.5/5 din 72 recenzii.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Iulizeni Service Auto Galați &mdash; 0744 756 108">
+<meta name="twitter:description" content="Service Castrol pe Drumul de Centură. Mecanici care rezolvă, nu amână.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        asphalt: '#0A0A0A',
+        coal:    '#171717',
+        coal2:   '#262626',
+        steel:   '#404040',
+        chrome:  '#D4D4D8',
+        chrome2: '#A1A1AA',
+        warn:    '#FACC15',
+        warn2:   '#EAB308',
+        flame:   '#F97316',
+        cream:   '#FAFAF9',
+        cobalt:  '#1E40AF'
+      },
+      fontFamily: {
+        display: ['Anton', 'sans-serif'],
+        sans:    ['Outfit', 'sans-serif']
+      }
+    }
+  }
+}
+</script>
+
+<style>
+html, body { font-family:'Outfit',sans-serif; background:#FAFAF9; color:#0A0A0A; }
+.font-display { font-family:'Anton',sans-serif; letter-spacing:.01em; }
+
+/* Diagonal warning stripe */
+.warn-stripes {
+  background-image: repeating-linear-gradient(45deg, #FACC15 0 18px, #0A0A0A 18px 36px);
+}
+.warn-stripes-thin {
+  background-image: repeating-linear-gradient(45deg, #FACC15 0 8px, #0A0A0A 8px 16px);
+  height: 8px;
+}
+
+/* Tire tread feel */
+.tread {
+  background-image:
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Big block headline */
+.h-blk { font-family:'Anton',sans-serif; line-height:.92; letter-spacing:.005em; text-transform:uppercase; }
+
+/* Service ticket card */
+.ticket {
+  background: #FAFAF9;
+  border:1px solid #D4D4D8;
+  position:relative;
+}
+.ticket::before, .ticket::after {
+  content:""; position:absolute; width:14px; height:14px; border-radius:50%;
+  background:#FAFAF9; box-shadow: inset 0 0 0 1px #D4D4D8;
+}
+.ticket::before { top:50%; left:-7px; transform:translateY(-50%); background: #0A0A0A; box-shadow:none; }
+.ticket::after  { top:50%; right:-7px; transform:translateY(-50%); background: #0A0A0A; box-shadow:none; }
+.ticket-divider { border-top: 1.5px dashed #D4D4D8; }
+
+/* Buttons */
+.btn-warn { background:#FACC15; color:#0A0A0A; transition:.25s; }
+.btn-warn:hover { background:#EAB308; transform: translateY(-2px); box-shadow: 0 14px 30px -10px rgba(250,204,21,.55); }
+.btn-asphalt { background:#0A0A0A; color:#FAFAF9; transition:.25s; }
+.btn-asphalt:hover { background:#262626; }
+.btn-line-d { border:1.5px solid #FAFAF9; color:#FAFAF9; transition:.25s; }
+.btn-line-d:hover { background:#FAFAF9; color:#0A0A0A; }
+
+/* Eyebrow */
+.eye {
+  font-size:.7rem; font-weight:700; letter-spacing:.22em; text-transform:uppercase;
+  color:#0A0A0A;
+  background:#FACC15; padding:.3rem .65rem; display:inline-block;
+}
+
+/* Stat block */
+.stat {
+  font-family:'Anton',sans-serif; font-size:3.4rem; line-height:1; color:#FACC15;
+}
+
+/* Service flow */
+.flow-step { background:#171717; color:#FAFAF9; padding: 1.5rem; position:relative; }
+.flow-step::after {
+  content:""; position:absolute; right:-12px; top:50%; transform:translateY(-50%);
+  width:0; height:0; border-top:14px solid transparent; border-bottom:14px solid transparent; border-left:14px solid #171717;
+  z-index:2;
+}
+.flow-step:last-child::after { display:none; }
+@media (max-width: 1023px) { .flow-step::after { display:none; } }
+
+/* Quote */
+.quote-box {
+  background:#FAFAF9; border:1px solid #D4D4D8; padding: 1.75rem;
+  position: relative;
+}
+.quote-box::before {
+  content:"“"; position:absolute; top:-22px; left:18px;
+  font-family:'Anton',sans-serif; font-size:5rem; color:#FACC15; line-height:1;
+}
+
+/* Star */
+.star { color:#FACC15; }
+
+/* Sticker */
+.sticker {
+  background:#FACC15; color:#0A0A0A; font-family:'Anton',sans-serif;
+  padding:.5rem 1rem; transform: rotate(-3deg); display:inline-block;
+}
+</style>
+</head>
+
+<body class="bg-cream">
+
+<!-- Top util -->
+<div class="hidden md:block bg-asphalt text-cream/85 text-xs">
+  <div class="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
+    <div class="flex items-center gap-5">
+      <span class="text-warn font-bold tracking-[.18em] uppercase">Castrol Authorized Service</span>
+      <span class="text-cream/60">|</span>
+      <span><i class="fa-solid fa-location-dot text-warn mr-1.5"></i>Drumul de Centură 50, Galați</span>
+    </div>
+    <div class="flex items-center gap-5">
+      <span><i class="fa-solid fa-star text-warn mr-1"></i>4.5 / 5 din 72 recenzii Google</span>
+      <a href="tel:0744756108" class="hover:text-warn transition"><i class="fa-solid fa-phone mr-1.5"></i>0744 756 108</a>
+    </div>
+  </div>
+</div>
+
+<div class="warn-stripes-thin"></div>
+
+<!-- Nav -->
+<nav class="sticky top-0 z-40 bg-cream/95 backdrop-blur border-b border-chrome">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="#" class="flex items-center gap-3">
+      <div class="w-12 h-12 bg-asphalt flex items-center justify-center text-warn font-display text-2xl">I</div>
+      <div class="leading-tight">
+        <div class="font-display text-2xl text-asphalt">IULIZENI</div>
+        <div class="text-[10px] tracking-[.22em] uppercase text-asphalt/70 font-bold">Service Auto &middot; Galați</div>
+      </div>
+    </a>
+    <div class="hidden lg:flex gap-7 text-sm font-semibold text-asphalt">
+      <a href="#servicii" class="hover:text-warn2 transition">Servicii</a>
+      <a href="#flow" class="hover:text-warn2 transition">Cum lucrăm</a>
+      <a href="#dece" class="hover:text-warn2 transition">De ce noi</a>
+      <a href="#parerile" class="hover:text-warn2 transition">Părerile clienților</a>
+      <a href="#program" class="hover:text-warn2 transition">Program</a>
+    </div>
+    <a href="tel:0744756108" class="hidden md:inline-flex btn-warn px-5 py-2.5 text-sm font-bold">
+      <i class="fa-solid fa-phone mr-2"></i>0744 756 108
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="relative bg-asphalt text-cream overflow-hidden">
+  <div class="absolute inset-0 tread opacity-60"></div>
+  <div class="absolute right-0 top-0 bottom-0 w-1/2 hidden lg:block">
+    <img src="https://images.unsplash.com/photo-1632823471565-1ecdf5d62c30?auto=format&fit=crop&w=1400&q=80" alt="Mecanic auto la lucru" class="w-full h-full object-cover opacity-40">
+    <div class="absolute inset-0 bg-gradient-to-r from-asphalt via-asphalt/70 to-transparent"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-6 py-20 md:py-28">
+    <span class="eye mb-7">Drumul de Centură 50 &middot; Galați</span>
+
+    <h1 class="h-blk text-6xl md:text-8xl lg:text-[7.5rem] mt-6 max-w-4xl" data-aos="fade-up">
+      Mașina intră.<br>
+      <span class="text-warn">Iese cu treaba</span><br>
+      făcută.
+    </h1>
+
+    <p class="mt-8 text-lg md:text-xl text-cream/80 max-w-2xl leading-relaxed" data-aos="fade-up" data-aos-delay="80">
+      Schimbi uleiul, vrei diagnoză, ai o problemă apărută din mers? La Iulizeni nu te programezi peste 3 săptămâni. Vii pe Centură, intri în atelier, pleci cu ce ai nevoie. Lubrifianți Castrol-aprobați, mecanici cu rezerve la pacient.
+    </p>
+
+    <div class="flex flex-wrap items-center gap-4 mt-10" data-aos="fade-up" data-aos-delay="160">
+      <a href="tel:0744756108" class="btn-warn px-7 py-4 font-bold inline-flex items-center text-base">
+        <i class="fa-solid fa-phone mr-3"></i>0744 756 108
+      </a>
+      <a href="https://wa.me/40744756108?text=Bună,%20am%20o%20mașină%20care%20trebuie%20văzută." class="btn-line-d px-7 py-4 font-bold inline-flex items-center text-base">
+        <i class="fa-brands fa-whatsapp mr-3"></i>Trimite pe WhatsApp
+      </a>
+      <span class="sticker text-base">// 4.5 ★ pe Google</span>
+    </div>
+
+    <div class="grid grid-cols-3 gap-px bg-cream/10 mt-16 border-y border-cream/10 max-w-3xl" data-aos="fade-up" data-aos-delay="200">
+      <div class="bg-asphalt p-5">
+        <div class="stat">72</div>
+        <div class="text-[10px] uppercase tracking-[.2em] text-cream/60 mt-2 font-bold">Recenzii Google</div>
+      </div>
+      <div class="bg-asphalt p-5">
+        <div class="stat">4.5</div>
+        <div class="text-[10px] uppercase tracking-[.2em] text-cream/60 mt-2 font-bold">Rating mediu</div>
+      </div>
+      <div class="bg-asphalt p-5">
+        <div class="stat">L&ndash;V</div>
+        <div class="text-[10px] uppercase tracking-[.2em] text-cream/60 mt-2 font-bold">09:00 &ndash; 18:00</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="warn-stripes-thin"></div>
+
+<!-- SERVICII -->
+<section id="servicii" class="py-24 bg-cream">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-12 gap-10 mb-14">
+      <div class="lg:col-span-7" data-aos="fade-up">
+        <span class="eye mb-5 inline-block">Ce facem</span>
+        <h2 class="h-blk text-4xl md:text-6xl text-asphalt mt-5">
+          Tot ce-i de făcut <br>
+          <span class="text-warn2">la mașină de zi cu zi.</span>
+        </h2>
+      </div>
+      <div class="lg:col-span-5 flex items-end" data-aos="fade-up" data-aos-delay="100">
+        <p class="text-asphalt/75 leading-relaxed text-lg">Atelierul e dotat și pentru mărci europene, și pentru asiatice. Diagnostic, mecanică, climă, anvelope, ulei &mdash; toate sub același acoperiș, fără să tragi mașina la 3 service-uri diferite.</p>
+      </div>
+    </div>
+
+    <!-- Service ticket cards -->
+    <div class="grid md:grid-cols-2 gap-6 lg:gap-10">
+
+      <div class="ticket p-7 mx-2" data-aos="fade-up">
+        <div class="flex items-baseline justify-between mb-3">
+          <div class="text-[10px] tracking-[.2em] uppercase text-asphalt/60 font-bold">Bon servicii / 01</div>
+          <span class="font-display text-warn2 text-2xl">★ ★ ★</span>
+        </div>
+        <h3 class="font-display text-3xl text-asphalt">Schimb ulei Castrol</h3>
+        <div class="ticket-divider my-4"></div>
+        <p class="text-sm text-asphalt/80 leading-relaxed mb-4">Lubrifianți Castrol potriviți pentru fiecare motor &mdash; benzină, diesel, hibrid. Schimbăm filtrele, golim corect, reumplem la spec, te punem în registru pentru următorul interval.</p>
+        <ul class="text-xs text-asphalt/75 space-y-1.5">
+          <li><i class="fa-solid fa-check text-warn2 mr-2"></i>Castrol Edge / Magnatec / GTX după carte tehnică</li>
+          <li><i class="fa-solid fa-check text-warn2 mr-2"></i>Filtru ulei + filtru aer schimbat</li>
+          <li><i class="fa-solid fa-check text-warn2 mr-2"></i>Resetare interval pe computerul de bord</li>
+        </ul>
+      </div>
+
+      <div class="ticket p-7 mx-2" data-aos="fade-up" data-aos-delay="80">
+        <div class="flex items-baseline justify-between mb-3">
+          <div class="text-[10px] tracking-[.2em] uppercase text-asphalt/60 font-bold">Bon servicii / 02</div>
+          <span class="font-display text-warn2 text-2xl">★ ★ ★</span>
+        </div>
+        <h3 class="font-display text-3xl text-asphalt">Mecanică generală</h3>
+        <div class="ticket-divider my-4"></div>
+        <p class="text-sm text-asphalt/80 leading-relaxed mb-4">Distribuție, etrieri, plăcuțe, lichid frână, cutie de viteze, ambreiaj, suspensie. Mecanicii noștri au lucrat cu sute de mașini &mdash; rezolvă, nu doar înlocuiesc piese la întâmplare.</p>
+        <ul class="text-xs text-asphalt/75 space-y-1.5">
+          <li><i class="fa-solid fa-check text-warn2 mr-2"></i>Distribuție, ambreiaj, cutie</li>
+          <li><i class="fa-solid fa-check text-warn2 mr-2"></i>Frâne, etrieri, plăcuțe, discuri</li>
+          <li><i class="fa-solid fa-check text-warn2 mr-2"></i>Suspensie, direcție, transmisie</li>
+        </ul>
+      </div>
+
+      <div class="ticket p-7 mx-2" data-aos="fade-up">
+        <div class="flex items-baseline justify-between mb-3">
+          <div class="text-[10px] tracking-[.2em] uppercase text-asphalt/60 font-bold">Bon servicii / 03</div>
+          <span class="font-display text-warn2 text-2xl">★ ★ ★</span>
+        </div>
+        <h3 class="font-display text-3xl text-asphalt">Diagnoză &amp; electronice</h3>
+        <div class="ticket-divider my-4"></div>
+        <p class="text-sm text-asphalt/80 leading-relaxed mb-4">Tester multimarcă pentru OBD-II, citire coduri, ștergere erori, parametri în timp real. Identificăm defectul, îți spunem ce costă, decizi tu cum mergem mai departe.</p>
+        <ul class="text-xs text-asphalt/75 space-y-1.5">
+          <li><i class="fa-solid fa-check text-warn2 mr-2"></i>Diagnoză ECU, ABS, airbag, transmisie</li>
+          <li><i class="fa-solid fa-check text-warn2 mr-2"></i>Verificări senzori &amp; sondă lambda</li>
+          <li><i class="fa-solid fa-check text-warn2 mr-2"></i>Citire/ștergere erori, raport scris</li>
+        </ul>
+      </div>
+
+      <div class="ticket p-7 mx-2" data-aos="fade-up" data-aos-delay="80">
+        <div class="flex items-baseline justify-between mb-3">
+          <div class="text-[10px] tracking-[.2em] uppercase text-asphalt/60 font-bold">Bon servicii / 04</div>
+          <span class="font-display text-warn2 text-2xl">★ ★ ★</span>
+        </div>
+        <h3 class="font-display text-3xl text-asphalt">Anvelope &amp; geometrie</h3>
+        <div class="ticket-divider my-4"></div>
+        <p class="text-sm text-asphalt/80 leading-relaxed mb-4">Montare, demontare, echilibrare, verificări geometrie. Schimbi anvelopele de sezon &mdash; le depozităm la noi pentru următorul, fără cost.</p>
+        <ul class="text-xs text-asphalt/75 space-y-1.5">
+          <li><i class="fa-solid fa-check text-warn2 mr-2"></i>Montaj &amp; echilibrare 13"&ndash;22"</li>
+          <li><i class="fa-solid fa-check text-warn2 mr-2"></i>Reparații anvelope la pană</li>
+          <li><i class="fa-solid fa-check text-warn2 mr-2"></i>Hotel anvelope inclus</li>
+        </ul>
+      </div>
+
+      <div class="ticket p-7 mx-2" data-aos="fade-up">
+        <div class="flex items-baseline justify-between mb-3">
+          <div class="text-[10px] tracking-[.2em] uppercase text-asphalt/60 font-bold">Bon servicii / 05</div>
+          <span class="font-display text-warn2 text-2xl">★ ★ ★</span>
+        </div>
+        <h3 class="font-display text-3xl text-asphalt">Climă &amp; A/C</h3>
+        <div class="ticket-divider my-4"></div>
+        <p class="text-sm text-asphalt/80 leading-relaxed mb-4">Încărcare freon (R134a / R1234yf), curățare evaporator, schimb filtru polen, verificare condensator. În iunie e cozi &mdash; recomandare: vino în martie.</p>
+        <ul class="text-xs text-asphalt/75 space-y-1.5">
+          <li><i class="fa-solid fa-check text-warn2 mr-2"></i>Încărcare freon R134a / R1234yf</li>
+          <li><i class="fa-solid fa-check text-warn2 mr-2"></i>Test etanșeitate cu UV</li>
+          <li><i class="fa-solid fa-check text-warn2 mr-2"></i>Curățare ozonică instalație</li>
+        </ul>
+      </div>
+
+      <div class="ticket p-7 mx-2" data-aos="fade-up" data-aos-delay="80">
+        <div class="flex items-baseline justify-between mb-3">
+          <div class="text-[10px] tracking-[.2em] uppercase text-asphalt/60 font-bold">Bon servicii / 06</div>
+          <span class="font-display text-warn2 text-2xl">★ ★ ★</span>
+        </div>
+        <h3 class="font-display text-3xl text-asphalt">Intervenții rapide</h3>
+        <div class="ticket-divider my-4"></div>
+        <p class="text-sm text-asphalt/80 leading-relaxed mb-4">Scut căzut, far ars, baterie moartă, lichid de spălător terminat &mdash; oprești pe Centură, intri 5 minute, pleci. Pentru lucruri mai serioase, te ajutăm și pe drum.</p>
+        <ul class="text-xs text-asphalt/75 space-y-1.5">
+          <li><i class="fa-solid fa-check text-warn2 mr-2"></i>Reparații minore în trecere</li>
+          <li><i class="fa-solid fa-check text-warn2 mr-2"></i>Verificări gratuite (nivel ulei, presiune)</li>
+          <li><i class="fa-solid fa-check text-warn2 mr-2"></i>Asistență la pornire baterie</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FLOW: cum lucrăm -->
+<section id="flow" class="bg-asphalt text-cream py-24 relative overflow-hidden">
+  <div class="absolute inset-0 tread"></div>
+  <div class="max-w-7xl mx-auto px-6 relative">
+
+    <div class="text-center max-w-3xl mx-auto mb-14" data-aos="fade-up">
+      <span class="eye">Cum lucrăm</span>
+      <h2 class="h-blk text-4xl md:text-6xl mt-5">
+        Patru pași <span class="text-warn">de la cheie la plecare.</span>
+      </h2>
+    </div>
+
+    <div class="grid lg:grid-cols-4 gap-3" data-aos="fade-up">
+      <div class="flow-step border-l-4 border-warn">
+        <div class="font-display text-warn text-5xl mb-3">01</div>
+        <h4 class="font-display text-2xl mb-2">Vii &amp; descrii</h4>
+        <p class="text-sm text-cream/75">Ne spui ce face mașina, când a început, ce-ai observat. Sau aducem fișa de la ITP/distribuție.</p>
+      </div>
+      <div class="flow-step border-l-4 border-warn">
+        <div class="font-display text-warn text-5xl mb-3">02</div>
+        <h4 class="font-display text-2xl mb-2">Verificăm</h4>
+        <p class="text-sm text-cream/75">Diagnoză, ridicare pe lift, verificare mecanică. Îți spunem ce găsim și ce trebuie făcut.</p>
+      </div>
+      <div class="flow-step border-l-4 border-warn">
+        <div class="font-display text-warn text-5xl mb-3">03</div>
+        <h4 class="font-display text-2xl mb-2">Ofertă &amp; OK</h4>
+        <p class="text-sm text-cream/75">Estimare clară: piese + manoperă + termen. Tu spui da, abia atunci începem să lucrăm.</p>
+      </div>
+      <div class="flow-step border-l-4 border-warn">
+        <div class="font-display text-warn text-5xl mb-3">04</div>
+        <h4 class="font-display text-2xl mb-2">Reparăm &amp; predăm</h4>
+        <p class="text-sm text-cream/75">Lucrăm, testăm, te chemăm. Pleci cu factură, garanție și recomandări pentru următorul interval.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- DE CE NOI -->
+<section id="dece" class="py-24 bg-cream">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+
+    <div class="lg:col-span-5" data-aos="fade-right">
+      <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=900&q=80" alt="Atelier service Iulizeni" class="w-full h-[440px] object-cover">
+    </div>
+
+    <div class="lg:col-span-7" data-aos="fade-left">
+      <span class="eye mb-5 inline-block">De ce Iulizeni</span>
+      <h2 class="h-blk text-4xl md:text-5xl text-asphalt mt-5">
+        Mecanici care <span class="text-warn2">rezolvă</span>, nu amână.
+      </h2>
+      <p class="mt-6 text-asphalt/80 leading-relaxed text-lg">Locuim pe Drumul de Centură de mulți ani. Cunoaștem mașinile clienților după plăcuță, le recomandăm intervalele de revizie din timp și nu schimbăm piese ca să încărcăm bonul. 4.5 stele din 72 recenzii nu se câștigă altfel.</p>
+
+      <div class="grid sm:grid-cols-2 gap-6 mt-9">
+        <div class="border-l-4 border-warn pl-5 py-1">
+          <div class="font-display text-asphalt text-2xl mb-1">Diagnoză înainte de piese</div>
+          <p class="text-sm text-asphalt/70">Înlocuim doar ce e stricat. Nu &laquo;să schimbăm și asta să fie&raquo;.</p>
+        </div>
+        <div class="border-l-4 border-warn pl-5 py-1">
+          <div class="font-display text-asphalt text-2xl mb-1">Estimare scrisă</div>
+          <p class="text-sm text-asphalt/70">Vezi piese + manoperă înainte. Nu se umflă pe parcurs fără acordul tău.</p>
+        </div>
+        <div class="border-l-4 border-warn pl-5 py-1">
+          <div class="font-display text-asphalt text-2xl mb-1">Castrol-approved</div>
+          <p class="text-sm text-asphalt/70">Lubrifianți cu specificațiile cerute de fabrica mașinii tale.</p>
+        </div>
+        <div class="border-l-4 border-warn pl-5 py-1">
+          <div class="font-display text-asphalt text-2xl mb-1">Intervenții pe drum</div>
+          <p class="text-sm text-asphalt/70">Treceți prin Galați și ați rămas pe drum? Sunați &mdash; venim sau vă ajutăm la telefon.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="parerile" class="py-24 bg-coal text-cream">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-12 gap-10 mb-12 items-end">
+      <div class="lg:col-span-7" data-aos="fade-up">
+        <span class="eye">Părerile clienților</span>
+        <h2 class="h-blk text-4xl md:text-6xl mt-5">
+          4.5 stele &middot;<br>
+          <span class="text-warn">cum sună de la cei care-au lăsat mașina la noi.</span>
+        </h2>
+      </div>
+      <div class="lg:col-span-5 flex items-end" data-aos="fade-up" data-aos-delay="100">
+        <p class="text-cream/75 leading-relaxed">Recenzii reale din Google, postate de oameni care au trecut prin atelierul nostru. Le-am ales pe cele care descriu cel mai bine cum lucrăm.</p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <div class="quote-box text-asphalt mt-6" data-aos="fade-up">
+        <div class="flex justify-between items-start mb-3">
+          <div>
+            <div class="font-display text-2xl">cornel cristi</div>
+            <div class="text-xs text-asphalt/60 uppercase tracking-[.18em] font-bold">Client Ford Focus 2</div>
+          </div>
+          <div class="star text-lg">★★★★★</div>
+        </div>
+        <p class="text-asphalt/85 leading-relaxed">&laquo;Un service cu oameni profesioniști, mecanici buni, rezolvă orice problemă &mdash; distribuție, reparat etrier, înlocuit lichid frână, ulei cutie viteze.&raquo;</p>
+      </div>
+
+      <div class="quote-box text-asphalt mt-6" data-aos="fade-up" data-aos-delay="80">
+        <div class="flex justify-between items-start mb-3">
+          <div>
+            <div class="font-display text-2xl">Claudiu</div>
+            <div class="text-xs text-asphalt/60 uppercase tracking-[.18em] font-bold">În trecere prin oraș</div>
+          </div>
+          <div class="star text-lg">★★★★★</div>
+        </div>
+        <p class="text-asphalt/85 leading-relaxed">&laquo;Le mulțumesc băieților pentru ajutor. Eram în trecere prin oraș, având o problemă minoră (scut căzut la mașină) &mdash; m-au ajutat imediat, deși aveau deja de lucru la alte mașini.&raquo;</p>
+      </div>
+
+      <div class="quote-box text-asphalt mt-6" data-aos="fade-up">
+        <div class="flex justify-between items-start mb-3">
+          <div>
+            <div class="font-display text-2xl">Marilen Bogiu</div>
+            <div class="text-xs text-asphalt/60 uppercase tracking-[.18em] font-bold">Client recurent</div>
+          </div>
+          <div class="star text-lg">★★★★★</div>
+        </div>
+        <p class="text-asphalt/85 leading-relaxed">&laquo;O echipă profesională, cu simț de răspundere total și îndeosebi unită. Cu mare drag recomand tuturor serviciile lor. Tot respectul.&raquo;</p>
+      </div>
+
+      <div class="quote-box text-asphalt mt-6" data-aos="fade-up" data-aos-delay="80">
+        <div class="flex justify-between items-start mb-3">
+          <div>
+            <div class="font-display text-2xl">Ionuț Popa</div>
+            <div class="text-xs text-asphalt/60 uppercase tracking-[.18em] font-bold">Client convins pe parcurs</div>
+          </div>
+          <div class="star text-lg">★★★★</div>
+        </div>
+        <p class="text-asphalt/85 leading-relaxed">&laquo;Deși la început am fost puțin reticent, pe parcursul lucrării m-am convins că oamenii sunt profesioniști și își fac treaba.&raquo;</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAM + MAP -->
+<section id="program" class="py-24 bg-cream">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-8">
+
+    <div class="lg:col-span-5 bg-asphalt text-cream p-9" data-aos="fade-right">
+      <span class="eye mb-5 inline-block">Program atelier</span>
+      <h2 class="h-blk text-4xl mt-5">Drumul de Centură 50</h2>
+      <p class="text-cream/75 mt-4 mb-6 leading-relaxed">Ne găsești pe inelul de centură al Galațiului. Programare doar pentru lucrări mari &mdash; pentru ulei, anvelope, intervenții minore poți veni direct.</p>
+
+      <div class="text-sm">
+        <div class="flex justify-between py-2.5 border-b border-cream/10"><span>Luni</span><span class="font-display text-warn text-lg">09:00 &ndash; 18:00</span></div>
+        <div class="flex justify-between py-2.5 border-b border-cream/10"><span>Marți</span><span class="font-display text-warn text-lg">09:00 &ndash; 18:00</span></div>
+        <div class="flex justify-between py-2.5 border-b border-cream/10"><span>Miercuri</span><span class="font-display text-warn text-lg">09:00 &ndash; 18:00</span></div>
+        <div class="flex justify-between py-2.5 border-b border-cream/10"><span>Joi</span><span class="font-display text-warn text-lg">09:00 &ndash; 18:00</span></div>
+        <div class="flex justify-between py-2.5 border-b border-cream/10"><span>Vineri</span><span class="font-display text-warn text-lg">09:00 &ndash; 18:00</span></div>
+        <div class="flex justify-between py-2.5 border-b border-cream/10"><span>Sâmbătă</span><span class="font-display text-cream/50 text-lg">Închis</span></div>
+        <div class="flex justify-between py-2.5"><span>Duminică</span><span class="font-display text-cream/50 text-lg">Închis</span></div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-3 mt-7">
+        <a href="tel:0744756108" class="btn-warn text-center py-3 text-sm font-bold"><i class="fa-solid fa-phone mr-2"></i>Sună</a>
+        <a href="https://wa.me/40744756108" class="btn-line-d text-center py-3 text-sm font-bold"><i class="fa-brands fa-whatsapp mr-2"></i>WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="lg:col-span-7 border border-chrome" data-aos="fade-left">
+      <iframe
+        src="https://www.google.com/maps?q=45.437769,28.006939&hl=ro&z=17&output=embed"
+        class="w-full h-full min-h-[520px]" style="border:0"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT CTA -->
+<section class="py-24 bg-warn text-asphalt relative overflow-hidden">
+  <div class="warn-stripes-thin absolute top-0 left-0 right-0"></div>
+  <div class="warn-stripes-thin absolute bottom-0 left-0 right-0"></div>
+
+  <div class="max-w-5xl mx-auto px-6 text-center relative">
+    <div class="text-[10px] tracking-[.22em] uppercase font-bold mb-5">Următorul pas</div>
+    <h2 class="h-blk text-4xl md:text-7xl">
+      Hai cu cheile.<br>
+      <span class="underline decoration-asphalt/40">Restul rezolvăm noi.</span>
+    </h2>
+    <p class="text-asphalt/85 max-w-2xl mx-auto mt-6 text-lg leading-relaxed">
+      Pentru schimb ulei, vino direct &mdash; durează 30 de minute. Pentru lucrări mai mari, sună sau scrie pe WhatsApp ce mașină ai și ce face. Îți zicem când avem loc.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4 mt-10">
+      <a href="tel:0744756108" class="btn-asphalt px-8 py-4 font-bold inline-flex items-center text-base">
+        <i class="fa-solid fa-phone mr-3"></i>0744 756 108
+      </a>
+      <a href="https://wa.me/40744756108?text=Bună,%20vin%20cu%20mașina%20la%20Iulizeni." class="bg-asphalt text-cream hover:bg-coal2 transition px-8 py-4 font-bold inline-flex items-center text-base">
+        <i class="fa-brands fa-whatsapp mr-3"></i>WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-asphalt text-cream/80">
+  <div class="max-w-7xl mx-auto px-6 py-14 grid md:grid-cols-3 gap-10">
+    <div>
+      <div class="flex items-center gap-3 mb-5">
+        <div class="w-12 h-12 bg-warn flex items-center justify-center font-display text-asphalt text-2xl">I</div>
+        <div>
+          <div class="font-display text-2xl text-cream">IULIZENI</div>
+          <div class="text-[10px] tracking-[.22em] uppercase text-warn font-bold">Service Auto Galați</div>
+        </div>
+      </div>
+      <p class="text-sm leading-relaxed">Atelierul tău de încredere pe Drumul de Centură. Schimb ulei Castrol, mecanică, diagnoză, climă, anvelope. Mecanici care rezolvă, nu amână.</p>
+    </div>
+    <div>
+      <div class="text-[10px] tracking-[.22em] uppercase text-warn font-bold mb-4">Servicii</div>
+      <ul class="text-sm space-y-2">
+        <li>Schimb ulei &amp; revizii</li>
+        <li>Mecanică generală</li>
+        <li>Diagnoză electronică</li>
+        <li>Anvelope &amp; geometrie</li>
+        <li>Climă auto</li>
+        <li>Intervenții rapide</li>
+      </ul>
+    </div>
+    <div>
+      <div class="text-[10px] tracking-[.22em] uppercase text-warn font-bold mb-4">Contact</div>
+      <ul class="text-sm space-y-3">
+        <li><i class="fa-solid fa-phone text-warn mr-2"></i><a href="tel:0744756108" class="hover:text-warn">0744 756 108</a></li>
+        <li><i class="fa-brands fa-whatsapp text-warn mr-2"></i><a href="https://wa.me/40744756108" class="hover:text-warn">WhatsApp</a></li>
+        <li><i class="fa-solid fa-location-dot text-warn mr-2"></i>Drumul de Centură 50, Galați</li>
+        <li><i class="fa-regular fa-clock text-warn mr-2"></i>L&ndash;V 09:00 &ndash; 18:00</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-cream/10">
+    <div class="max-w-7xl mx-auto px-6 py-5 text-xs text-cream/50 flex flex-col sm:flex-row justify-between gap-2">
+      <span>&copy; <span id="yr"></span> Iulizeni Service Auto. Toate drepturile rezervate.</span>
+      <span>Galați &middot; Service auto &middot; Castrol</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mobile bar -->
+<div class="fixed bottom-0 left-0 right-0 md:hidden z-50 bg-asphalt text-cream grid grid-cols-2 border-t-4 border-warn">
+  <a href="tel:0744756108" class="flex items-center justify-center py-4 font-bold text-sm border-r border-cream/20">
+    <i class="fa-solid fa-phone mr-2 text-warn"></i>Sună
+  </a>
+  <a href="https://wa.me/40744756108" class="flex items-center justify-center py-4 font-bold text-sm">
+    <i class="fa-brands fa-whatsapp mr-2 text-warn"></i>WhatsApp
+  </a>
+</div>
+<div class="md:hidden h-16"></div>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Iulizeni Service Auto - Castrol Service",
+  "description": "Service auto Castrol Galați: schimb ulei, mecanică generală, diagnoză, anvelope, climă auto, intervenții rapide. Drumul de Centură 50.",
+  "telephone": "+40744756108",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Drumul de Centură 50",
+    "addressLocality": "Galați",
+    "postalCode": "800402",
+    "addressCountry": "RO"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.437769,
+    "longitude": 28.006939
+  },
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"}
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "72"
+  }
+}
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 700, once: true, offset: 80 });
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

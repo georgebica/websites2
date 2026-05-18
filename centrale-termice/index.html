@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centrale Termice Timișoara &mdash; Instalare, Reparație &amp; Service Centrale | 0722 333 544</title>
+<meta name="description" content="Centrale Termice Timișoara &mdash; tehnicieni autorizați pentru instalare, reparație, mentenanță și verificare anuală centrale gaz, condensare, electrice. Intervenție rapidă în Timișoara.">
+<meta name="keywords" content="reparații centrale termice Timișoara, service centrale gaz, instalare centrală condensare, mentenanță centrale termice, urgențe încălzire Timișoara, tehnician autorizat ANRE">
+<meta name="robots" content="index,follow">
+<meta name="author" content="Centrale Termice Timișoara">
+<link rel="canonical" href="">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:site_name" content="Centrale Termice Timișoara">
+<meta property="og:title" content="Centrale Termice &mdash; Service &amp; instalare în Timișoara">
+<meta property="og:description" content="Tehnicieni autorizați. Reparăm centrala azi, nu la săptămâna viitoare. Sună 0722 333 544.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Centrale Termice Timișoara &mdash; 0722 333 544">
+<meta name="twitter:description" content="Reparație, instalare, mentenanță centrale termice. Intervenții rapide în Timișoara și împrejurimi.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        indigo0: '#1E1B4B',
+        indigo1: '#312E81',
+        indigo2: '#3730A3',
+        indigo3: '#4338CA',
+        flame:   '#F97316',
+        flame2:  '#EA580C',
+        flame3:  '#FB923C',
+        cream:   '#FAFAF9',
+        bone:    '#F5F5F4',
+        ink:     '#18181B',
+        muted:   '#6B7280'
+      },
+      fontFamily: {
+        display: ['"DM Serif Display"', 'serif'],
+        sans:    ['"Plus Jakarta Sans"', 'sans-serif']
+      }
+    }
+  }
+}
+</script>
+
+<style>
+html, body { font-family:'Plus Jakarta Sans',sans-serif; background:#FAFAF9; color:#18181B; }
+.font-display { font-family:'DM Serif Display', serif; }
+
+/* Indigo gradient */
+.indigo-grad {
+  background: linear-gradient(135deg, #1E1B4B 0%, #312E81 50%, #3730A3 100%);
+}
+
+/* Flame badge */
+.live-badge {
+  background:#F97316; color:#FAFAF9;
+  display:inline-flex; align-items:center; gap:.5rem;
+  padding:.4rem .85rem;
+  font-size:.7rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+}
+.live-badge::before {
+  content:""; width:8px; height:8px; background:#FAFAF9; border-radius:50%;
+  animation: flicker 1.5s infinite;
+}
+@keyframes flicker { 0%,100%{opacity:1} 50%{opacity:.4} }
+
+/* Buttons */
+.btn-flame { background:#F97316; color:#FAFAF9; transition:.25s; font-weight:600; }
+.btn-flame:hover { background:#EA580C; box-shadow: 0 14px 30px -10px rgba(249,115,22,.55); transform: translateY(-2px); }
+.btn-indigo { background:#312E81; color:#FAFAF9; transition:.25s; font-weight:600; }
+.btn-indigo:hover { background:#1E1B4B; }
+.btn-line { border:1.5px solid #312E81; color:#312E81; transition:.25s; font-weight:600; }
+.btn-line:hover { background:#312E81; color:#FAFAF9; }
+.btn-line-d { border:1.5px solid #FAFAF9; color:#FAFAF9; transition:.25s; font-weight:600; }
+.btn-line-d:hover { background:#FAFAF9; color:#312E81; }
+
+/* Eyebrow */
+.eye {
+  font-size:.7rem; font-weight:700; letter-spacing:.22em; text-transform:uppercase; color:#F97316;
+}
+
+/* Card */
+.svc-tab {
+  background: #FFFFFF;
+  border: 1px solid rgba(49,46,129,.15);
+  transition:.3s;
+  position:relative;
+  overflow:hidden;
+}
+.svc-tab::before {
+  content:""; position:absolute; top:0; left:0; right:0; height:4px; background:#312E81; transition:.3s;
+}
+.svc-tab:hover { transform:translateY(-6px); border-color:#F97316; box-shadow: 0 30px 60px -25px rgba(30,27,75,.3); }
+.svc-tab:hover::before { background:#F97316; height:6px; }
+
+/* Numbered marker */
+.num-circle {
+  width:48px; height:48px; border-radius:50%;
+  background:#312E81; color:#FAFAF9;
+  display:flex; align-items:center; justify-content:center;
+  font-family:'DM Serif Display',serif; font-size:1.4rem;
+  border:3px solid #FAFAF9; box-shadow: 0 0 0 1px #312E81;
+}
+
+/* Step row */
+.step-row {
+  display:grid; grid-template-columns: 60px 1fr; gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px dashed rgba(49,46,129,.2);
+}
+.step-row:last-child { border-bottom: none; }
+.step-num {
+  font-family:'DM Serif Display',serif;
+  font-size: 2.6rem;
+  color:#F97316;
+  line-height: 1;
+}
+
+/* Spec strip dark */
+.spec-strip { background:#1E1B4B; color:#FAFAF9; padding: 1.25rem; border-left: 4px solid #F97316; }
+</style>
+</head>
+
+<body class="bg-cream">
+
+<!-- Top util -->
+<div class="hidden md:block bg-indigo0 text-cream/85 text-xs">
+  <div class="max-w-7xl mx-auto px-6 py-2.5 flex justify-between items-center">
+    <span><span class="live-badge mr-3">Intervenție rapidă</span>Timișoara &amp; împrejurimi &middot; centrală oprită = sună acum</span>
+    <a href="tel:0722333544" class="hover:text-flame transition"><i class="fa-solid fa-phone mr-1.5 text-flame3"></i>0722 333 544</a>
+  </div>
+</div>
+
+<!-- Nav -->
+<nav class="sticky top-0 z-40 bg-cream/95 backdrop-blur border-b border-indigo0/10">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="#" class="flex items-center gap-3">
+      <div class="w-12 h-12 indigo-grad flex items-center justify-center">
+        <i class="fa-solid fa-fire text-flame3 text-xl"></i>
+      </div>
+      <div class="leading-tight">
+        <div class="font-display text-2xl text-indigo1">Centrale Termice</div>
+        <div class="text-[10px] tracking-[.22em] uppercase text-flame font-bold">Timișoara &middot; Service autorizat</div>
+      </div>
+    </a>
+    <div class="hidden lg:flex gap-7 text-sm font-semibold text-indigo1">
+      <a href="#servicii" class="hover:text-flame transition">Servicii</a>
+      <a href="#interventie" class="hover:text-flame transition">Cum intervenim</a>
+      <a href="#dece" class="hover:text-flame transition">De ce noi</a>
+      <a href="#program" class="hover:text-flame transition">Program</a>
+      <a href="#contact" class="hover:text-flame transition">Contact</a>
+    </div>
+    <a href="tel:0722333544" class="hidden md:inline-flex btn-flame px-5 py-2.5 text-sm">
+      <i class="fa-solid fa-phone mr-2"></i>0722 333 544
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="indigo-grad text-cream relative overflow-hidden">
+  <div class="absolute inset-0 opacity-30">
+    <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1800&q=80" alt="Tehnician centrale termice" class="w-full h-full object-cover">
+  </div>
+  <div class="absolute inset-0 indigo-grad opacity-80"></div>
+
+  <div class="max-w-7xl mx-auto px-6 py-20 md:py-32 relative grid lg:grid-cols-12 gap-10 items-center">
+    <div class="lg:col-span-8" data-aos="fade-up">
+      <span class="live-badge mb-7">Service autorizat ANRE</span>
+      <h1 class="font-display text-5xl md:text-6xl lg:text-7xl mt-7 leading-[1.05]">
+        Centrala s-a oprit?<br>
+        Vă <em class="text-flame3 italic">dăm</em> căldura înapoi astăzi.
+      </h1>
+      <p class="mt-8 text-lg md:text-xl text-cream/80 max-w-2xl leading-relaxed">
+        Suntem echipa de tehnicieni autorizați care ridică telefonul și ajunge la tine în câteva ore, nu în câteva zile. Reparăm, montăm, verificăm și întreținem centrale termice pe gaz, condensare și electrice &mdash; pentru apartamente, case și mici business-uri din Timișoara.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4 mt-10">
+        <a href="tel:0722333544" class="btn-flame px-7 py-4 inline-flex items-center text-base">
+          <i class="fa-solid fa-phone mr-3"></i>Sună acum &middot; 0722 333 544
+        </a>
+        <a href="https://wa.me/40722333544?text=Bună,%20am%20o%20problemă%20cu%20centrala." class="btn-line-d px-7 py-4 inline-flex items-center text-base">
+          <i class="fa-brands fa-whatsapp mr-3"></i>WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="lg:col-span-4 space-y-3" data-aos="fade-up" data-aos-delay="200">
+      <div class="spec-strip">
+        <div class="text-[10px] tracking-[.22em] uppercase text-flame3 font-bold mb-1">De câte ori ai sunat fără să primești răspuns?</div>
+        <div class="font-display text-xl">La noi telefonul are om la celălalt capăt.</div>
+      </div>
+      <div class="spec-strip">
+        <div class="text-[10px] tracking-[.22em] uppercase text-flame3 font-bold mb-1">Centrala face zgomot, nu pornește, dă eroare?</div>
+        <div class="font-display text-xl">Diagnostic la fața locului, manoperă fixă.</div>
+      </div>
+      <div class="spec-strip">
+        <div class="text-[10px] tracking-[.22em] uppercase text-flame3 font-bold mb-1">Vrei o centrală nouă?</div>
+        <div class="font-display text-xl">Recomandare după nevoie, nu după comision.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="bg-ink text-cream py-10">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+    <div data-aos="fade-up">
+      <div class="font-display text-4xl text-flame3">ANRE</div>
+      <div class="text-xs uppercase tracking-[.2em] text-cream/70 mt-1 font-semibold">Tehnicieni autorizați</div>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="80">
+      <div class="font-display text-4xl text-flame3">Same-day</div>
+      <div class="text-xs uppercase tracking-[.2em] text-cream/70 mt-1 font-semibold">Răspuns la urgențe</div>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="160">
+      <div class="font-display text-4xl text-flame3">Garanție</div>
+      <div class="text-xs uppercase tracking-[.2em] text-cream/70 mt-1 font-semibold">Pe manoperă &amp; piese</div>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="240">
+      <div class="font-display text-4xl text-flame3">Toate mărcile</div>
+      <div class="text-xs uppercase tracking-[.2em] text-cream/70 mt-1 font-semibold">Junkers, Baxi, Vaillant, Viessmann...</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICII -->
+<section id="servicii" class="py-24 bg-cream">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-12 gap-10 mb-16">
+      <div class="lg:col-span-7" data-aos="fade-up">
+        <div class="eye mb-4">Ce facem</div>
+        <h2 class="font-display text-4xl md:text-6xl text-indigo0 leading-[1.05]">
+          Patru tipuri de intervenții.<br>
+          <em class="text-flame italic">Aceeași echipă pentru toate.</em>
+        </h2>
+      </div>
+      <div class="lg:col-span-5 flex items-end" data-aos="fade-up" data-aos-delay="100">
+        <p class="text-muted text-lg leading-relaxed">Centrală nouă, centrală veche care face probleme, verificare anuală obligatorie, sau o defecțiune care nu te lasă să dormi &mdash; le rezolvăm pe toate. Cu autorizație, cu factură, cu garanție.</p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+      <article class="svc-tab p-7" data-aos="fade-up">
+        <div class="num-circle mb-5">1</div>
+        <div class="text-[10px] tracking-[.22em] uppercase text-flame font-bold mb-2">Instalare nouă</div>
+        <h3 class="font-display text-2xl text-indigo0 mb-3">Centrală nouă, montată corect.</h3>
+        <p class="text-sm text-muted leading-relaxed mb-4">De la dimensionare în funcție de suprafață, la racord gaz, la punere în funcțiune autorizată. Junkers, Baxi, Vaillant, Viessmann, Bosch, Westen.</p>
+        <ul class="text-xs text-muted space-y-1.5">
+          <li><i class="fa-solid fa-check text-flame mr-2"></i>Dimensionare debit termic</li>
+          <li><i class="fa-solid fa-check text-flame mr-2"></i>Racord gaz autorizat</li>
+          <li><i class="fa-solid fa-check text-flame mr-2"></i>PIF de către instalator atestat</li>
+        </ul>
+      </article>
+
+      <article class="svc-tab p-7" data-aos="fade-up" data-aos-delay="80">
+        <div class="num-circle mb-5">2</div>
+        <div class="text-[10px] tracking-[.22em] uppercase text-flame font-bold mb-2">Reparație &amp; depanare</div>
+        <h3 class="font-display text-2xl text-indigo0 mb-3">Defecte găsite, defecte rezolvate.</h3>
+        <p class="text-sm text-muted leading-relaxed mb-4">Centrala nu pornește, dă cod de eroare, face zgomot, pierde presiune, nu încălzește apa caldă. Punem diagnosticul, schimbăm ce trebuie, plecăm cu centrala funcțională.</p>
+        <ul class="text-xs text-muted space-y-1.5">
+          <li><i class="fa-solid fa-check text-flame mr-2"></i>Coduri eroare &amp; senzori</li>
+          <li><i class="fa-solid fa-check text-flame mr-2"></i>Schimb pompă, vană, schimbător</li>
+          <li><i class="fa-solid fa-check text-flame mr-2"></i>Recompletare presiune &amp; aerisire</li>
+        </ul>
+      </article>
+
+      <article class="svc-tab p-7" data-aos="fade-up" data-aos-delay="160">
+        <div class="num-circle mb-5">3</div>
+        <div class="text-[10px] tracking-[.22em] uppercase text-flame font-bold mb-2">Mentenanță anuală</div>
+        <h3 class="font-display text-2xl text-indigo0 mb-3">Verificarea care prelungește viața centralei.</h3>
+        <p class="text-sm text-muted leading-relaxed mb-4">Curățare arzător, schimbător de căldură, verificare presiune, evacuare gaze, etanșeitate. Plus revizia tehnică obligatorie ANRE pentru centralele pe gaz.</p>
+        <ul class="text-xs text-muted space-y-1.5">
+          <li><i class="fa-solid fa-check text-flame mr-2"></i>Curățare componente interne</li>
+          <li><i class="fa-solid fa-check text-flame mr-2"></i>Verificare etanșeitate &amp; tiraj</li>
+          <li><i class="fa-solid fa-check text-flame mr-2"></i>Buletin verificare ANRE</li>
+        </ul>
+      </article>
+
+      <article class="svc-tab p-7" data-aos="fade-up" data-aos-delay="240">
+        <div class="num-circle mb-5">4</div>
+        <div class="text-[10px] tracking-[.22em] uppercase text-flame font-bold mb-2">Modernizare</div>
+        <h3 class="font-display text-2xl text-indigo0 mb-3">Înlocuire centrală veche cu condensare.</h3>
+        <p class="text-sm text-muted leading-relaxed mb-4">Centralele clasice consumă cu 25-30% mai mult ca cele cu condensare. Recomandăm modelul potrivit, demontăm vechea, montăm noua, racord, PIF și predare.</p>
+        <ul class="text-xs text-muted space-y-1.5">
+          <li><i class="fa-solid fa-check text-flame mr-2"></i>Recomandare după consum real</li>
+          <li><i class="fa-solid fa-check text-flame mr-2"></i>Demontaj &amp; reciclare centrală veche</li>
+          <li><i class="fa-solid fa-check text-flame mr-2"></i>Montaj &amp; integrare termostat smart</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CUM INTERVENIM -->
+<section id="interventie" class="py-24 indigo-grad text-cream relative overflow-hidden">
+  <div class="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-flame/15 blur-3xl"></div>
+  <div class="max-w-7xl mx-auto px-6 relative">
+
+    <div class="grid lg:grid-cols-12 gap-10 mb-16">
+      <div class="lg:col-span-7" data-aos="fade-up">
+        <div class="eye mb-4" style="color:#FB923C;">Cum intervenim</div>
+        <h2 class="font-display text-4xl md:text-6xl leading-[1.05]">Sună-ne. Restul vine în <em class="italic text-flame3">5 pași.</em></h2>
+      </div>
+      <div class="lg:col-span-5 flex items-end" data-aos="fade-up" data-aos-delay="100">
+        <p class="text-cream/80 leading-relaxed">Procesul nostru e gândit ca să nu pierzi timpul. Sun unul, apoi îți spunem clar ce facem, când facem și cât costă &mdash; înainte să începem.</p>
+      </div>
+    </div>
+
+    <div class="bg-cream/5 backdrop-blur p-8 md:p-12 border border-cream/15" data-aos="fade-up">
+
+      <div class="step-row" style="border-bottom-color: rgba(255,255,255,.15);">
+        <div class="step-num">01</div>
+        <div>
+          <h4 class="font-display text-2xl text-cream mb-1">Sună sau scrie pe WhatsApp</h4>
+          <p class="text-sm text-cream/75 leading-relaxed">Spune-ne ce face centrala, ce model ai și unde se află. Pentru urgențe, mergem prioritar.</p>
+        </div>
+      </div>
+
+      <div class="step-row" style="border-bottom-color: rgba(255,255,255,.15);">
+        <div class="step-num">02</div>
+        <div>
+          <h4 class="font-display text-2xl text-cream mb-1">Stabilim ora vizitei</h4>
+          <p class="text-sm text-cream/75 leading-relaxed">În aceeași zi pentru urgențe în Timișoara. Pentru lucrări programate, alegem împreună un interval care îți convine.</p>
+        </div>
+      </div>
+
+      <div class="step-row" style="border-bottom-color: rgba(255,255,255,.15);">
+        <div class="step-num">03</div>
+        <div>
+          <h4 class="font-display text-2xl text-cream mb-1">Diagnostic la fața locului</h4>
+          <p class="text-sm text-cream/75 leading-relaxed">Tehnicianul verifică, citește erorile, măsoară presiuni și gaze. Îți spune exact ce nu merge și ce piese ar fi de schimbat.</p>
+        </div>
+      </div>
+
+      <div class="step-row" style="border-bottom-color: rgba(255,255,255,.15);">
+        <div class="step-num">04</div>
+        <div>
+          <h4 class="font-display text-2xl text-cream mb-1">Estimare scrisă, decizia ta</h4>
+          <p class="text-sm text-cream/75 leading-relaxed">Manoperă + piese + termen, scris pe hârtie. Nimic nu se face fără acordul tău. Dacă spui da, începem; dacă nu, îți facem doar diagnosticul (care se plătește simbolic).</p>
+        </div>
+      </div>
+
+      <div class="step-row" style="border-bottom-color: transparent;">
+        <div class="step-num">05</div>
+        <div>
+          <h4 class="font-display text-2xl text-cream mb-1">Reparăm, testăm, predăm</h4>
+          <p class="text-sm text-cream/75 leading-relaxed">Schimbăm piesa, aerisim instalația, testăm sub sarcină, completăm presiunea. Plecăm doar când centrala funcționează în parametri și tu ești convins. Factură fiscală, garanție pe lucrare.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DE CE NOI -->
+<section id="dece" class="py-24 bg-bone">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+
+    <div class="lg:col-span-5" data-aos="fade-right">
+      <img src="https://images.unsplash.com/photo-1597000061080-cd0501c6b1f3?auto=format&fit=crop&w=900&q=80" alt="Tehnician centrale termice la lucru" class="w-full h-[460px] object-cover">
+    </div>
+
+    <div class="lg:col-span-7" data-aos="fade-left">
+      <div class="eye mb-4">De ce să suni la noi</div>
+      <h2 class="font-display text-4xl md:text-5xl text-indigo0 leading-[1.05] mb-6">
+        Pentru că răspundem.<br>
+        <em class="italic text-flame">Și venim când spunem.</em>
+      </h2>
+      <p class="text-muted text-lg leading-relaxed mb-8">Cea mai frustrantă parte a problemelor cu centrala nu e centrala &mdash; sunt firmele de service care nu sună înapoi, care &laquo;vin marți&raquo; și apar joi, care îți schimbă piese de care n-ai nevoie. Aici lucrăm altfel.</p>
+
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div class="bg-white border-l-4 border-flame p-5">
+          <h4 class="font-display text-xl text-indigo0 mb-1">Telefon cu om</h4>
+          <p class="text-sm text-muted">Nu robot, nu &laquo;suntem ocupați, lăsați un mesaj&raquo;. Răspunde un tehnician sau dispecer.</p>
+        </div>
+        <div class="bg-white border-l-4 border-flame p-5">
+          <h4 class="font-display text-xl text-indigo0 mb-1">Estimare înainte</h4>
+          <p class="text-sm text-muted">Vezi piesele, manopera și termenul scris înainte ca noi să-l atingem pe șurub.</p>
+        </div>
+        <div class="bg-white border-l-4 border-flame p-5">
+          <h4 class="font-display text-xl text-indigo0 mb-1">Doar piese originale</h4>
+          <p class="text-sm text-muted">Sau echivalente certificate. Niciodată &laquo;ceva ce-am găsit prin atelier&raquo;.</p>
+        </div>
+        <div class="bg-white border-l-4 border-flame p-5">
+          <h4 class="font-display text-xl text-indigo0 mb-1">Garanție pe lucrare</h4>
+          <p class="text-sm text-muted">Dacă revine aceeași defecțiune în garanție, venim înapoi pe cheltuiala noastră.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROGRAM + MAP -->
+<section id="program" class="py-24 bg-cream">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-8">
+
+    <div class="lg:col-span-5 indigo-grad text-cream p-9" data-aos="fade-right">
+      <div class="eye mb-4" style="color:#FB923C;">Program &amp; vizite</div>
+      <h2 class="font-display text-4xl mb-4">Strada Ovidiu Cotruș 2A</h2>
+      <p class="text-cream/80 leading-relaxed mb-7">Punctul nostru de lucru e în Timișoara. Pentru intervenții, mergem la tine acasă sau la sediul tău. Pentru consultanță, te primim la birou.</p>
+
+      <div class="text-sm">
+        <div class="flex justify-between py-2.5 border-b border-cream/15"><span>Luni</span><span class="font-display text-flame3 text-lg">08:00 &ndash; 18:00</span></div>
+        <div class="flex justify-between py-2.5 border-b border-cream/15"><span>Marți</span><span class="font-display text-flame3 text-lg">08:00 &ndash; 18:00</span></div>
+        <div class="flex justify-between py-2.5 border-b border-cream/15"><span>Miercuri</span><span class="font-display text-flame3 text-lg">08:00 &ndash; 18:00</span></div>
+        <div class="flex justify-between py-2.5 border-b border-cream/15"><span>Joi</span><span class="font-display text-flame3 text-lg">08:00 &ndash; 18:00</span></div>
+        <div class="flex justify-between py-2.5 border-b border-cream/15"><span>Vineri</span><span class="font-display text-flame3 text-lg">08:00 &ndash; 18:00</span></div>
+        <div class="flex justify-between py-2.5 border-b border-cream/15"><span>Sâmbătă</span><span class="font-display text-flame3 text-lg">09:00 &ndash; 13:00</span></div>
+        <div class="flex justify-between py-2.5"><span>Duminică</span><span class="font-display text-cream/40 text-lg">Doar urgențe</span></div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-3 mt-7">
+        <a href="tel:0722333544" class="btn-flame text-center py-3 text-sm"><i class="fa-solid fa-phone mr-2"></i>Sună</a>
+        <a href="https://wa.me/40722333544" class="btn-line-d text-center py-3 text-sm"><i class="fa-brands fa-whatsapp mr-2"></i>WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="lg:col-span-7 border border-indigo0/15" data-aos="fade-left">
+      <iframe
+        src="https://www.google.com/maps?q=45.71967,21.172762&hl=ro&z=17&output=embed"
+        class="w-full h-full min-h-[520px]" style="border:0"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT CTA -->
+<section id="contact" class="py-24 bg-flame text-cream relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-flame via-flame2 to-indigo1 opacity-90"></div>
+  <div class="max-w-5xl mx-auto px-6 text-center relative">
+    <div class="text-[10px] tracking-[.22em] uppercase font-bold mb-5">Următorul pas</div>
+    <h2 class="font-display text-4xl md:text-6xl leading-[1.05]">
+      Ai centrala oprită?<br>
+      <em class="italic">Sună acum, nu mâine.</em>
+    </h2>
+    <p class="text-cream/90 max-w-2xl mx-auto mt-6 text-lg leading-relaxed">
+      O zi fără căldură este o zi prea mult. Ne puteți suna, scrie pe WhatsApp sau veni direct la sediu &mdash; venim cât mai repede posibil. Pentru întreținerea anuală, programarea o facem cu o săptămână înainte.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4 mt-10">
+      <a href="tel:0722333544" class="bg-indigo0 hover:bg-indigo1 transition px-8 py-4 font-semibold inline-flex items-center text-base">
+        <i class="fa-solid fa-phone mr-3"></i>0722 333 544
+      </a>
+      <a href="https://wa.me/40722333544?text=Bună,%20centrala%20mea%20are%20o%20problemă." class="bg-cream text-indigo0 hover:bg-ink hover:text-cream transition px-8 py-4 font-semibold inline-flex items-center text-base">
+        <i class="fa-brands fa-whatsapp mr-3"></i>WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-indigo0 text-cream/80">
+  <div class="max-w-7xl mx-auto px-6 py-14 grid md:grid-cols-3 gap-10">
+    <div>
+      <div class="flex items-center gap-3 mb-5">
+        <div class="w-12 h-12 bg-flame flex items-center justify-center">
+          <i class="fa-solid fa-fire text-cream text-xl"></i>
+        </div>
+        <div>
+          <div class="font-display text-2xl text-cream">Centrale Termice</div>
+          <div class="text-[10px] tracking-[.22em] uppercase text-flame3 font-bold">Timișoara</div>
+        </div>
+      </div>
+      <p class="text-sm leading-relaxed">Tehnicieni autorizați ANRE pentru instalare, reparație, mentenanță și verificare anuală centrale termice.</p>
+    </div>
+    <div>
+      <div class="text-[10px] tracking-[.22em] uppercase text-flame3 font-bold mb-4">Servicii</div>
+      <ul class="text-sm space-y-2">
+        <li>Instalare centrală nouă</li>
+        <li>Reparații &amp; depanare</li>
+        <li>Mentenanță anuală</li>
+        <li>Verificare ANRE</li>
+        <li>Modernizare condensare</li>
+        <li>Termostate smart</li>
+      </ul>
+    </div>
+    <div>
+      <div class="text-[10px] tracking-[.22em] uppercase text-flame3 font-bold mb-4">Contact</div>
+      <ul class="text-sm space-y-3">
+        <li><i class="fa-solid fa-phone text-flame3 mr-2"></i><a href="tel:0722333544" class="hover:text-flame3">0722 333 544</a></li>
+        <li><i class="fa-brands fa-whatsapp text-flame3 mr-2"></i><a href="https://wa.me/40722333544" class="hover:text-flame3">WhatsApp</a></li>
+        <li><i class="fa-solid fa-location-dot text-flame3 mr-2"></i>Strada Ovidiu Cotruș 2A, Timișoara</li>
+        <li><i class="fa-regular fa-clock text-flame3 mr-2"></i>L&ndash;V 08:00&ndash;18:00, S 09:00&ndash;13:00</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-cream/10">
+    <div class="max-w-7xl mx-auto px-6 py-5 text-xs text-cream/50 flex flex-col sm:flex-row justify-between gap-2">
+      <span>&copy; <span id="yr"></span> Centrale Termice Timișoara. Toate drepturile rezervate.</span>
+      <span>Timișoara &middot; Service centrale termice</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mobile bar -->
+<div class="fixed bottom-0 left-0 right-0 md:hidden z-50 bg-indigo0 text-cream grid grid-cols-2 border-t-4 border-flame">
+  <a href="tel:0722333544" class="flex items-center justify-center py-4 font-semibold text-sm border-r border-cream/15">
+    <i class="fa-solid fa-phone mr-2 text-flame3"></i>Sună
+  </a>
+  <a href="https://wa.me/40722333544" class="flex items-center justify-center py-4 font-semibold text-sm">
+    <i class="fa-brands fa-whatsapp mr-2 text-flame3"></i>WhatsApp
+  </a>
+</div>
+<div class="md:hidden h-16"></div>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HVACBusiness",
+  "name": "Centrale Termice Timișoara",
+  "description": "Service autorizat pentru centrale termice. Instalare, reparație, mentenanță anuală și verificare ANRE pentru centrale gaz, condensare și electrice.",
+  "telephone": "+40722333544",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Strada Ovidiu Cotruș 2A",
+    "addressLocality": "Timișoara",
+    "postalCode": "300514",
+    "addressCountry": "RO"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.71967,
+    "longitude": 21.172762
+  },
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"09:00","closes":"13:00"}
+  ]
+}
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 700, once: true, offset: 80 });
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

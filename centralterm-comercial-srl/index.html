@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centralterm Comercial Brașov &mdash; Centrale, Radiatoare, Piese &amp; Accesorii Instalații | 0268 543 454</title>
+<meta name="description" content="Centralterm Comercial Brașov &mdash; depozit de centrale termice, radiatoare, pompe, robineți, fitinguri, piese de schimb și accesorii instalații. Strada 13 Decembrie 16. Sună 0268 543 454.">
+<meta name="keywords" content="depozit instalații Brașov, piese centrală termică Brașov, radiatoare Brașov, robineți pompe Brașov, accesorii instalații, Centralterm Comercial">
+<meta name="robots" content="index,follow">
+<meta name="author" content="Centralterm Comercial">
+<link rel="canonical" href="">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:site_name" content="Centralterm Comercial">
+<meta property="og:title" content="Centralterm Comercial &mdash; Depozit centrale &amp; instalații Brașov">
+<meta property="og:description" content="Centrale, radiatoare, piese de schimb, fitinguri și accesorii. Suport tehnic, livrare, prețuri pentru profesioniști.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Centralterm Comercial Brașov &mdash; 0268 543 454">
+<meta name="twitter:description" content="Depozit complet pentru instalatori și beneficiari finali. Centrale, piese, accesorii pe raft.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Work+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        espresso: '#422006',
+        coffee:   '#5B2A0A',
+        cocoa:    '#7C3F1D',
+        mustard:  '#EAB308',
+        mustard2: '#CA8A04',
+        gold:     '#FBBF24',
+        cream:    '#FAFAF9',
+        bone:     '#F5F5F2',
+        wheat:    '#FEF3C7',
+        coal:     '#1C1917',
+        muted:    '#78716C',
+        edge:     '#D6D3D1'
+      },
+      fontFamily: {
+        display: ['Lora', 'serif'],
+        sans:    ['"Work Sans"', 'sans-serif']
+      }
+    }
+  }
+}
+</script>
+
+<style>
+html, body { font-family:'Work Sans',sans-serif; background:#FAFAF9; color:#1C1917; }
+.font-display { font-family:'Lora', serif; }
+
+/* Catalog index marker */
+.idx { font-family:'Lora',serif; font-style:italic; color:#EAB308; font-weight:600; font-size:1.1rem; }
+
+/* Catalog row */
+.cat-row {
+  display: grid;
+  grid-template-columns: 70px 1fr auto;
+  gap: 1.25rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px dashed #D6D3D1;
+  align-items: center;
+}
+.cat-row:last-child { border-bottom: none; }
+
+/* Stock dot */
+.stk { width:10px; height:10px; border-radius:50%; display:inline-block; }
+.stk-ok { background:#65A30D; box-shadow: 0 0 0 3px rgba(101,163,13,.15); }
+.stk-low { background:#EAB308; box-shadow: 0 0 0 3px rgba(234,179,8,.15); }
+.stk-order { background:#A1A1AA; box-shadow: 0 0 0 3px rgba(161,161,170,.15); }
+
+/* Buttons */
+.btn-mustard { background:#EAB308; color:#1C1917; transition:.25s; font-weight:600; }
+.btn-mustard:hover { background:#CA8A04; }
+.btn-espresso { background:#422006; color:#FAFAF9; transition:.25s; font-weight:600; }
+.btn-espresso:hover { background:#5B2A0A; box-shadow: 0 14px 30px -10px rgba(66,32,6,.45); }
+.btn-line { border:1.5px solid #422006; color:#422006; transition:.25s; font-weight:600; }
+.btn-line:hover { background:#422006; color:#FAFAF9; }
+.btn-line-d { border:1.5px solid #FAFAF9; color:#FAFAF9; transition:.25s; font-weight:600; }
+.btn-line-d:hover { background:#FAFAF9; color:#422006; }
+
+/* Eyebrow */
+.eye {
+  font-size:.7rem; font-weight:700; letter-spacing:.22em; text-transform:uppercase;
+  color:#422006;
+  background:#EAB308; padding:.25rem .65rem; display:inline-block;
+}
+
+/* Card */
+.cat-card {
+  background:#FFFFFF;
+  border:1px solid #D6D3D1;
+  transition:.25s;
+  position:relative;
+  overflow:hidden;
+}
+.cat-card:hover { border-color:#EAB308; transform: translateY(-4px); box-shadow: 0 30px 60px -25px rgba(66,32,6,.3); }
+
+/* Catalog price tag */
+.tag-price {
+  background:#FEF3C7; color:#422006;
+  padding:.3rem .65rem;
+  font-family:'Lora',serif;
+  font-size:.85rem; font-weight:600; font-style:italic;
+}
+
+/* Decorative double-line border */
+.dbl-border {
+  border-top: 3px double #422006;
+  border-bottom: 3px double #422006;
+  padding: 2.5rem 0;
+}
+
+/* Banner */
+.banner-stripe {
+  background:repeating-linear-gradient(135deg, #422006 0 16px, #5B2A0A 16px 32px);
+}
+
+/* Brand chip (different from Casitherm pills) */
+.brand-chip {
+  display:inline-flex; align-items:center; padding:.55rem 1rem;
+  background:#FEF3C7;
+  border:1px solid #FBBF24;
+  font-family:'Lora',serif;
+  font-style:italic;
+  font-weight:600;
+  font-size:.95rem;
+  color:#422006;
+}
+</style>
+</head>
+
+<body class="bg-cream">
+
+<!-- Top banner -->
+<div class="banner-stripe text-cream/90 text-xs">
+  <div class="max-w-7xl mx-auto px-6 py-2 flex justify-center md:justify-between items-center">
+    <span class="hidden md:inline tracking-[.18em] uppercase font-semibold">Depozit instalații &middot; Brașov &middot; din 1995</span>
+    <span><i class="fa-solid fa-truck-fast mr-1.5 text-mustard"></i>Livrare în Brașov &amp; județ &middot; cont profesional pentru instalatori</span>
+  </div>
+</div>
+
+<!-- Top util -->
+<div class="hidden md:block bg-coal text-cream/85 text-xs">
+  <div class="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
+    <span><i class="fa-solid fa-location-dot text-mustard mr-1.5"></i>Strada 13 Decembrie 16, Brașov</span>
+    <a href="tel:0268543454" class="hover:text-mustard transition"><i class="fa-solid fa-phone mr-1.5"></i>0268 543 454</a>
+  </div>
+</div>
+
+<!-- Nav -->
+<nav class="sticky top-0 z-40 bg-cream/95 backdrop-blur border-b border-edge">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="#" class="flex items-center gap-3">
+      <div class="w-12 h-12 bg-espresso flex items-center justify-center">
+        <span class="font-display italic text-mustard text-2xl font-bold">Ct</span>
+      </div>
+      <div class="leading-tight">
+        <div class="font-display text-2xl font-bold text-espresso">Centralterm</div>
+        <div class="text-[10px] tracking-[.22em] uppercase text-cocoa font-bold">Comercial &middot; Brașov</div>
+      </div>
+    </a>
+    <div class="hidden lg:flex gap-7 text-sm font-semibold text-espresso">
+      <a href="#categorii" class="hover:text-mustard2 transition">Categorii</a>
+      <a href="#stoc" class="hover:text-mustard2 transition">Stoc curent</a>
+      <a href="#profesionisti" class="hover:text-mustard2 transition">Pentru instalatori</a>
+      <a href="#program" class="hover:text-mustard2 transition">Program</a>
+      <a href="#contact" class="hover:text-mustard2 transition">Contact</a>
+    </div>
+    <a href="tel:0268543454" class="hidden md:inline-flex btn-mustard px-5 py-2.5 text-sm">
+      <i class="fa-solid fa-phone mr-2"></i>0268 543 454
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="relative bg-bone overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-12 gap-12 items-center">
+
+    <div class="lg:col-span-7" data-aos="fade-up">
+      <span class="eye mb-7">Catalog &middot; Vol. 30 &middot; Brașov</span>
+      <h1 class="font-display text-5xl md:text-6xl lg:text-[5.5rem] mt-7 leading-[1.05] text-espresso font-bold">
+        Tot ce-i de încălzit <em class="italic font-display text-mustard2">o casă,</em><br>
+        pe un singur raft.
+      </h1>
+      <p class="mt-7 text-lg md:text-xl text-coffee/85 leading-relaxed max-w-xl">
+        Centralterm e depozitul de instalații termice unde profesioniștii și beneficiarii finali din Brașov vin de aproape 30 de ani &mdash; pentru centrală, radiator, pompă, robinet sau o piesă mică de schimb. Stocuri reale, suport tehnic, prețuri pentru cont.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4 mt-10">
+        <a href="tel:0268543454" class="btn-espresso px-7 py-4 inline-flex items-center text-base">
+          <i class="fa-solid fa-phone mr-3"></i>0268 543 454
+        </a>
+        <a href="https://wa.me/40268543454?text=Bună,%20am%20o%20listă%20de%20materiale%20pentru%20ofertă." class="btn-line px-7 py-4 inline-flex items-center text-base">
+          <i class="fa-brands fa-whatsapp mr-3"></i>Trimite lista pe WhatsApp
+        </a>
+      </div>
+
+      <!-- Brands -->
+      <div class="mt-12">
+        <div class="text-[10px] tracking-[.22em] uppercase text-coffee font-bold mb-3">Mărci pe raft</div>
+        <div class="flex flex-wrap gap-2">
+          <span class="brand-chip">Junkers</span>
+          <span class="brand-chip">Vaillant</span>
+          <span class="brand-chip">Bosch</span>
+          <span class="brand-chip">Baxi</span>
+          <span class="brand-chip">Westen</span>
+          <span class="brand-chip">Purmo</span>
+          <span class="brand-chip">Grundfos</span>
+          <span class="brand-chip">Honeywell</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:col-span-5 relative" data-aos="fade-up" data-aos-delay="200">
+      <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1100&q=80" alt="Depozit instalații termice" class="w-full h-[480px] object-cover">
+      <div class="absolute -bottom-6 -left-6 bg-espresso text-cream p-6 max-w-xs">
+        <div class="text-[10px] tracking-[.22em] uppercase text-mustard font-bold mb-2">Notă a depozitului</div>
+        <div class="font-display italic text-lg leading-snug">&laquo;Întreabă-ne pentru piesa de care ai nevoie. Dacă nu o avem, o aducem rapid &mdash; și-ți spunem când.&raquo;</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORII -->
+<section id="categorii" class="py-24 bg-cream">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-12 gap-10 mb-14 items-end">
+      <div class="lg:col-span-7" data-aos="fade-up">
+        <span class="eye mb-5 inline-block">Categorii principale</span>
+        <h2 class="font-display text-4xl md:text-5xl text-espresso font-bold leading-[1.05] mt-4">
+          Șase rafturi unde se află <em class="italic">aproape orice</em>.
+        </h2>
+      </div>
+      <p class="lg:col-span-5 text-coffee/80 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+        Avem stoc constant pentru cele mai cerute produse. Pentru piese mai aparte, comandă livrarea într-un termen rezonabil &mdash; ne ocupăm noi de aprovizionare.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <article class="cat-card" data-aos="fade-up">
+        <div class="aspect-video bg-wheat overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=80" alt="Centrale termice" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-baseline mb-2">
+            <span class="idx">i.</span>
+            <span class="text-[10px] tracking-[.22em] uppercase text-cocoa font-bold">Categoria 01</span>
+          </div>
+          <h3 class="font-display text-2xl font-bold text-espresso mb-2">Centrale termice</h3>
+          <p class="text-sm text-muted leading-relaxed">Pe gaz, condensare, electrice. Junkers, Vaillant, Bosch, Baxi, Westen. Pentru apartament, casă, comercial.</p>
+        </div>
+      </article>
+
+      <article class="cat-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="aspect-video bg-wheat overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1631193816258-28b44b21e78b?auto=format&fit=crop&w=800&q=80" alt="Radiatoare" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-baseline mb-2">
+            <span class="idx">ii.</span>
+            <span class="text-[10px] tracking-[.22em] uppercase text-cocoa font-bold">Categoria 02</span>
+          </div>
+          <h3 class="font-display text-2xl font-bold text-espresso mb-2">Radiatoare &amp; calorifere</h3>
+          <p class="text-sm text-muted leading-relaxed">Panouri Purmo (Compact, Ventil), calorifere baie scară, calorifere design. Suporturi, robineți, dezaerisitori.</p>
+        </div>
+      </article>
+
+      <article class="cat-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="aspect-video bg-wheat overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80" alt="Pompe și hidrofoare" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-baseline mb-2">
+            <span class="idx">iii.</span>
+            <span class="text-[10px] tracking-[.22em] uppercase text-cocoa font-bold">Categoria 03</span>
+          </div>
+          <h3 class="font-display text-2xl font-bold text-espresso mb-2">Pompe &amp; hidrofoare</h3>
+          <p class="text-sm text-muted leading-relaxed">Grundfos UPS &amp; Alpha pentru încălzire, hidrofoare casnice, pompe submersibile, vase expansiune.</p>
+        </div>
+      </article>
+
+      <article class="cat-card" data-aos="fade-up">
+        <div class="aspect-video bg-wheat overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1585129777188-9f6f1cd0a5fa?auto=format&fit=crop&w=800&q=80" alt="Robineți și fitinguri" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-baseline mb-2">
+            <span class="idx">iv.</span>
+            <span class="text-[10px] tracking-[.22em] uppercase text-cocoa font-bold">Categoria 04</span>
+          </div>
+          <h3 class="font-display text-2xl font-bold text-espresso mb-2">Robineți &amp; fitinguri</h3>
+          <p class="text-sm text-muted leading-relaxed">Robineți cu sferă, termostatici, presfit, sertizare, compresie. Fitinguri PPR, multistrat, cupru, oțel.</p>
+        </div>
+      </article>
+
+      <article class="cat-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="aspect-video bg-wheat overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1626184146389-7e1b13a6b65e?auto=format&fit=crop&w=800&q=80" alt="Boilere și ACM" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-baseline mb-2">
+            <span class="idx">v.</span>
+            <span class="text-[10px] tracking-[.22em] uppercase text-cocoa font-bold">Categoria 05</span>
+          </div>
+          <h3 class="font-display text-2xl font-bold text-espresso mb-2">Boilere &amp; preparare ACM</h3>
+          <p class="text-sm text-muted leading-relaxed">Boilere mono- și bivalente 80&ndash;500 l, vase expansiune Reflex, accesorii sanitare apă caldă.</p>
+        </div>
+      </article>
+
+      <article class="cat-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="aspect-video bg-wheat overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=800&q=80" alt="Piese de schimb și accesorii" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <div class="flex justify-between items-baseline mb-2">
+            <span class="idx">vi.</span>
+            <span class="text-[10px] tracking-[.22em] uppercase text-cocoa font-bold">Categoria 06</span>
+          </div>
+          <h3 class="font-display text-2xl font-bold text-espresso mb-2">Piese de schimb &amp; consumabile</h3>
+          <p class="text-sm text-muted leading-relaxed">Garnituri, garnituri grafit, etanșeități, manometre, termometre, ventile siguranță, sondă lambda. Stoc constant.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- STOC TABLE -->
+<section id="stoc" class="py-24 bg-bone">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-12 gap-10 mb-12">
+      <div class="lg:col-span-7" data-aos="fade-up">
+        <span class="eye mb-3 inline-block">Stoc &middot; Lista scurtă</span>
+        <h2 class="font-display text-4xl md:text-5xl text-espresso font-bold leading-tight mt-4">
+          Cele mai cerute pe rând,<br>
+          <em class="italic text-mustard2">cu disponibilitate.</em>
+        </h2>
+      </div>
+      <div class="lg:col-span-5 flex items-end" data-aos="fade-up" data-aos-delay="100">
+        <p class="text-coffee/80 leading-relaxed">Verzi &mdash; pe raft. Galbeni &mdash; stoc redus, sună înainte. Gri &mdash; pe comandă, cu termen scurt.</p>
+      </div>
+    </div>
+
+    <div class="bg-cream border border-edge p-6 md:p-10 dbl-border" data-aos="fade-up" style="border-left:none; border-right:none;">
+
+      <div class="cat-row">
+        <span class="idx">01.</span>
+        <div>
+          <div class="font-display font-bold text-espresso text-lg">Centrală gaz Junkers Cerapur 24 kW</div>
+          <div class="text-xs text-muted">Pentru apartament 2-3 camere &middot; condensare &middot; cu boiler integrat opțional</div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="stk stk-ok"></span>
+          <span class="text-xs uppercase tracking-[.18em] font-bold text-mustard2">Pe raft</span>
+        </div>
+      </div>
+
+      <div class="cat-row">
+        <span class="idx">02.</span>
+        <div>
+          <div class="font-display font-bold text-espresso text-lg">Radiator Purmo Compact C22 600&times;1000</div>
+          <div class="text-xs text-muted">Panou compact, conexiuni laterale, pentru încălzire centrală</div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="stk stk-ok"></span>
+          <span class="text-xs uppercase tracking-[.18em] font-bold text-mustard2">Pe raft</span>
+        </div>
+      </div>
+
+      <div class="cat-row">
+        <span class="idx">03.</span>
+        <div>
+          <div class="font-display font-bold text-espresso text-lg">Pompă Grundfos UPS 25-60 180</div>
+          <div class="text-xs text-muted">Circulație încălzire centrală, conexiune 1½&Prime;</div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="stk stk-ok"></span>
+          <span class="text-xs uppercase tracking-[.18em] font-bold text-mustard2">Pe raft</span>
+        </div>
+      </div>
+
+      <div class="cat-row">
+        <span class="idx">04.</span>
+        <div>
+          <div class="font-display font-bold text-espresso text-lg">Boiler bivalent Reflex Storatherm 200 l</div>
+          <div class="text-xs text-muted">Pentru cuplare cu pompă căldură + centrală sau panouri solare</div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="stk stk-low"></span>
+          <span class="text-xs uppercase tracking-[.18em] font-bold text-mustard2">Stoc redus</span>
+        </div>
+      </div>
+
+      <div class="cat-row">
+        <span class="idx">05.</span>
+        <div>
+          <div class="font-display font-bold text-espresso text-lg">Robinet termostatic cap M30&times;1.5</div>
+          <div class="text-xs text-muted">Honeywell, Heimeier, Caleffi &middot; cap + corp</div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="stk stk-ok"></span>
+          <span class="text-xs uppercase tracking-[.18em] font-bold text-mustard2">Pe raft</span>
+        </div>
+      </div>
+
+      <div class="cat-row">
+        <span class="idx">06.</span>
+        <div>
+          <div class="font-display font-bold text-espresso text-lg">Vas expansiune 8 l / 12 l / 18 l Reflex N</div>
+          <div class="text-xs text-muted">Pentru circuit primar centrală, instalații închise</div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="stk stk-ok"></span>
+          <span class="text-xs uppercase tracking-[.18em] font-bold text-mustard2">Pe raft</span>
+        </div>
+      </div>
+
+      <div class="cat-row">
+        <span class="idx">07.</span>
+        <div>
+          <div class="font-display font-bold text-espresso text-lg">Termostat smart compatibil OpenTherm</div>
+          <div class="text-xs text-muted">Honeywell EvoHome, Salus, Tado &middot; integrare cu majoritatea centralelor</div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="stk stk-low"></span>
+          <span class="text-xs uppercase tracking-[.18em] font-bold text-mustard2">Stoc redus</span>
+        </div>
+      </div>
+
+      <div class="cat-row">
+        <span class="idx">08.</span>
+        <div>
+          <div class="font-display font-bold text-espresso text-lg">Schimbător căldură pentru centrală</div>
+          <div class="text-xs text-muted">Piese de schimb pentru Junkers, Bosch, Vaillant, Baxi (după model)</div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="stk stk-order"></span>
+          <span class="text-xs uppercase tracking-[.18em] font-bold text-muted">Comandă rapidă</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-10">
+      <p class="text-coffee italic font-display">Lista de mai sus e doar un fragment. Sună 0268 543 454 pentru orice piesă specifică &mdash; verificăm pe loc.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROFESIONISTI -->
+<section id="profesionisti" class="py-24 bg-espresso text-cream relative overflow-hidden">
+  <div class="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-mustard/15 blur-3xl"></div>
+  <div class="max-w-7xl mx-auto px-6 relative grid lg:grid-cols-12 gap-12 items-center">
+
+    <div class="lg:col-span-5" data-aos="fade-right">
+      <div class="text-[10px] tracking-[.22em] uppercase text-mustard font-bold mb-3">Pentru profesioniști</div>
+      <h2 class="font-display text-4xl md:text-5xl leading-[1.05] mb-6 font-bold">
+        Cont profesional, <em class="italic text-mustard">discount, livrare.</em>
+      </h2>
+      <p class="text-cream/80 text-lg leading-relaxed">Dacă ești instalator atestat sau firmă de instalații, deschidem cont. Discount pe volum, factură lunară cu termen, livrare în șantier la nivelul județului. Adu CIF-ul și certificatul ANRE.</p>
+
+      <a href="tel:0268543454" class="mt-8 btn-mustard px-7 py-4 inline-flex items-center text-base">
+        <i class="fa-solid fa-handshake mr-3"></i>Deschide cont profesional
+      </a>
+    </div>
+
+    <div class="lg:col-span-7 grid sm:grid-cols-2 gap-5" data-aos="fade-left">
+      <div class="bg-cream/5 backdrop-blur p-6 border border-cream/10">
+        <i class="fa-solid fa-percent text-mustard text-2xl mb-3"></i>
+        <h4 class="font-display text-xl font-bold mb-2">Discount pe volum</h4>
+        <p class="text-sm text-cream/70 leading-relaxed">Cu cât cumperi mai mult, cu atât crește marja ta &mdash; transparent, fixat în cont, vizibil pe factură.</p>
+      </div>
+      <div class="bg-cream/5 backdrop-blur p-6 border border-cream/10">
+        <i class="fa-solid fa-calendar-days text-mustard text-2xl mb-3"></i>
+        <h4 class="font-display text-xl font-bold mb-2">Factură lunară</h4>
+        <p class="text-sm text-cream/70 leading-relaxed">Plătește la sfârșit de lună, nu la fiecare bon. Avantajos pentru cash flow-ul firmei.</p>
+      </div>
+      <div class="bg-cream/5 backdrop-blur p-6 border border-cream/10">
+        <i class="fa-solid fa-truck-fast text-mustard text-2xl mb-3"></i>
+        <h4 class="font-display text-xl font-bold mb-2">Livrare în șantier</h4>
+        <p class="text-sm text-cream/70 leading-relaxed">Livrăm cu mașina noastră în Brașov și județ &mdash; centrale, paleți, comenzi mari.</p>
+      </div>
+      <div class="bg-cream/5 backdrop-blur p-6 border border-cream/10">
+        <i class="fa-solid fa-headset text-mustard text-2xl mb-3"></i>
+        <h4 class="font-display text-xl font-bold mb-2">Suport tehnic</h4>
+        <p class="text-sm text-cream/70 leading-relaxed">Dimensionare pompă, alegere centrală, verificări compatibilitate &mdash; aproape orice întrebare are un răspuns la tejghea.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROGRAM + MAP -->
+<section id="program" class="py-24 bg-cream">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-8">
+
+    <div class="lg:col-span-5 bg-bone border border-edge p-9" data-aos="fade-right">
+      <span class="eye mb-4 inline-block">Vizită &amp; program</span>
+      <h2 class="font-display text-4xl text-espresso font-bold mb-3 mt-4">Strada 13 Decembrie 16</h2>
+      <p class="text-coffee leading-relaxed mb-7">Punctul nostru e în Brașov. Vino cu lista, plănuim împreună sau alegi de pe raft. Pentru livrări, te trimitem la birou.</p>
+
+      <div class="text-sm">
+        <div class="flex justify-between py-2.5 border-b border-edge"><span>Luni</span><span class="font-display italic font-semibold text-espresso">08:00 &ndash; 17:00</span></div>
+        <div class="flex justify-between py-2.5 border-b border-edge"><span>Marți</span><span class="font-display italic font-semibold text-espresso">08:00 &ndash; 17:00</span></div>
+        <div class="flex justify-between py-2.5 border-b border-edge"><span>Miercuri</span><span class="font-display italic font-semibold text-espresso">08:00 &ndash; 17:00</span></div>
+        <div class="flex justify-between py-2.5 border-b border-edge"><span>Joi</span><span class="font-display italic font-semibold text-espresso">08:00 &ndash; 17:00</span></div>
+        <div class="flex justify-between py-2.5 border-b border-edge"><span>Vineri</span><span class="font-display italic font-semibold text-espresso">08:00 &ndash; 17:00</span></div>
+        <div class="flex justify-between py-2.5 border-b border-edge"><span>Sâmbătă</span><span class="font-display italic font-semibold text-mustard2">09:00 &ndash; 13:00</span></div>
+        <div class="flex justify-between py-2.5"><span>Duminică</span><span class="font-display italic text-muted">Închis</span></div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-3 mt-7">
+        <a href="tel:0268543454" class="btn-espresso text-center py-3 text-sm"><i class="fa-solid fa-phone mr-2"></i>Sună</a>
+        <a href="https://wa.me/40268543454" class="btn-line text-center py-3 text-sm"><i class="fa-brands fa-whatsapp mr-2"></i>WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="lg:col-span-7 border border-edge" data-aos="fade-left">
+      <iframe
+        src="https://www.google.com/maps?q=45.652435,25.604767&hl=ro&z=17&output=embed"
+        class="w-full h-full min-h-[520px]" style="border:0"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT CTA -->
+<section id="contact" class="py-24 bg-mustard text-espresso relative overflow-hidden">
+  <div class="absolute inset-0 banner-stripe opacity-5"></div>
+  <div class="max-w-5xl mx-auto px-6 text-center relative">
+    <div class="text-[10px] tracking-[.22em] uppercase font-bold mb-5">Următorul pas</div>
+    <h2 class="font-display text-4xl md:text-6xl font-bold leading-[1.05]">
+      Adu lista. <em class="italic">Pleci cu marfa.</em>
+    </h2>
+    <p class="text-espresso/85 max-w-2xl mx-auto mt-6 text-lg leading-relaxed">
+      Pentru cumpărături directe, vino la sediu &mdash; te primim de la 08:00. Pentru comenzi mari, sună sau scrie pe WhatsApp și pregătim totul până ajungi.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4 mt-10">
+      <a href="tel:0268543454" class="btn-espresso px-8 py-4 inline-flex items-center text-base">
+        <i class="fa-solid fa-phone mr-3"></i>0268 543 454
+      </a>
+      <a href="https://wa.me/40268543454?text=Bună,%20am%20o%20listă%20pentru%20Centralterm." class="bg-cream text-espresso hover:bg-espresso hover:text-cream transition px-8 py-4 font-semibold inline-flex items-center text-base">
+        <i class="fa-brands fa-whatsapp mr-3"></i>WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-coal text-cream/80">
+  <div class="max-w-7xl mx-auto px-6 py-14 grid md:grid-cols-3 gap-10">
+    <div>
+      <div class="flex items-center gap-3 mb-5">
+        <div class="w-12 h-12 bg-mustard flex items-center justify-center">
+          <span class="font-display italic text-espresso text-2xl font-bold">Ct</span>
+        </div>
+        <div>
+          <div class="font-display text-2xl font-bold text-cream">Centralterm</div>
+          <div class="text-[10px] tracking-[.22em] uppercase text-mustard font-bold">Comercial Brașov</div>
+        </div>
+      </div>
+      <p class="text-sm leading-relaxed">Depozit de centrale termice, radiatoare, pompe, fitinguri, accesorii și piese de schimb. Strada 13 Decembrie 16, Brașov.</p>
+    </div>
+    <div>
+      <div class="text-[10px] tracking-[.22em] uppercase text-mustard font-bold mb-4">Categorii</div>
+      <ul class="text-sm space-y-2">
+        <li>Centrale termice</li>
+        <li>Radiatoare &amp; calorifere</li>
+        <li>Pompe &amp; hidrofoare</li>
+        <li>Robineți &amp; fitinguri</li>
+        <li>Boilere &amp; ACM</li>
+        <li>Piese de schimb</li>
+      </ul>
+    </div>
+    <div>
+      <div class="text-[10px] tracking-[.22em] uppercase text-mustard font-bold mb-4">Contact</div>
+      <ul class="text-sm space-y-3">
+        <li><i class="fa-solid fa-phone text-mustard mr-2"></i><a href="tel:0268543454" class="hover:text-mustard">0268 543 454</a></li>
+        <li><i class="fa-brands fa-whatsapp text-mustard mr-2"></i><a href="https://wa.me/40268543454" class="hover:text-mustard">WhatsApp</a></li>
+        <li><i class="fa-solid fa-location-dot text-mustard mr-2"></i>Strada 13 Decembrie 16, Brașov</li>
+        <li><i class="fa-regular fa-clock text-mustard mr-2"></i>L&ndash;V 08:00&ndash;17:00, S 09:00&ndash;13:00</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-cream/10">
+    <div class="max-w-7xl mx-auto px-6 py-5 text-xs text-cream/50 flex flex-col sm:flex-row justify-between gap-2">
+      <span>&copy; <span id="yr"></span> Centralterm Comercial S.R.L. Toate drepturile rezervate.</span>
+      <span>Brașov &middot; Depozit instalații</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mobile bar -->
+<div class="fixed bottom-0 left-0 right-0 md:hidden z-50 bg-espresso text-cream grid grid-cols-2 border-t-4 border-mustard">
+  <a href="tel:0268543454" class="flex items-center justify-center py-4 font-semibold text-sm border-r border-cream/15">
+    <i class="fa-solid fa-phone mr-2 text-mustard"></i>Sună
+  </a>
+  <a href="https://wa.me/40268543454" class="flex items-center justify-center py-4 font-semibold text-sm">
+    <i class="fa-brands fa-whatsapp mr-2 text-mustard"></i>WhatsApp
+  </a>
+</div>
+<div class="md:hidden h-16"></div>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Centralterm Comercial S.R.L.",
+  "description": "Depozit de centrale termice, radiatoare, pompe, fitinguri, accesorii și piese de schimb pentru instalații. Cont profesional pentru instalatori.",
+  "telephone": "+40268543454",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Strada 13 Decembrie 16",
+    "addressLocality": "Brașov",
+    "postalCode": "500173",
+    "addressCountry": "RO"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.652435,
+    "longitude": 25.604767
+  },
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"09:00","closes":"13:00"}
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.3",
+    "reviewCount": "3"
+  }
+}
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 700, once: true, offset: 80 });
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
