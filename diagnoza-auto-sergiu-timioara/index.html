@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style id="mobile-no-hscroll">
+/* mobile-no-hscroll-v1 */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+  position: relative;
+}
+@media (max-width: 767px) {
+  body * { max-width: 100vw; }
+}
+</style>
+
+<title>Diagnoz&#259; Auto Sergiu - Service Auto Ghiroda / Timi&#537;oara | 0734 724 514</title>
+<meta name="description" content="Diagnoz&#259; auto computerizat&#259; &#238;n Ghiroda (Timi&#537;oara). ECU scan, repara&#539;ii motor, ITP, fr&#226;ne, baterie. 4.8★ (69 recenzii). Sun&#259;: 0734 724 514.">
+<meta name="keywords" content="diagnoz&#259; auto Timi&#537;oara, service auto Ghiroda, ECU scan Timi&#537;oara, repara&#539;ii motor Timi&#537;oara, ITP preg&#259;tire, Sergiu auto">
+<meta name="robots" content="index,follow">
+<meta name="author" content="Diagnoz&#259; Auto Sergiu">
+<link rel="canonical" href="https://diagnoza-auto-sergiu.ro/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:site_name" content="Diagnoz&#259; Auto Sergiu">
+<meta property="og:title" content="Diagnoz&#259; Auto Sergiu — Ghiroda / Timi&#537;oara">
+<meta property="og:description" content="Diagnoz&#259; corect&#259; din prima &#238;ncercare. 69 recenzii, 4.8★.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{
+  colors:{
+    indigo:'#1A1F3A',
+    indigoDeep:'#0D1124',
+    slate:'#2E3554',
+    mist:'#B2B7C4',
+    paper:'#FAFAFC',
+    ice:'#EEF0F5',
+    yellow:'#FFD60A',
+    yellowDark:'#E5B800',
+    sigRed:'#FF3B30',
+    green:'#34C759'
+  },
+  fontFamily:{
+    mono:['"JetBrains Mono"','monospace'],
+    sans:['Inter','sans-serif']
+  }
+}}}
+</script>
+<style>
+body{font-family:'Inter',sans-serif;background:#FAFAFC;color:#1A1F3A;}
+.mono{font-family:'JetBrains Mono',monospace;}
+.scanlines{background-image:repeating-linear-gradient(0deg,rgba(255,214,10,.05) 0,rgba(255,214,10,.05) 1px,transparent 1px,transparent 3px);}
+.grid-bg{background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:32px 32px;}
+.terminal-line::before{content:'>';color:#FFD60A;margin-right:.5rem;font-weight:700;}
+.diag-card{transition:all .3s ease;}
+.diag-card:hover{transform:translateY(-3px);border-color:#FFD60A;}
+.tab-num{font-variant-numeric:tabular-nums;}
+.tag{display:inline-flex;align-items:center;gap:.4rem;padding:.25rem .7rem;background:#FFD60A;color:#1A1F3A;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;font-family:'JetBrains Mono',monospace;}
+.led{width:8px;height:8px;border-radius:50%;background:#34C759;box-shadow:0 0 12px #34C759;animation:pulse 2s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:.8}50%{opacity:1}}
+@media (max-width:767px){.pb-safe{padding-bottom:88px;}}
+html{scroll-behavior:smooth;}
+</style>
+</head>
+<body class="pb-safe">
+
+<header class="bg-paper/95 backdrop-blur sticky top-0 z-40 border-b border-indigo/10">
+  <div class="max-w-7xl mx-auto px-5 lg:px-10 py-4 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-3">
+      <div class="w-11 h-11 bg-indigo grid place-items-center rounded">
+        <i class="fa-solid fa-microchip text-yellow"></i>
+      </div>
+      <div class="leading-tight">
+        <div class="mono font-bold text-lg text-indigo">DIAGNOZA<span class="text-yellowDark">_</span>SERGIU</div>
+        <div class="text-[10px] tracking-[0.22em] uppercase text-slate mono">Ghiroda &middot; Timi&#537;oara</div>
+      </div>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-sm text-indigo/85 font-medium">
+      <a href="#servicii" class="hover:text-yellowDark">Servicii</a>
+      <a href="#proces" class="hover:text-yellowDark">Proces</a>
+      <a href="#recenzii" class="hover:text-yellowDark">Recenzii</a>
+      <a href="#contact" class="hover:text-yellowDark">Contact</a>
+    </nav>
+    <a href="tel:0734724514" class="hidden sm:inline-flex items-center gap-2 bg-yellow hover:bg-indigo hover:text-paper text-indigo px-5 py-2.5 rounded text-sm font-bold transition mono">
+      <i class="fa-solid fa-phone"></i> 0734 724 514
+    </a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section id="top" class="relative overflow-hidden bg-indigo text-paper grid-bg">
+  <div class="absolute inset-0 scanlines pointer-events-none"></div>
+  <div class="max-w-7xl mx-auto px-5 lg:px-10 pt-16 pb-20 lg:pt-24 lg:pb-28 relative grid lg:grid-cols-12 gap-12">
+    <div class="lg:col-span-7" data-aos="fade-up">
+      <div class="flex items-center gap-3 mb-7">
+        <span class="led"></span>
+        <span class="mono text-yellow text-xs tracking-wider">SYSTEM_ONLINE &middot; L–V 9:00–20:00</span>
+      </div>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-[.95] font-bold mb-7">
+        Diagnoz&#259; corect&#259; <br>
+        <span class="text-yellow">din prima</span> &#238;ncercare.
+      </h1>
+      <p class="text-lg lg:text-xl text-mist max-w-2xl mb-9 leading-relaxed">
+        Sergiu scaneaz&#259; computeriza&#539;ia ma&#537;inii, cite&#537;te codurile reale &#537;i &#238;&#539;i spune ce trebuie reparat &#537;i ce nu. F&#259;r&#259; piese inventate, f&#259;r&#259; manopere fantezi.
+      </p>
+      <div class="flex flex-wrap gap-3 mb-12">
+        <a href="tel:0734724514" class="bg-yellow hover:bg-paper text-indigo px-7 py-4 rounded flex items-center gap-3 font-bold transition">
+          <i class="fa-solid fa-phone"></i> 0734 724 514
+        </a>
+        <a href="https://wa.me/40734724514" target="_blank" class="border border-paper/30 hover:bg-paper hover:text-indigo text-paper px-7 py-4 rounded flex items-center gap-3 font-bold transition">
+          <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+        </a>
+      </div>
+      <div class="bg-indigoDeep p-5 rounded border border-paper/10 max-w-xl font-mono text-sm">
+        <div class="terminal-line text-paper/90 mb-1">Scanare OBD-II initiate...</div>
+        <div class="terminal-line text-yellow mb-1">69 clien&#539;i recen&#539;i &middot; rating 4.8/5</div>
+        <div class="terminal-line text-mist">Ready_for_appointment</div>
+      </div>
+    </div>
+    <div class="lg:col-span-5 relative" data-aos="fade-left" data-aos-delay="200">
+      <div class="aspect-square rounded overflow-hidden border-4 border-yellow/40">
+        <img src="https://images.unsplash.com/photo-1632823471565-1ecdf5c6da77?w=900&auto=format&fit=crop&q=70" alt="Diagnoz&#259; auto computerizat&#259;" class="w-full h-full object-cover">
+      </div>
+      <div class="absolute -bottom-4 -left-4 bg-paper text-indigo p-5 rounded border-4 border-yellow max-w-[280px]">
+        <div class="mono text-[10px] tracking-[0.22em] text-yellowDark mb-2">CLIENT_REVIEW</div>
+        <p class="text-sm leading-relaxed italic">"Sergiu ne-a l&#259;murit imediat. Profesionalism &#537;i promptitudine."</p>
+        <div class="text-xs text-indigo/60 mt-2 mono">— Amalia B.</div>
+      </div>
+      <div class="absolute -top-3 -right-3 bg-yellow text-indigo p-3 rotate-3">
+        <div class="mono text-[10px] tracking-wider">RATING</div>
+        <div class="font-bold text-2xl mono">4.8/5</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="servicii" class="py-20 lg:py-28 bg-paper">
+  <div class="max-w-7xl mx-auto px-5 lg:px-10">
+    <div class="grid lg:grid-cols-12 gap-10 mb-14">
+      <div class="lg:col-span-5" data-aos="fade-up">
+        <div class="tag mb-5">SERVICES.LIST</div>
+        <h2 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-indigo leading-[.95]">Sapte verific&#259;ri care &#238;&#539;i economisesc bani.</h2>
+      </div>
+      <div class="lg:col-span-7 lg:pt-12 text-indigo/70 text-lg leading-relaxed mono text-[15px]" data-aos="fade-up" data-aos-delay="100">
+        Diagnostic&#259;m &#238;nainte de orice repara&#539;ie. Cite&#537;ti codurile direct, vezi ce e &#238;ntr-adev&#259;r defect &#537;i ce e doar avertisment de senzor. F&#259;r&#259; suprapre&#539;.
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="diag-card bg-ice rounded p-7 border-2 border-indigo/10" data-aos="fade-up">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="mono text-yellowDark font-bold text-sm">01</div>
+          <div class="led"></div>
+        </div>
+        <i class="fa-solid fa-microchip text-3xl text-indigo mb-4"></i>
+        <h3 class="text-xl font-bold text-indigo mb-2">Scanare ECU</h3>
+        <p class="text-sm text-indigo/70 leading-relaxed">Citire coduri de eroare, scanare full ECU, transmisie, ABS, airbag, climatizare.</p>
+      </div>
+      <div class="diag-card bg-indigo text-paper rounded p-7" data-aos="fade-up" data-aos-delay="80">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="mono text-yellow font-bold text-sm">02</div>
+          <div class="led"></div>
+        </div>
+        <i class="fa-solid fa-gears text-3xl text-yellow mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">Diagnoz&#259; motor</h3>
+        <p class="text-sm text-mist leading-relaxed">Analiz&#259; martor check-engine, fum, consum anormal, vibra&#539;ii — identific&#259;m cauza real&#259;.</p>
+      </div>
+      <div class="diag-card bg-ice rounded p-7 border-2 border-indigo/10" data-aos="fade-up" data-aos-delay="160">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="mono text-yellowDark font-bold text-sm">03</div>
+          <div class="led"></div>
+        </div>
+        <i class="fa-solid fa-bolt text-3xl text-indigo mb-4"></i>
+        <h3 class="text-xl font-bold text-indigo mb-2">Electronic&#259; auto</h3>
+        <p class="text-sm text-indigo/70 leading-relaxed">Repara&#539;ii la senzori, calculatoare, sisteme de iluminare &#537;i comfort.</p>
+      </div>
+      <div class="diag-card bg-yellow text-indigo rounded p-7" data-aos="fade-up">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="mono font-bold text-sm">04</div>
+          <i class="fa-solid fa-circle text-green text-xs"></i>
+        </div>
+        <i class="fa-solid fa-clipboard-check text-3xl mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">Verific&#259;ri pre-ITP</h3>
+        <p class="text-sm text-indigo/80 leading-relaxed">Identific&#259;m problemele &#238;nainte s&#259; ajungi la sta&#539;ie. Iei ITP-ul din prima.</p>
+      </div>
+      <div class="diag-card bg-ice rounded p-7 border-2 border-indigo/10" data-aos="fade-up" data-aos-delay="80">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="mono text-yellowDark font-bold text-sm">05</div>
+          <div class="led"></div>
+        </div>
+        <i class="fa-solid fa-car-battery text-3xl text-indigo mb-4"></i>
+        <h3 class="text-xl font-bold text-indigo mb-2">Baterie &amp; alternator</h3>
+        <p class="text-sm text-indigo/70 leading-relaxed">Test &#238;nc&#259;rcare, descop&#259;rim probleme de pornire &#238;nainte s&#259; ai surprize.</p>
+      </div>
+      <div class="diag-card bg-ice rounded p-7 border-2 border-indigo/10" data-aos="fade-up" data-aos-delay="160">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="mono text-yellowDark font-bold text-sm">06</div>
+          <div class="led"></div>
+        </div>
+        <i class="fa-solid fa-circle-stop text-3xl text-indigo mb-4"></i>
+        <h3 class="text-xl font-bold text-indigo mb-2">Sistem fr&#226;nare</h3>
+        <p class="text-sm text-indigo/70 leading-relaxed">Verificare pl&#259;cu&#539;e, discuri, ABS, ESP. Repara&#539;ii cu piese corecte.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section id="proces" class="py-20 lg:py-28 bg-indigo text-paper">
+  <div class="max-w-7xl mx-auto px-5 lg:px-10">
+    <div class="text-center max-w-3xl mx-auto mb-14" data-aos="fade-up">
+      <div class="tag mb-5">PROCESS.FLOW</div>
+      <h2 class="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">Patru pa&#537;i &#238;ntre apel &#537;i ma&#537;ina reparat&#259;.</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="bg-slate rounded p-7 border border-paper/15" data-aos="fade-up">
+        <div class="mono text-yellow text-xs tracking-wider mb-3">STEP_01</div>
+        <i class="fa-solid fa-phone text-3xl text-yellow mb-4"></i>
+        <h3 class="font-bold text-xl mb-2">Apel</h3>
+        <p class="text-sm text-mist leading-relaxed">Spune ce face ma&#537;ina, &#238;&#539;i d&#259;m slot pentru diagnoz&#259;.</p>
+      </div>
+      <div class="bg-slate rounded p-7 border border-paper/15" data-aos="fade-up" data-aos-delay="80">
+        <div class="mono text-yellow text-xs tracking-wider mb-3">STEP_02</div>
+        <i class="fa-solid fa-magnifying-glass-chart text-3xl text-yellow mb-4"></i>
+        <h3 class="font-bold text-xl mb-2">Scanare</h3>
+        <p class="text-sm text-mist leading-relaxed">Conect&#259;m diagnoza, citim coduri, evalu&#259;m problemele.</p>
+      </div>
+      <div class="bg-slate rounded p-7 border border-paper/15" data-aos="fade-up" data-aos-delay="160">
+        <div class="mono text-yellow text-xs tracking-wider mb-3">STEP_03</div>
+        <i class="fa-solid fa-file-lines text-3xl text-yellow mb-4"></i>
+        <h3 class="font-bold text-xl mb-2">Raport &amp; ofert&#259;</h3>
+        <p class="text-sm text-mist leading-relaxed">Explica&#539;ii clare, pre&#539;uri reale, op&#539;iuni. Alegi ce facem.</p>
+      </div>
+      <div class="bg-slate rounded p-7 border border-paper/15" data-aos="fade-up" data-aos-delay="240">
+        <div class="mono text-yellow text-xs tracking-wider mb-3">STEP_04</div>
+        <i class="fa-solid fa-wrench text-3xl text-yellow mb-4"></i>
+        <h3 class="font-bold text-xl mb-2">Repara&#539;ie</h3>
+        <p class="text-sm text-mist leading-relaxed">Lucrare la termen, predare cu raport &#537;i recomand&#259;ri.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section id="recenzii" class="py-20 lg:py-28 bg-ice">
+  <div class="max-w-7xl mx-auto px-5 lg:px-10">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <div class="tag mb-5">CLIENT_FEEDBACK</div>
+      <h2 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-indigo leading-tight">69 clien&#539;i, 4.8 stele.</h2>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="bg-paper rounded p-6 border-2 border-indigo/10" data-aos="fade-up">
+        <div class="text-yellowDark text-sm mb-3">★★★★★</div>
+        <p class="text-indigo/80 leading-relaxed text-sm italic mb-5">Sergiu ne-a ajutat imediat... ne-a l&#259;murit. Profesionalism &#537;i promptitudine!</p>
+        <div class="mono text-[11px] text-indigo/55 tracking-wider">— AMALIA B.</div>
+      </div>
+      <div class="bg-paper rounded p-6 border-2 border-indigo/10" data-aos="fade-up" data-aos-delay="80">
+        <div class="text-yellowDark text-sm mb-3">★★★★★</div>
+        <p class="text-indigo/80 leading-relaxed text-sm italic mb-5">Serviciu excelent de diagnoz&#259; auto! Identificarea codurilor de eroare, informa&#539;ii clare, rapid &#537;i profesionist.</p>
+        <div class="mono text-[11px] text-indigo/55 tracking-wider">— RAUL G.</div>
+      </div>
+      <div class="bg-paper rounded p-6 border-2 border-indigo/10" data-aos="fade-up" data-aos-delay="160">
+        <div class="text-yellowDark text-sm mb-3">★★★★★</div>
+        <p class="text-indigo/80 leading-relaxed text-sm italic mb-5">Profesionalism, promptitudine &#537;i aten&#539;ie la detalii. Explica&#539;ii clare. Am sim&#539;it c&#259; sunt pe m&#226;ini bune.</p>
+        <div class="mono text-[11px] text-indigo/55 tracking-wider">— MARIA G.</div>
+      </div>
+      <div class="bg-indigo text-paper rounded p-6" data-aos="fade-up" data-aos-delay="240">
+        <div class="text-yellow text-sm mb-3">★★★★★</div>
+        <p class="text-mist leading-relaxed text-sm italic mb-5">Foarte priceput! Amabil. Te ajut&#259; s&#259; g&#259;se&#537;ti cea mai potrivit&#259; solu&#539;ie pentru problem&#259;.</p>
+        <div class="mono text-[11px] text-yellow tracking-wider">— JONY F.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-20 lg:py-28 bg-paper">
+  <div class="max-w-7xl mx-auto px-5 lg:px-10 grid lg:grid-cols-12 gap-10">
+    <div class="lg:col-span-5" data-aos="fade-up">
+      <div class="tag mb-5">CONTACT.INIT</div>
+      <h2 class="text-4xl lg:text-5xl font-bold text-indigo leading-tight mb-8">Rar&#259;u 8, Ghiroda. L&#226;ng&#259; Timi&#537;oara.</h2>
+      <div class="space-y-3 mb-8">
+        <a href="tel:0734724514" class="block bg-yellow hover:bg-indigo hover:text-paper text-indigo rounded p-5 flex items-center justify-between font-bold transition mono">
+          <span class="flex items-center gap-3"><i class="fa-solid fa-phone"></i> 0734 724 514</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="https://wa.me/40734724514" target="_blank" class="block bg-indigo hover:bg-slate text-paper rounded p-5 flex items-center justify-between font-bold transition mono">
+          <span class="flex items-center gap-3"><i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="bg-ice rounded p-5 text-sm space-y-3 border-2 border-indigo/10">
+        <div class="flex items-start gap-3"><i class="fa-solid fa-location-dot text-yellowDark mt-1"></i><div>Strada Rar&#259;u 8, 307200 Ghiroda (zona Timi&#537;oara)</div></div>
+        <div class="flex items-start gap-3"><i class="fa-solid fa-clock text-yellowDark mt-1"></i><div>Luni–Vineri: 09:00–20:00<br>S&#226;mb&#259;t&#259;: 11:00–16:00<div class="text-indigo/55">Duminic&#259;: &#238;nchis</div></div></div>
+        <div class="flex items-start gap-3"><i class="fa-solid fa-credit-card text-yellowDark mt-1"></i><div>Card &amp; numerar</div></div>
+      </div>
+    </div>
+    <div class="lg:col-span-7" data-aos="fade-up" data-aos-delay="100">
+      <div class="aspect-[4/3] rounded overflow-hidden border-4 border-indigo">
+        <iframe src="https://www.google.com/maps?q=45.770275,21.313532&hl=ro&z=17&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-indigoDeep text-mist py-12">
+  <div class="max-w-7xl mx-auto px-5 lg:px-10 grid md:grid-cols-3 gap-8">
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <span class="w-11 h-11 grid place-items-center bg-yellow text-indigo rounded"><i class="fa-solid fa-microchip"></i></span>
+        <div class="mono font-bold text-xl text-paper">DIAGNOZA<span class="text-yellow">_</span>SERGIU</div>
+      </div>
+      <p class="text-sm text-mist/70 leading-relaxed">Service auto specializat &#238;n diagnoz&#259; computerizat&#259; &#238;n Ghiroda, zona Timi&#537;oara.</p>
+    </div>
+    <div>
+      <div class="mono text-[11px] tracking-[0.25em] uppercase text-yellow mb-3 font-semibold">Servicii</div>
+      <ul class="space-y-2 text-sm">
+        <li>Scanare ECU</li>
+        <li>Diagnoz&#259; motor</li>
+        <li>Electronic&#259; auto</li>
+        <li>Pre-ITP</li>
+        <li>Fr&#226;ne &amp; baterii</li>
+      </ul>
+    </div>
+    <div>
+      <div class="mono text-[11px] tracking-[0.25em] uppercase text-yellow mb-3 font-semibold">Contact</div>
+      <ul class="space-y-2 text-sm">
+        <li><i class="fa-solid fa-location-dot w-5"></i> Rar&#259;u 8, Ghiroda</li>
+        <li><i class="fa-solid fa-phone w-5"></i> <a href="tel:0734724514" class="hover:text-paper">0734 724 514</a></li>
+        <li><i class="fa-brands fa-whatsapp w-5"></i> <a href="https://wa.me/40734724514" class="hover:text-paper">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-5 lg:px-10 mt-10 pt-6 border-t border-mist/10 text-xs text-mist/40 flex flex-col md:flex-row justify-between gap-2">
+    <div>&copy; Diagnoz&#259; Auto Sergiu &middot; Ghiroda &middot; Timi&#537;oara</div>
+    <div class="mono">SYSTEM_OPERATIONAL</div>
+  </div>
+</footer>
+
+<div class="md:hidden fixed bottom-0 inset-x-0 z-50 bg-indigo text-paper grid grid-cols-2 border-t border-paper/15">
+  <a href="tel:0734724514" class="flex items-center justify-center gap-2 py-4 hover:bg-slate transition text-sm font-bold">
+    <i class="fa-solid fa-phone text-yellow"></i> Sun&#259;
+  </a>
+  <a href="https://wa.me/40734724514" target="_blank" class="flex items-center justify-center gap-2 py-4 bg-yellow text-indigo hover:bg-yellowDark transition text-sm font-bold">
+    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+  </a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"AutomotiveBusiness",
+  "name":"Diagnoz&#259; Auto Sergiu",
+  "description":"Service auto specializat &#238;n diagnoz&#259; computerizat&#259; &#238;n Ghiroda (Timi&#537;oara): ECU scan, motor, electronic&#259;, pre-ITP, fr&#226;ne, baterii.",
+  "telephone":"+40734724514",
+  "url":"https://diagnoza-auto-sergiu.ro/",
+  "priceRange":"$$",
+  "address":{"@type":"PostalAddress","streetAddress":"Strada Rar&#259;u 8","addressLocality":"Ghiroda","postalCode":"307200","addressCountry":"RO"},
+  "geo":{"@type":"GeoCoordinates","latitude":45.770275,"longitude":21.313532},
+  "areaServed":["Timi&#537;oara","Ghiroda","Jude&#539;ul Timi&#537;"],
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"69","bestRating":"5"},
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"20:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"11:00","closes":"16:00"}
+  ],
+  "review":[
+    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Raul Gircsis"},"reviewBody":"Serviciu excelent de diagnoz&#259; auto, identificare coduri de eroare, rapid &#537;i profesionist."},
+    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Maria Gabriela"},"reviewBody":"Profesionalism, promptitudine, aten&#539;ie la detalii."}
+  ]
+}
+</script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({duration:700,once:true,offset:80});</script>
+</body>
+</html>

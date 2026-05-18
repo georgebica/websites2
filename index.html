@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Sites</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+           background: #0f172a; color: #e2e8f0; min-height: 100vh; }
+    .header { padding: 3rem 2rem 2rem; text-align: center; border-bottom: 1px solid #1e293b; }
+    .header h1 { font-size: 1.8rem; font-weight: 700; }
+    .header p { color: #64748b; margin-top: 0.5rem; font-size: 0.95rem; }
+    .search-wrap { max-width: 400px; margin: 1.5rem auto 0; }
+    .search-wrap input { width: 100%; padding: 0.7rem 1rem; border-radius: 0.5rem;
+      border: 1px solid #334155; background: #1e293b; color: #e2e8f0; font-size: 0.9rem; outline: none; }
+    .search-wrap input:focus { border-color: #3b82f6; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem; padding: 2rem; max-width: 1200px; margin: 0 auto; }
+    .site-card { display: block; background: #1e293b; border: 1px solid #334155;
+      border-radius: 0.75rem; padding: 1.25rem 1.5rem; text-decoration: none; color: inherit;
+      transition: border-color 0.2s, background 0.2s; }
+    .site-card:hover { border-color: #3b82f6; }
+    .site-name { font-weight: 600; font-size: 1rem; margin-bottom: 0.35rem; }
+    .site-url { color: #3b82f6; font-size: 0.8rem; font-family: monospace; }
+    .site-card.hidden { display: none; }
+    .count { color: #64748b; font-size: 0.85rem; text-align: center; padding: 0 2rem; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Business Sites</h1>
+    <p>335 sites deployed</p>
+    <div class="search-wrap">
+      <input type="text" id="search" placeholder="Search businesses..." autocomplete="off">
+    </div>
+  </div>
+  <p class="count" id="count"></p>
+  <div class="grid" id="grid">
+        <a href="/2a-studio-de-idei/" class="site-card">
+          <div class="site-name">2A STUDIO DE IDEI</div>
+          <div class="site-url">/2a-studio-de-idei/</div>
+        </a>
+        <a href="/ac-auto-nea-costica/" class="site-card">
+          <div class="site-name">A_C auto Nea&#x27; Costica</div>
+          <div class="site-url">/ac-auto-nea-costica/</div>
+        </a>
+        <a href="/ab-archistory/" class="site-card">
+          <div class="site-name">Ab Archistory</div>
+          <div class="site-url">/ab-archistory/</div>
+        </a>
+        <a href="/ab-autobella-service/" class="site-card">
+          <div class="site-name">AB Autobella Service</div>
+          <div class="site-url">/ab-autobella-service/</div>
+        </a>
+        <a href="/ad-garage-auto-universal-srl/" class="site-card">
+          <div class="site-name">Ad Garage Auto Universal Srl</div>
+          <div class="site-url">/ad-garage-auto-universal-srl/</div>
+        </a>
+        <a href="/addetailingauto/" class="site-card">
+          <div class="site-name">AD.DETAILING.AUTO</div>
+          <div class="site-url">/addetailingauto/</div>
+        </a>
+        <a href="/adaco-pro-tim/" class="site-card">
+          <div class="site-name">Adaco Pro-Tim</div>
+          <div class="site-url">/adaco-pro-tim/</div>
+        </a>
+        <a href="/adan-fm-srl/" class="site-card">
+          <div class="site-name">ADAN FM SRL</div>
+          <div class="site-url">/adan-fm-srl/</div>
+        </a>
+        <a href="/addent/" class="site-card">
+          <div class="site-name">Addent</div>
+          <div class="site-url">/addent/</div>
+        </a>
+        <a href="/adent-ada/" class="site-card">
+          <div class="site-name">Adent Ada</div>
+          <div class="site-url">/adent-ada/</div>
+        </a>
+        <a href="/adi-auto/" class="site-card">
+          <div class="site-name">Adi Auto</div>
+          <div class="site-url">/adi-auto/</div>
+        </a>
+        <a href="/aer-conditionat-brasov-devinstal-brasov-srl/" class="site-card">
+          <div class="site-name">Aer Conditionat Brasov - DEVINSTAL BRASOV SRL</div>
+          <div class="site-url">/aer-conditionat-brasov-devinstal-brasov-srl/</div>
+        </a>
+        <a href="/agenia-srbu-srl/" class="site-card">
+          <div class="site-name">Agenţia Sârbu S.R.L</div>
+          <div class="site-url">/agenia-srbu-srl/</div>
+        </a>
+        <a href="/ager-clean/" class="site-card">
+          <div class="site-name">Ager Clean</div>
+          <div class="site-url">/ager-clean/</div>
+        </a>
+        <a href="/akka-srl/" class="site-card">
+          <div class="site-name">AKKA S.R.L</div>
+          <div class="site-url">/akka-srl/</div>
+        </a>
+        <a href="/akydent/" class="site-card">
+          <div class="site-name">Akydent</div>
+          <div class="site-url">/akydent/</div>
+        </a>
+        <a href="/allure-medical-center/" class="site-card">
+          <div class="site-name">Allure Medical Center</div>
+          <div class="site-url">/allure-medical-center/</div>
+        </a>
+        <a href="/alpha-dent/" class="site-card">
+          <div class="site-name">Alpha Dent</div>
+          <div class="site-url">/alpha-dent/</div>
+        </a>
+        <a href="/alra-profesional-detailing/" class="site-card">
+          <div class="site-name">Alra Profesional Detailing</div>
+          <div class="site-url">/alra-profesional-detailing/</div>
+        </a>
+        <a href="/alt-garage-detailing/" class="site-card">
+          <div class="site-name">ALT GARAGE Detailing</div>
+          <div class="site-url">/alt-garage-detailing/</div>
+        </a>
+        <a href="/amenajari-interioare-decorative-finisari-si-zugraveli/" class="site-card">
+          <div class="site-name">Amenajari interioare decorative. Finisari si zugraveli</div>
+          <div class="site-url">/amenajari-interioare-decorative-finisari-si-zugraveli/</div>
+        </a>
+        <a href="/amenajari-interioare-construcii-pavaj-diadami-construct-srl/" class="site-card">
+          <div class="site-name">Amenajari interioare, construcții, pavaj, Diadami Construct SRL</div>
+          <div class="site-url">/amenajari-interioare-construcii-pavaj-diadami-construct-srl/</div>
+        </a>
+        <a href="/amenajri-interioare-galai-suprafee-mari-case-spaii-comerciale/" class="site-card">
+          <div class="site-name">Amenajări interioare Galați - Suprafețe mari - Case, spații comerciale</div>
+          <div class="site-url">/amenajri-interioare-galai-suprafee-mari-case-spaii-comerciale/</div>
+        </a>
+        <a href="/amzu-lelia-florentina/" class="site-card">
+          <div class="site-name">Amzu Lelia Florentina</div>
+          <div class="site-url">/amzu-lelia-florentina/</div>
+        </a>
+        <a href="/anao-ogard-srl/" class="site-card">
+          <div class="site-name">ANAO Şogard S.R.L</div>
+          <div class="site-url">/anao-ogard-srl/</div>
+        </a>
+        <a href="/animax-vet-brasov/" class="site-card">
+          <div class="site-name">Animax Vet Brasov</div>
+          <div class="site-url">/animax-vet-brasov/</div>
+        </a>
+        <a href="/any-clean-firma-de-curatenie-galati-servicii-curatenie-la-domiciliu-case-vile-ap/" class="site-card">
+          <div class="site-name">Any Clean - Firma de Curatenie Galati. Servicii Curatenie la Domiciliu, Case, Vile, Apartamente Gala</div>
+          <div class="site-url">/any-clean-firma-de-curatenie-galati-servicii-curatenie-la-domiciliu-case-vile-ap/</div>
+        </a>
+        <a href="/apollo-design/" class="site-card">
+          <div class="site-name">apollo DESIGN</div>
+          <div class="site-url">/apollo-design/</div>
+        </a>
+        <a href="/aqppmcar-detailing/" class="site-card">
+          <div class="site-name">AqppmCar Detailing</div>
+          <div class="site-url">/aqppmcar-detailing/</div>
+        </a>
+        <a href="/arb-constructii/" class="site-card">
+          <div class="site-name">Arb constructii</div>
+          <div class="site-url">/arb-constructii/</div>
+        </a>
+        <a href="/arcada/" class="site-card">
+          <div class="site-name">Arcada</div>
+          <div class="site-url">/arcada/</div>
+        </a>
+        <a href="/archidec-design-tik-tok/" class="site-card">
+          <div class="site-name">ARCHIDEC DESIGN TIK TOK</div>
+          <div class="site-url">/archidec-design-tik-tok/</div>
+        </a>
+        <a href="/arhihabit/" class="site-card">
+          <div class="site-name">ARHIHABIT</div>
+          <div class="site-url">/arhihabit/</div>
+        </a>
+        <a href="/arhimobili/" class="site-card">
+          <div class="site-name">Arhimobili</div>
+          <div class="site-url">/arhimobili/</div>
+        </a>
+        <a href="/arhiplan/" class="site-card">
+          <div class="site-name">arhiPLAN</div>
+          <div class="site-url">/arhiplan/</div>
+        </a>
+        <a href="/arhitect-anghel-srl/" class="site-card">
+          <div class="site-name">Arhitect Anghel SRL</div>
+          <div class="site-url">/arhitect-anghel-srl/</div>
+        </a>
+        <a href="/arhitect-braov-atelier-brbt-arhitectur/" class="site-card">
+          <div class="site-name">Arhitect Brașov - Atelier BRBT Arhitectură</div>
+          <div class="site-url">/arhitect-braov-atelier-brbt-arhitectur/</div>
+        </a>
+        <a href="/arhitect-ctlina-chiculi/" class="site-card">
+          <div class="site-name">Arhitect Cătălina Chiculiţă</div>
+          <div class="site-url">/arhitect-ctlina-chiculi/</div>
+        </a>
+        <a href="/arhitect-durbac-srl/" class="site-card">
+          <div class="site-name">Arhitect Durbacă S.R.L</div>
+          <div class="site-url">/arhitect-durbac-srl/</div>
+        </a>
+        <a href="/arhitect-peisagist-brasov/" class="site-card">
+          <div class="site-name">Arhitect Peisagist Brasov</div>
+          <div class="site-url">/arhitect-peisagist-brasov/</div>
+        </a>
+        <a href="/arhitect-saptelei-alexandra-diana/" class="site-card">
+          <div class="site-name">Arhitect Saptelei Alexandra-Diana</div>
+          <div class="site-url">/arhitect-saptelei-alexandra-diana/</div>
+        </a>
+        <a href="/arhitect-sebastian-preda/" class="site-card">
+          <div class="site-name">ARHITECT SEBASTIAN PREDA</div>
+          <div class="site-url">/arhitect-sebastian-preda/</div>
+        </a>
+        <a href="/arhitect-vg-timisoara/" class="site-card">
+          <div class="site-name">ARHITECT V.G. TIMISOARA</div>
+          <div class="site-url">/arhitect-vg-timisoara/</div>
+        </a>
+        <a href="/aria-architects/" class="site-card">
+          <div class="site-name">ARIA Architects</div>
+          <div class="site-url">/aria-architects/</div>
+        </a>
+        <a href="/artmand-polishdetailing/" class="site-card">
+          <div class="site-name">ArtMand Polish&amp;Detailing</div>
+          <div class="site-url">/artmand-polishdetailing/</div>
+        </a>
+        <a href="/as-proiect/" class="site-card">
+          <div class="site-name">AS PROIECT</div>
+          <div class="site-url">/as-proiect/</div>
+        </a>
+        <a href="/astec-srl/" class="site-card">
+          <div class="site-name">ASTEC S.R.L</div>
+          <div class="site-url">/astec-srl/</div>
+        </a>
+        <a href="/atelier-electric-auto-basoc/" class="site-card">
+          <div class="site-name">Atelier Electric Auto Basoc</div>
+          <div class="site-url">/atelier-electric-auto-basoc/</div>
+        </a>
+        <a href="/atelier-mecanic/" class="site-card">
+          <div class="site-name">Atelier Mecanic</div>
+          <div class="site-url">/atelier-mecanic/</div>
+        </a>
+        <a href="/augustin-constructii-iasi/" class="site-card">
+          <div class="site-name">Augustin Constructii Iasi</div>
+          <div class="site-url">/augustin-constructii-iasi/</div>
+        </a>
+        <a href="/augustin-detailing/" class="site-card">
+          <div class="site-name">Augustin Detailing</div>
+          <div class="site-url">/augustin-detailing/</div>
+        </a>
+        <a href="/auto-detailing-iasi/" class="site-card">
+          <div class="site-name">Auto Detailing Iasi</div>
+          <div class="site-url">/auto-detailing-iasi/</div>
+        </a>
+        <a href="/auto-gp-pro-service/" class="site-card">
+          <div class="site-name">Auto G.P. Pro-Service</div>
+          <div class="site-url">/auto-gp-pro-service/</div>
+        </a>
+        <a href="/auto-hub-detailing/" class="site-card">
+          <div class="site-name">Auto Hub Detailing</div>
+          <div class="site-url">/auto-hub-detailing/</div>
+        </a>
+        <a href="/auto-premio-mag-piese-auto/" class="site-card">
+          <div class="site-name">Auto Premio Mag Piese Auto</div>
+          <div class="site-url">/auto-premio-mag-piese-auto/</div>
+        </a>
+        <a href="/auto-tester-timisoara/" class="site-card">
+          <div class="site-name">Auto Tester Timisoara</div>
+          <div class="site-url">/auto-tester-timisoara/</div>
+        </a>
+        <a href="/auto-videotel-vulcanizare-service-auto/" class="site-card">
+          <div class="site-name">Auto Videotel - Vulcanizare - Service auto</div>
+          <div class="site-url">/auto-videotel-vulcanizare-service-auto/</div>
+        </a>
+        <a href="/autoalci/" class="site-card">
+          <div class="site-name">Autoalci</div>
+          <div class="site-url">/autoalci/</div>
+        </a>
+        <a href="/autoem-service/" class="site-card">
+          <div class="site-name">AutoEm Service</div>
+          <div class="site-url">/autoem-service/</div>
+        </a>
+        <a href="/autokey-service-auto/" class="site-card">
+          <div class="site-name">AUTOKEY SERVICE AUTO</div>
+          <div class="site-url">/autokey-service-auto/</div>
+        </a>
+        <a href="/automecanica-scm-galai/" class="site-card">
+          <div class="site-name">Automecanica S.C.M. Galaţi</div>
+          <div class="site-url">/automecanica-scm-galai/</div>
+        </a>
+        <a href="/autoplus-service-auto/" class="site-card">
+          <div class="site-name">Autoplus-Service auto</div>
+          <div class="site-url">/autoplus-service-auto/</div>
+        </a>
+        <a href="/autoteh-three-color/" class="site-card">
+          <div class="site-name">Autoteh Three Color</div>
+          <div class="site-url">/autoteh-three-color/</div>
+        </a>
+        <a href="/autovis-service-auto/" class="site-card">
+          <div class="site-name">AutoVis service auto</div>
+          <div class="site-url">/autovis-service-auto/</div>
+        </a>
+        <a href="/ava-custom/" class="site-card">
+          <div class="site-name">AVA Custom</div>
+          <div class="site-url">/ava-custom/</div>
+        </a>
+        <a href="/bacalu-mihai-puiu/" class="site-card">
+          <div class="site-name">Bacalu Mihai-Puiu</div>
+          <div class="site-url">/bacalu-mihai-puiu/</div>
+        </a>
+        <a href="/bandit-autorec-srl/" class="site-card">
+          <div class="site-name">BANDIT AUTOREC SRL</div>
+          <div class="site-url">/bandit-autorec-srl/</div>
+        </a>
+        <a href="/bauvas-prest-srl/" class="site-card">
+          <div class="site-name">Bauvas Prest S.R.L</div>
+          <div class="site-url">/bauvas-prest-srl/</div>
+        </a>
+        <a href="/bbn-motors/" class="site-card">
+          <div class="site-name">BBN Motors</div>
+          <div class="site-url">/bbn-motors/</div>
+        </a>
+        <a href="/bdp-detailing-dumbravita/" class="site-card">
+          <div class="site-name">BDP DETAILING DUMBRAVITA</div>
+          <div class="site-url">/bdp-detailing-dumbravita/</div>
+        </a>
+        <a href="/bebmar-services/" class="site-card">
+          <div class="site-name">Bebmar Services</div>
+          <div class="site-url">/bebmar-services/</div>
+        </a>
+        <a href="/best-clean-shoes/" class="site-card">
+          <div class="site-name">Best Clean Shoes</div>
+          <div class="site-url">/best-clean-shoes/</div>
+        </a>
+        <a href="/best-instal-srl/" class="site-card">
+          <div class="site-name">Best Instal SRL</div>
+          <div class="site-url">/best-instal-srl/</div>
+        </a>
+        <a href="/best-of-savin-auto-detailing/" class="site-card">
+          <div class="site-name">Best Of Savin Auto Detailing</div>
+          <div class="site-url">/best-of-savin-auto-detailing/</div>
+        </a>
+        <a href="/bia-art-auto-service/" class="site-card">
+          <div class="site-name">Bia Art Auto Service</div>
+          <div class="site-url">/bia-art-auto-service/</div>
+        </a>
+        <a href="/birou-de-arhitectura-popa-romeo/" class="site-card">
+          <div class="site-name">Birou de Arhitectura Popa Romeo</div>
+          <div class="site-url">/birou-de-arhitectura-popa-romeo/</div>
+        </a>
+        <a href="/birou-de-arhitectura-ru-laura-alina/" class="site-card">
+          <div class="site-name">Birou de arhitectura Rău Laura Alina</div>
+          <div class="site-url">/birou-de-arhitectura-ru-laura-alina/</div>
+        </a>
+        <a href="/birou-notarial-ianoi-minodora/" class="site-card">
+          <div class="site-name">Birou Notarial Ianoși Minodora</div>
+          <div class="site-url">/birou-notarial-ianoi-minodora/</div>
+        </a>
+        <a href="/bi-impex-srl/" class="site-card">
+          <div class="site-name">Biţă Impex S.R.L</div>
+          <div class="site-url">/bi-impex-srl/</div>
+        </a>
+        <a href="/brocaco-srl/" class="site-card">
+          <div class="site-name">BROCA&amp;CO S.R.L</div>
+          <div class="site-url">/brocaco-srl/</div>
+        </a>
+        <a href="/bsb-ac-auto-service-galati/" class="site-card">
+          <div class="site-name">BSB AC AUTO SERVICE GALATI</div>
+          <div class="site-url">/bsb-ac-auto-service-galati/</div>
+        </a>
+        <a href="/bucon-invest/" class="site-card">
+          <div class="site-name">Bucon Invest</div>
+          <div class="site-url">/bucon-invest/</div>
+        </a>
+        <a href="/bupte-detailing-auto-timisoara/" class="site-card">
+          <div class="site-name">Bupte Detailing Auto Timisoara</div>
+          <div class="site-url">/bupte-detailing-auto-timisoara/</div>
+        </a>
+        <a href="/byb-car-service-galati/" class="site-card">
+          <div class="site-name">BYB CAR SERVICE GALATI</div>
+          <div class="site-url">/byb-car-service-galati/</div>
+        </a>
+        <a href="/cmi-stomatologic-dr-panfile-neculai/" class="site-card">
+          <div class="site-name">C.M.I. Stomatologic Dr. Panfile Neculai</div>
+          <div class="site-url">/cmi-stomatologic-dr-panfile-neculai/</div>
+        </a>
+        <a href="/cabinet-doctor-eduard-simon/" class="site-card">
+          <div class="site-name">Cabinet Doctor Eduard Simon</div>
+          <div class="site-url">/cabinet-doctor-eduard-simon/</div>
+        </a>
+        <a href="/cabinet-doctor-marie-codrua-ioana-coral-dent/" class="site-card">
+          <div class="site-name">Cabinet Doctor Marieş Codruţa Ioana _ Coral Dent</div>
+          <div class="site-url">/cabinet-doctor-marie-codrua-ioana-coral-dent/</div>
+        </a>
+        <a href="/cabinet-medical-dr-muncan-jugoslava/" class="site-card">
+          <div class="site-name">Cabinet medical Dr. Muncan Jugoslava</div>
+          <div class="site-url">/cabinet-medical-dr-muncan-jugoslava/</div>
+        </a>
+        <a href="/cabinet-medical-veterinar-drdan-georgescu/" class="site-card">
+          <div class="site-name">Cabinet medical veterinar dr.Dan Georgescu</div>
+          <div class="site-url">/cabinet-medical-veterinar-drdan-georgescu/</div>
+        </a>
+        <a href="/cabinet-medicina-veterinara-da-dinamyc-vet-help/" class="site-card">
+          <div class="site-name">CABINET MEDICINA VETERINARA (D&amp;A) DINAMYC VET HELP</div>
+          <div class="site-url">/cabinet-medicina-veterinara-da-dinamyc-vet-help/</div>
+        </a>
+        <a href="/cabinet-stomatologic-dr-ion-vrtosu/" class="site-card">
+          <div class="site-name">Cabinet Stomatologic Dr. Ion Vârtosu</div>
+          <div class="site-url">/cabinet-stomatologic-dr-ion-vrtosu/</div>
+        </a>
+        <a href="/cabinet-stomatologic-dr-toman/" class="site-card">
+          <div class="site-name">Cabinet Stomatologic Dr. Toman</div>
+          <div class="site-url">/cabinet-stomatologic-dr-toman/</div>
+        </a>
+        <a href="/cabinet-stomatologic-miadent/" class="site-card">
+          <div class="site-name">Cabinet Stomatologic Miadent</div>
+          <div class="site-url">/cabinet-stomatologic-miadent/</div>
+        </a>
+        <a href="/cabinet-veterinar-happyvets-clinique/" class="site-card">
+          <div class="site-name">Cabinet Veterinar - HappyVets Clinique</div>
+          <div class="site-url">/cabinet-veterinar-happyvets-clinique/</div>
+        </a>
+        <a href="/cabinet-veterinar-betovetsacele/" class="site-card">
+          <div class="site-name">Cabinet Veterinar Betovetsacele</div>
+          <div class="site-url">/cabinet-veterinar-betovetsacele/</div>
+        </a>
+        <a href="/cabinet-veterinar-dr-thomas-keller/" class="site-card">
+          <div class="site-name">Cabinet Veterinar Dr Thomas Keller</div>
+          <div class="site-url">/cabinet-veterinar-dr-thomas-keller/</div>
+        </a>
+        <a href="/cabinet-veterinar-friendly-vet-dr-maniu-vlad/" class="site-card">
+          <div class="site-name">Cabinet veterinar Friendly Vet Dr. Maniu Vlad</div>
+          <div class="site-url">/cabinet-veterinar-friendly-vet-dr-maniu-vlad/</div>
+        </a>
+        <a href="/cabinet-veterinar-help-vet/" class="site-card">
+          <div class="site-name">Cabinet Veterinar Help Vet+</div>
+          <div class="site-url">/cabinet-veterinar-help-vet/</div>
+        </a>
+        <a href="/cabinet-veterinar-petvet-medical/" class="site-card">
+          <div class="site-name">Cabinet Veterinar PetVet Medical</div>
+          <div class="site-url">/cabinet-veterinar-petvet-medical/</div>
+        </a>
+        <a href="/cabinete-stomatologice-tiglina/" class="site-card">
+          <div class="site-name">Cabinete Stomatologice Tiglina</div>
+          <div class="site-url">/cabinete-stomatologice-tiglina/</div>
+        </a>
+        <a href="/cadastru-iasi-grup-cinci/" class="site-card">
+          <div class="site-name">Cadastru Iasi - Grup Cinci</div>
+          <div class="site-url">/cadastru-iasi-grup-cinci/</div>
+        </a>
+        <a href="/camdav-pneus/" class="site-card">
+          <div class="site-name">Camdav PNEUS</div>
+          <div class="site-url">/camdav-pneus/</div>
+        </a>
+        <a href="/canifel-vet-srl/" class="site-card">
+          <div class="site-name">Canifel-Vet S.R.L</div>
+          <div class="site-url">/canifel-vet-srl/</div>
+        </a>
+        <a href="/canina-vet-srl/" class="site-card">
+          <div class="site-name">Canina Vet S.R.L</div>
+          <div class="site-url">/canina-vet-srl/</div>
+        </a>
+        <a href="/capricorn-car-care/" class="site-card">
+          <div class="site-name">Capricorn Car Care</div>
+          <div class="site-url">/capricorn-car-care/</div>
+        </a>
+        <a href="/casa-funerar-octavian/" class="site-card">
+          <div class="site-name">Casa Funerară Octavian</div>
+          <div class="site-url">/casa-funerar-octavian/</div>
+        </a>
+        <a href="/case-la-cheie-iasi/" class="site-card">
+          <div class="site-name">Case La Cheie Iasi</div>
+          <div class="site-url">/case-la-cheie-iasi/</div>
+        </a>
+        <a href="/case-pasive-izocamp/" class="site-card">
+          <div class="site-name">Case Pasive - Izocamp</div>
+          <div class="site-url">/case-pasive-izocamp/</div>
+        </a>
+        <a href="/castrol-service-iulizeni-service-auto/" class="site-card">
+          <div class="site-name">Castrol Service Iulizeni Service Auto</div>
+          <div class="site-url">/castrol-service-iulizeni-service-auto/</div>
+        </a>
+        <a href="/castrol-service-vibro-auto/" class="site-card">
+          <div class="site-name">Castrol Service Vibro Auto</div>
+          <div class="site-url">/castrol-service-vibro-auto/</div>
+        </a>
+        <a href="/catavio-prest-srl/" class="site-card">
+          <div class="site-name">Catavio Prest S.R.L</div>
+          <div class="site-url">/catavio-prest-srl/</div>
+        </a>
+        <a href="/centrale-termice/" class="site-card">
+          <div class="site-name">Centrale Termice</div>
+          <div class="site-url">/centrale-termice/</div>
+        </a>
+        <a href="/centralterm-comercial-srl/" class="site-card">
+          <div class="site-name">Centralterm Comercial S.R.L</div>
+          <div class="site-url">/centralterm-comercial-srl/</div>
+        </a>
+        <a href="/centrul-medical-dr-zaharia/" class="site-card">
+          <div class="site-name">Centrul Medical Dr. Zaharia</div>
+          <div class="site-url">/centrul-medical-dr-zaharia/</div>
+        </a>
+        <a href="/chiculia-marioara-catalina/" class="site-card">
+          <div class="site-name">Chiculiţa Marioara Catalina</div>
+          <div class="site-url">/chiculia-marioara-catalina/</div>
+        </a>
+        <a href="/chiptuningdiagnoza-si-reparatii-electrice/" class="site-card">
+          <div class="site-name">Chiptuning,Diagnoza si reparatii electrice</div>
+          <div class="site-url">/chiptuningdiagnoza-si-reparatii-electrice/</div>
+        </a>
+        <a href="/chirurgie-plastica-estetic-iai/" class="site-card">
+          <div class="site-name">Chirurgie Plastica Estetică Iaşi</div>
+          <div class="site-url">/chirurgie-plastica-estetic-iai/</div>
+        </a>
+        <a href="/cia-birou-de-proiectare/" class="site-card">
+          <div class="site-name">CIA Birou de Proiectare</div>
+          <div class="site-url">/cia-birou-de-proiectare/</div>
+        </a>
+        <a href="/ciauu-gheorghe-birou-individual-de-arhitectur/" class="site-card">
+          <div class="site-name">Ciauşu Gheorghe, Birou Individual De Arhitectură</div>
+          <div class="site-url">/ciauu-gheorghe-birou-individual-de-arhitectur/</div>
+        </a>
+        <a href="/cic-garage-auto-detailing/" class="site-card">
+          <div class="site-name">Cic Garage Auto Detailing</div>
+          <div class="site-url">/cic-garage-auto-detailing/</div>
+        </a>
+        <a href="/cirrus-studio/" class="site-card">
+          <div class="site-name">Cirrus Studio</div>
+          <div class="site-url">/cirrus-studio/</div>
+        </a>
+        <a href="/clean-floana-srl/" class="site-card">
+          <div class="site-name">CLEAN FLO&amp;ANA S.R.L</div>
+          <div class="site-url">/clean-floana-srl/</div>
+        </a>
+        <a href="/clean-panda/" class="site-card">
+          <div class="site-name">Clean Panda</div>
+          <div class="site-url">/clean-panda/</div>
+        </a>
+        <a href="/cleancar-concept-detailing-auto/" class="site-card">
+          <div class="site-name">CleanCar Concept Detailing Auto</div>
+          <div class="site-url">/cleancar-concept-detailing-auto/</div>
+        </a>
+        <a href="/cleopatra-art/" class="site-card">
+          <div class="site-name">CLEOPATRA ART</div>
+          <div class="site-url">/cleopatra-art/</div>
+        </a>
+        <a href="/clinica-adadent/" class="site-card">
+          <div class="site-name">Clinica AdaDent</div>
+          <div class="site-url">/clinica-adadent/</div>
+        </a>
+        <a href="/clinica-dentar-dr-morra/" class="site-card">
+          <div class="site-name">Clinica Dentară Dr. MORRA</div>
+          <div class="site-url">/clinica-dentar-dr-morra/</div>
+        </a>
+        <a href="/clinica-esdent/" class="site-card">
+          <div class="site-name">CLINICA ESDENT</div>
+          <div class="site-url">/clinica-esdent/</div>
+        </a>
+        <a href="/clinica-stomatologica-family-dent-dr-balaban/" class="site-card">
+          <div class="site-name">Clinica Stomatologica Family Dent - Dr. Balaban</div>
+          <div class="site-url">/clinica-stomatologica-family-dent-dr-balaban/</div>
+        </a>
+        <a href="/clinica-stomatologica-rodent-s-r-l/" class="site-card">
+          <div class="site-name">Clinica Stomatologica Rodent S. R. L</div>
+          <div class="site-url">/clinica-stomatologica-rodent-s-r-l/</div>
+        </a>
+        <a href="/clinic-dentar-medic-specialist-stomatologie-general-clinescu-gianina/" class="site-card">
+          <div class="site-name">Clinică Dentară - Medic Specialist Stomatologie Generală Călinescu Gianina</div>
+          <div class="site-url">/clinic-dentar-medic-specialist-stomatologie-general-clinescu-gianina/</div>
+        </a>
+        <a href="/clinisan-esedent-dr-isabela-lorelei-necula/" class="site-card">
+          <div class="site-name">Clinisan Esedent - Dr. Isabela Lorelei Necula</div>
+          <div class="site-url">/clinisan-esedent-dr-isabela-lorelei-necula/</div>
+        </a>
+        <a href="/cmi-stomatolog-doctor-nistorencu-madalina-anca/" class="site-card">
+          <div class="site-name">CMI- Stomatolog Doctor Nistorencu Madalina-Anca</div>
+          <div class="site-url">/cmi-stomatolog-doctor-nistorencu-madalina-anca/</div>
+        </a>
+        <a href="/cmo-auto/" class="site-card">
+          <div class="site-name">CMO Auto</div>
+          <div class="site-url">/cmo-auto/</div>
+        </a>
+        <a href="/compania-de-construcii-ro-ro/" class="site-card">
+          <div class="site-name">Compania De Construcţii Ro-Ro</div>
+          <div class="site-url">/compania-de-construcii-ro-ro/</div>
+        </a>
+        <a href="/con-sam-pro/" class="site-card">
+          <div class="site-name">Con-Sam-Pro</div>
+          <div class="site-url">/con-sam-pro/</div>
+        </a>
+        <a href="/concept-blue/" class="site-card">
+          <div class="site-name">Concept Blue</div>
+          <div class="site-url">/concept-blue/</div>
+        </a>
+        <a href="/cons-alpin-best/" class="site-card">
+          <div class="site-name">Cons Alpin Best</div>
+          <div class="site-url">/cons-alpin-best/</div>
+        </a>
+        <a href="/constill/" class="site-card">
+          <div class="site-name">Constill</div>
+          <div class="site-url">/constill/</div>
+        </a>
+        <a href="/construct-miva-srl/" class="site-card">
+          <div class="site-name">Construct Miva S.R.L</div>
+          <div class="site-url">/construct-miva-srl/</div>
+        </a>
+        <a href="/construct-solar-europe/" class="site-card">
+          <div class="site-name">Construct Solar Europe</div>
+          <div class="site-url">/construct-solar-europe/</div>
+        </a>
+        <a href="/constructii-interioare/" class="site-card">
+          <div class="site-name">Constructii interioare</div>
+          <div class="site-url">/constructii-interioare/</div>
+        </a>
+        <a href="/construcii-case-iasi/" class="site-card">
+          <div class="site-name">Construcții case iasi</div>
+          <div class="site-url">/construcii-case-iasi/</div>
+        </a>
+        <a href="/construcii-case-i-amenajari/" class="site-card">
+          <div class="site-name">Construcții Case și Amenajari</div>
+          <div class="site-url">/construcii-case-i-amenajari/</div>
+        </a>
+        <a href="/cosmetizari-volane/" class="site-card">
+          <div class="site-name">Cosmetizari Volane</div>
+          <div class="site-url">/cosmetizari-volane/</div>
+        </a>
+        <a href="/cota-zero-srl/" class="site-card">
+          <div class="site-name">Cota Zero S.R.L</div>
+          <div class="site-url">/cota-zero-srl/</div>
+        </a>
+        <a href="/cr-cleaning-services/" class="site-card">
+          <div class="site-name">CR CLEANING SERVICES</div>
+          <div class="site-url">/cr-cleaning-services/</div>
+        </a>
+        <a href="/crisdetailingauto-detailing-galati/" class="site-card">
+          <div class="site-name">CrisDetailingAuto detailing galati</div>
+          <div class="site-url">/crisdetailingauto-detailing-galati/</div>
+        </a>
+        <a href="/cristal-service-auto-galati/" class="site-card">
+          <div class="site-name">Cristal Service Auto Galati</div>
+          <div class="site-url">/cristal-service-auto-galati/</div>
+        </a>
+        <a href="/curat-plus-detailing/" class="site-card">
+          <div class="site-name">Curat Plus Detailing</div>
+          <div class="site-url">/curat-plus-detailing/</div>
+        </a>
+        <a href="/curatare-pavajefatade-de-case-brasov/" class="site-card">
+          <div class="site-name">Curatare pavaje,fatade de case Brasov</div>
+          <div class="site-url">/curatare-pavajefatade-de-case-brasov/</div>
+        </a>
+        <a href="/curatatoriedetailing-auto/" class="site-card">
+          <div class="site-name">Curatatorie_Detailing Auto</div>
+          <div class="site-url">/curatatoriedetailing-auto/</div>
+        </a>
+        <a href="/curatenie-brasov/" class="site-card">
+          <div class="site-name">Curatenie Brasov</div>
+          <div class="site-url">/curatenie-brasov/</div>
+        </a>
+        <a href="/curatenie-in-asociatii-de-locatari-timisoara/" class="site-card">
+          <div class="site-name">Curatenie in Asociatii de locatari Timisoara</div>
+          <div class="site-url">/curatenie-in-asociatii-de-locatari-timisoara/</div>
+        </a>
+        <a href="/curatenie-in-brasov/" class="site-card">
+          <div class="site-name">Curatenie in Brasov</div>
+          <div class="site-url">/curatenie-in-brasov/</div>
+        </a>
+        <a href="/curatenie-timisoara-cdcs-team-servicii-de-curatenie-timisoara/" class="site-card">
+          <div class="site-name">CURATENIE TIMISOARA __ CD&amp;CS Team Servicii de Curatenie Timisoara</div>
+          <div class="site-url">/curatenie-timisoara-cdcs-team-servicii-de-curatenie-timisoara/</div>
+        </a>
+        <a href="/d2-echo-design/" class="site-card">
+          <div class="site-name">D2 Echo Design</div>
+          <div class="site-url">/d2-echo-design/</div>
+        </a>
+        <a href="/danmar-srl/" class="site-card">
+          <div class="site-name">Danmar S.R.L</div>
+          <div class="site-url">/danmar-srl/</div>
+        </a>
+        <a href="/dbc-garage/" class="site-card">
+          <div class="site-name">DBC Garage</div>
+          <div class="site-url">/dbc-garage/</div>
+        </a>
+        <a href="/dental-cabinet-danoodent/" class="site-card">
+          <div class="site-name">Dental Cabinet DanooDent</div>
+          <div class="site-url">/dental-cabinet-danoodent/</div>
+        </a>
+        <a href="/dental-estetica/" class="site-card">
+          <div class="site-name">Dental Estetica</div>
+          <div class="site-url">/dental-estetica/</div>
+        </a>
+        <a href="/dental-klass-03/" class="site-card">
+          <div class="site-name">Dental Klass 03</div>
+          <div class="site-url">/dental-klass-03/</div>
+        </a>
+        <a href="/dental-office-dr-casapu-anda-dental-opera-clinic/" class="site-card">
+          <div class="site-name">Dental Office Dr. Casapu Anda (Dental Opera Clinic)</div>
+          <div class="site-url">/dental-office-dr-casapu-anda-dental-opera-clinic/</div>
+        </a>
+        <a href="/dental-office-eiffel-praxis/" class="site-card">
+          <div class="site-name">Dental Office EIFFEL PRAXIS</div>
+          <div class="site-url">/dental-office-eiffel-praxis/</div>
+        </a>
+        <a href="/dental-one-studio/" class="site-card">
+          <div class="site-name">Dental One Studio</div>
+          <div class="site-url">/dental-one-studio/</div>
+        </a>
+        <a href="/dental-srl/" class="site-card">
+          <div class="site-name">Dental S.R.L</div>
+          <div class="site-url">/dental-srl/</div>
+        </a>
+        <a href="/dentis-cabinet-stomatologic-dr-barlescu-denisa/" class="site-card">
+          <div class="site-name">Dentis Cabinet Stomatologic Dr. Barlescu Denisa</div>
+          <div class="site-url">/dentis-cabinet-stomatologic-dr-barlescu-denisa/</div>
+        </a>
+        <a href="/dentist-dr-fulga-vitalie/" class="site-card">
+          <div class="site-name">Dentist Dr. Fulga Vitalie</div>
+          <div class="site-url">/dentist-dr-fulga-vitalie/</div>
+        </a>
+        <a href="/dentists-society/" class="site-card">
+          <div class="site-name">dentists society</div>
+          <div class="site-url">/dentists-society/</div>
+        </a>
+        <a href="/dentomania/" class="site-card">
+          <div class="site-name">Dentomania</div>
+          <div class="site-url">/dentomania/</div>
+        </a>
+        <a href="/deqo-woodart-amenajari-interioare-si-renovari-brasov/" class="site-card">
+          <div class="site-name">Deqo WoodArt _ Amenajari Interioare si Renovari Brasov</div>
+          <div class="site-url">/deqo-woodart-amenajari-interioare-si-renovari-brasov/</div>
+        </a>
+        <a href="/dermatique/" class="site-card">
+          <div class="site-name">Dermatique</div>
+          <div class="site-url">/dermatique/</div>
+        </a>
+        <a href="/design-artisans/" class="site-card">
+          <div class="site-name">Design Artisans</div>
+          <div class="site-url">/design-artisans/</div>
+        </a>
+        <a href="/detail-mode-iasi/" class="site-card">
+          <div class="site-name">Detail Mode Iasi</div>
+          <div class="site-url">/detail-mode-iasi/</div>
+        </a>
+        <a href="/detailing/" class="site-card">
+          <div class="site-name">Detailing</div>
+          <div class="site-url">/detailing/</div>
+        </a>
+        <a href="/detailing-auto-curatare-tapiterii/" class="site-card">
+          <div class="site-name">DETAILING AUTO CURATARE TAPITERII</div>
+          <div class="site-url">/detailing-auto-curatare-tapiterii/</div>
+        </a>
+        <a href="/detailing-auto-cosmetica-auto-galati-polish-auto-polish-faruri-galati-curatare-t/" class="site-card">
+          <div class="site-name">Detailing Auto, Cosmetica Auto Galati. Polish Auto, Polish Faruri Galati. Curatare Tapiterie Auto, P</div>
+          <div class="site-url">/detailing-auto-cosmetica-auto-galati-polish-auto-polish-faruri-galati-curatare-t/</div>
+        </a>
+        <a href="/detailing-by-nnn/" class="site-card">
+          <div class="site-name">Detailing by NNN</div>
+          <div class="site-url">/detailing-by-nnn/</div>
+        </a>
+        <a href="/diagnoza-auto-sergiu-timioara/" class="site-card">
+          <div class="site-name">Diagnoza Auto Sergiu Timișoara</div>
+          <div class="site-url">/diagnoza-auto-sergiu-timioara/</div>
+        </a>
+        <a href="/dimitriu-valentina/" class="site-card">
+          <div class="site-name">Dimitriu Valentina</div>
+          <div class="site-url">/dimitriu-valentina/</div>
+        </a>
+        <a href="/dinadent/" class="site-card">
+          <div class="site-name">DinaDent</div>
+          <div class="site-url">/dinadent/</div>
+        </a>
+        <a href="/direcia-sanitar-veterinar-i-pt-sigurana-alimentelor-gl/" class="site-card">
+          <div class="site-name">Direcţia Sanitar Veterinară Şi PT. Siguranţa Alimentelor GL</div>
+          <div class="site-url">/direcia-sanitar-veterinar-i-pt-sigurana-alimentelor-gl/</div>
+        </a>
+        <a href="/doctor-dorneanu-george/" class="site-card">
+          <div class="site-name">Doctor Dorneanu George</div>
+          <div class="site-url">/doctor-dorneanu-george/</div>
+        </a>
+        <a href="/dodo-instal-art/" class="site-card">
+          <div class="site-name">Dodo Instal Art</div>
+          <div class="site-url">/dodo-instal-art/</div>
+        </a>
+        <a href="/dom-fm-srl/" class="site-card">
+          <div class="site-name">DOM FM SRL</div>
+          <div class="site-url">/dom-fm-srl/</div>
+        </a>
+        <a href="/dontolife-coman-claudia/" class="site-card">
+          <div class="site-name">Dontolife - Coman Claudia</div>
+          <div class="site-url">/dontolife-coman-claudia/</div>
+        </a>
+        <a href="/dr-amina-shammat-chirurgie-plastica-chirurgia-mainii/" class="site-card">
+          <div class="site-name">Dr. Amina Shammat Chirurgie Plastica, Chirurgia Mainii</div>
+          <div class="site-url">/dr-amina-shammat-chirurgie-plastica-chirurgia-mainii/</div>
+        </a>
+        <a href="/dr-andy-leibovici/" class="site-card">
+          <div class="site-name">Dr. Andy Leibovici</div>
+          <div class="site-url">/dr-andy-leibovici/</div>
+        </a>
+        <a href="/dr-breahndent/" class="site-card">
+          <div class="site-name">Dr. BreahnăDent</div>
+          <div class="site-url">/dr-breahndent/</div>
+        </a>
+        <a href="/dr-radu-daniela/" class="site-card">
+          <div class="site-name">Dr. RADU DANIELA</div>
+          <div class="site-url">/dr-radu-daniela/</div>
+        </a>
+        <a href="/dr-rotaru-oleg/" class="site-card">
+          <div class="site-name">Dr. Rotaru Oleg</div>
+          <div class="site-url">/dr-rotaru-oleg/</div>
+        </a>
+        <a href="/drcatalin-ionita-dental-clinic/" class="site-card">
+          <div class="site-name">Dr.Catalin Ionita DENTAL CLINIC</div>
+          <div class="site-url">/drcatalin-ionita-dental-clinic/</div>
+        </a>
+        <a href="/dream-smile/" class="site-card">
+          <div class="site-name">Dream Smile</div>
+          <div class="site-url">/dream-smile/</div>
+        </a>
+        <a href="/dricu-gabriela/" class="site-card">
+          <div class="site-name">Drişcu Gabriela</div>
+          <div class="site-url">/dricu-gabriela/</div>
+        </a>
+        <a href="/ds-tuning-detailing/" class="site-card">
+          <div class="site-name">DS TUNING DETAILING</div>
+          <div class="site-url">/ds-tuning-detailing/</div>
+        </a>
+        <a href="/dt-studio-arhitect-design/" class="site-card">
+          <div class="site-name">DT Studio - ARHITECT &amp; DESIGN</div>
+          <div class="site-url">/dt-studio-arhitect-design/</div>
+        </a>
+        <a href="/dubai-design/" class="site-card">
+          <div class="site-name">Dubai Design</div>
+          <div class="site-url">/dubai-design/</div>
+        </a>
+        <a href="/duplecs/" class="site-card">
+          <div class="site-name">DUPLECS</div>
+          <div class="site-url">/duplecs/</div>
+        </a>
+        <a href="/dyo-detailing-auto-iai/" class="site-card">
+          <div class="site-name">Dyo Detailing Auto Iași</div>
+          <div class="site-url">/dyo-detailing-auto-iai/</div>
+        </a>
+        <a href="/ecoloptim/" class="site-card">
+          <div class="site-name">ECOLOPTIM</div>
+          <div class="site-url">/ecoloptim/</div>
+        </a>
+        <a href="/edenta-clinic/" class="site-card">
+          <div class="site-name">EDENTA Clinic</div>
+          <div class="site-url">/edenta-clinic/</div>
+        </a>
+        <a href="/electrician-autorizat-anre/" class="site-card">
+          <div class="site-name">Electrician autorizat ANRE</div>
+          <div class="site-url">/electrician-autorizat-anre/</div>
+        </a>
+        <a href="/electron-instalatii-electrice/" class="site-card">
+          <div class="site-name">Electron - Instalatii electrice</div>
+          <div class="site-url">/electron-instalatii-electrice/</div>
+        </a>
+        <a href="/electronica-galati-ihtis/" class="site-card">
+          <div class="site-name">Electronica Galati - IHTIS</div>
+          <div class="site-url">/electronica-galati-ihtis/</div>
+        </a>
+        <a href="/electronix2014/" class="site-card">
+          <div class="site-name">Electronix2014</div>
+          <div class="site-url">/electronix2014/</div>
+        </a>
+        <a href="/elit-cleaning/" class="site-card">
+          <div class="site-name">Elit Cleaning</div>
+          <div class="site-url">/elit-cleaning/</div>
+        </a>
+        <a href="/elite-clinique/" class="site-card">
+          <div class="site-name">Elite Clinique</div>
+          <div class="site-url">/elite-clinique/</div>
+        </a>
+        <a href="/elmas-pagad-electrical-supply/" class="site-card">
+          <div class="site-name">ELMAS-PAGAD Electrical Supply</div>
+          <div class="site-url">/elmas-pagad-electrical-supply/</div>
+        </a>
+        <a href="/emergency-junior-vets-srl/" class="site-card">
+          <div class="site-name">EMERGENCY JUNIOR VETS SRL</div>
+          <div class="site-url">/emergency-junior-vets-srl/</div>
+        </a>
+        <a href="/entadesign/" class="site-card">
+          <div class="site-name">Entadesign</div>
+          <div class="site-url">/entadesign/</div>
+        </a>
+        <a href="/entuzi-enthusiastic-design/" class="site-card">
+          <div class="site-name">Entuzi _ Enthusiastic Design</div>
+          <div class="site-url">/entuzi-enthusiastic-design/</div>
+        </a>
+        <a href="/estet-denta-plus-srl/" class="site-card">
+          <div class="site-name">Estet Denta Plus S.R.L</div>
+          <div class="site-url">/estet-denta-plus-srl/</div>
+        </a>
+        <a href="/esthetic-side-clinic/" class="site-card">
+          <div class="site-name">Esthetic Side Clinic</div>
+          <div class="site-url">/esthetic-side-clinic/</div>
+        </a>
+        <a href="/evacuri-tuning-car-galai-dnx/" class="site-card">
+          <div class="site-name">Evacuări Tuning Car Galați DNX</div>
+          <div class="site-url">/evacuri-tuning-car-galai-dnx/</div>
+        </a>
+        <a href="/event-arhitect/" class="site-card">
+          <div class="site-name">Event Arhitect</div>
+          <div class="site-url">/event-arhitect/</div>
+        </a>
+        <a href="/expres-construct-srl/" class="site-card">
+          <div class="site-name">Expres Construct S.R.L</div>
+          <div class="site-url">/expres-construct-srl/</div>
+        </a>
+        <a href="/farmacie-veterinara/" class="site-card">
+          <div class="site-name">Farmacie Veterinara</div>
+          <div class="site-url">/farmacie-veterinara/</div>
+        </a>
+        <a href="/farmacie-veterinara-ranvet/" class="site-card">
+          <div class="site-name">Farmacie Veterinara RanVet</div>
+          <div class="site-url">/farmacie-veterinara-ranvet/</div>
+        </a>
+        <a href="/farmadan-vet/" class="site-card">
+          <div class="site-name">Farmadan Vet</div>
+          <div class="site-url">/farmadan-vet/</div>
+        </a>
+        <a href="/fauna-topvet/" class="site-card">
+          <div class="site-name">Fauna Topvet</div>
+          <div class="site-url">/fauna-topvet/</div>
+        </a>
+        <a href="/fe-ro-zelei/" class="site-card">
+          <div class="site-name">FE-RO. ZELEI</div>
+          <div class="site-url">/fe-ro-zelei/</div>
+        </a>
+        <a href="/fereastra-eco/" class="site-card">
+          <div class="site-name">Fereastra ECO</div>
+          <div class="site-url">/fereastra-eco/</div>
+        </a>
+        <a href="/fig-depozit-materiale-de-constructii/" class="site-card">
+          <div class="site-name">FIG - DEPOZIT MATERIALE DE CONSTRUCTII</div>
+          <div class="site-url">/fig-depozit-materiale-de-constructii/</div>
+        </a>
+        <a href="/filiala-timis/" class="site-card">
+          <div class="site-name">Filiala Timis</div>
+          <div class="site-url">/filiala-timis/</div>
+        </a>
+        <a href="/finisaje-interioare-timisoara/" class="site-card">
+          <div class="site-name">Finisaje Interioare TImisoara</div>
+          <div class="site-url">/finisaje-interioare-timisoara/</div>
+        </a>
+        <a href="/firma-constructii-timisoara/" class="site-card">
+          <div class="site-name">Firma constructii Timisoara</div>
+          <div class="site-url">/firma-constructii-timisoara/</div>
+        </a>
+        <a href="/firma-curatenie-galati/" class="site-card">
+          <div class="site-name">FIRMA CURATENIE GALATI</div>
+          <div class="site-url">/firma-curatenie-galati/</div>
+        </a>
+        <a href="/firma-curatenie-timisoara/" class="site-card">
+          <div class="site-name">Firma Curatenie Timisoara</div>
+          <div class="site-url">/firma-curatenie-timisoara/</div>
+        </a>
+        <a href="/firma-de-construcii/" class="site-card">
+          <div class="site-name">Firma de construcții</div>
+          <div class="site-url">/firma-de-construcii/</div>
+        </a>
+        <a href="/firma-de-curatenie-brasov/" class="site-card">
+          <div class="site-name">Firma de curatenie Brasov</div>
+          <div class="site-url">/firma-de-curatenie-brasov/</div>
+        </a>
+        <a href="/firma-electricieni/" class="site-card">
+          <div class="site-name">Firma electricieni</div>
+          <div class="site-url">/firma-electricieni/</div>
+        </a>
+        <a href="/firme-construcii-kronwerk/" class="site-card">
+          <div class="site-name">Firme construcții-Kronwerk</div>
+          <div class="site-url">/firme-construcii-kronwerk/</div>
+        </a>
+        <a href="/firme-de-instalatii/" class="site-card">
+          <div class="site-name">Firme de Instalatii</div>
+          <div class="site-url">/firme-de-instalatii/</div>
+        </a>
+        <a href="/firm-de-constructi-galati-srl/" class="site-card">
+          <div class="site-name">Firmă de constructi galati S.R.L</div>
+          <div class="site-url">/firm-de-constructi-galati-srl/</div>
+        </a>
+        <a href="/folii-auto-glg-auto-design/" class="site-card">
+          <div class="site-name">Folii auto GLG Auto Design</div>
+          <div class="site-url">/folii-auto-glg-auto-design/</div>
+        </a>
+        <a href="/folii-auto-iasi-folii-omologate-rar-iasi-tunning-iasi-polish-auto-iasi-inscripti/" class="site-card">
+          <div class="site-name">Folii auto Iasi, folii omologate RAR Iasi, tunning Iasi, polish auto Iasi, inscriptionari auto Iasi</div>
+          <div class="site-url">/folii-auto-iasi-folii-omologate-rar-iasi-tunning-iasi-polish-auto-iasi-inscripti/</div>
+        </a>
+        <a href="/fresh-detailing/" class="site-card">
+          <div class="site-name">Fresh Detailing</div>
+          <div class="site-url">/fresh-detailing/</div>
+        </a>
+        <a href="/garajul-de-detailing/" class="site-card">
+          <div class="site-name">Garajul de Detailing</div>
+          <div class="site-url">/garajul-de-detailing/</div>
+        </a>
+        <a href="/gavrilu-alina-cmi/" class="site-card">
+          <div class="site-name">Gavriluţă Alina, C.M.I</div>
+          <div class="site-url">/gavrilu-alina-cmi/</div>
+        </a>
+        <a href="/gemini-design/" class="site-card">
+          <div class="site-name">Gemini Design</div>
+          <div class="site-url">/gemini-design/</div>
+        </a>
+        <a href="/geometrie-roti-3d-indreptat-jante-autovulcanizare-aditires/" class="site-card">
+          <div class="site-name">Geometrie roti 3D Indreptat jante autoVulcanizare Aditires</div>
+          <div class="site-url">/geometrie-roti-3d-indreptat-jante-autovulcanizare-aditires/</div>
+        </a>
+        <a href="/getimrom-instal/" class="site-card">
+          <div class="site-name">Getimrom Instal</div>
+          <div class="site-url">/getimrom-instal/</div>
+        </a>
+        <a href="/gizmo3dstudio/" class="site-card">
+          <div class="site-name">Gizmo3DStudio</div>
+          <div class="site-url">/gizmo3dstudio/</div>
+        </a>
+        <a href="/glamour-clinic/" class="site-card">
+          <div class="site-name">Glamour Clinic</div>
+          <div class="site-url">/glamour-clinic/</div>
+        </a>
+        <a href="/gleam-crafters/" class="site-card">
+          <div class="site-name">Gleam Crafters</div>
+          <div class="site-url">/gleam-crafters/</div>
+        </a>
+        <a href="/glow-skin-by-mihaela/" class="site-card">
+          <div class="site-name">Glow Skin by Mihaela</div>
+          <div class="site-url">/glow-skin-by-mihaela/</div>
+        </a>
+        <a href="/goag-nicolaie/" class="site-card">
+          <div class="site-name">Goagă Nicolaie</div>
+          <div class="site-url">/goag-nicolaie/</div>
+        </a>
+        <a href="/gold-detailing/" class="site-card">
+          <div class="site-name">Gold detailing</div>
+          <div class="site-url">/gold-detailing/</div>
+        </a>
+        <a href="/goodwyn-design-interior-iasi/" class="site-card">
+          <div class="site-name">Goodwyn Design Interior Iasi</div>
+          <div class="site-url">/goodwyn-design-interior-iasi/</div>
+        </a>
+        <a href="/gosman-detailing-auto-srl/" class="site-card">
+          <div class="site-name">Gosman Detailing Auto SRL</div>
+          <div class="site-url">/gosman-detailing-auto-srl/</div>
+        </a>
+        <a href="/grup-arcons/" class="site-card">
+          <div class="site-name">Grup Arcons</div>
+          <div class="site-url">/grup-arcons/</div>
+        </a>
+        <a href="/gta-auto-service/" class="site-card">
+          <div class="site-name">GTA Auto Service</div>
+          <div class="site-url">/gta-auto-service/</div>
+        </a>
+        <a href="/had/" class="site-card">
+          <div class="site-name">HaD</div>
+          <div class="site-url">/had/</div>
+        </a>
+        <a href="/ham-ham/" class="site-card">
+          <div class="site-name">Ham Ham</div>
+          <div class="site-url">/ham-ham/</div>
+        </a>
+        <a href="/happy-corner-pet/" class="site-card">
+          <div class="site-name">Happy Corner Pet</div>
+          <div class="site-url">/happy-corner-pet/</div>
+        </a>
+        <a href="/hdm-interncasa/" class="site-card">
+          <div class="site-name">HDM Interncasa</div>
+          <div class="site-url">/hdm-interncasa/</div>
+        </a>
+        <a href="/hidroizolatii-galati/" class="site-card">
+          <div class="site-name">Hidroizolatii Galati</div>
+          <div class="site-url">/hidroizolatii-galati/</div>
+        </a>
+        <a href="/hidroizolatii-galati-scinstaltermic-constructsrl/" class="site-card">
+          <div class="site-name">Hidroizolatii Galati-SC.InstalTermic Construct.SRL</div>
+          <div class="site-url">/hidroizolatii-galati-scinstaltermic-constructsrl/</div>
+        </a>
+        <a href="/hiperform-timioara/" class="site-card">
+          <div class="site-name">Hiperform Timișoara</div>
+          <div class="site-url">/hiperform-timioara/</div>
+        </a>
+        <a href="/hobby-car-self-service/" class="site-card">
+          <div class="site-name">Hobby car self service</div>
+          <div class="site-url">/hobby-car-self-service/</div>
+        </a>
+        <a href="/hod-chimex/" class="site-card">
+          <div class="site-name">Hod-Chimex</div>
+          <div class="site-url">/hod-chimex/</div>
+        </a>
+        <a href="/hope-pet-srl/" class="site-card">
+          <div class="site-name">Hope Pet S.R.L</div>
+          <div class="site-url">/hope-pet-srl/</div>
+        </a>
+        <a href="/hous-hub/" class="site-card">
+          <div class="site-name">HOUS Hub</div>
+          <div class="site-url">/hous-hub/</div>
+        </a>
+        <a href="/huge-construct-srl/" class="site-card">
+          <div class="site-name">Huge Construct S.R.L</div>
+          <div class="site-url">/huge-construct-srl/</div>
+        </a>
+        <a href="/ii-parlea-marius/" class="site-card">
+          <div class="site-name">I.I. Parlea Marius</div>
+          <div class="site-url">/ii-parlea-marius/</div>
+        </a>
+        <a href="/iftodix-business-srl-montaj-clime-si-reparatii-casnice/" class="site-card">
+          <div class="site-name">Iftodix business S.R.L - Montaj Clime si reparatii casnice</div>
+          <div class="site-url">/iftodix-business-srl-montaj-clime-si-reparatii-casnice/</div>
+        </a>
+        <a href="/impecabil-clean/" class="site-card">
+          <div class="site-name">Impecabil Clean</div>
+          <div class="site-url">/impecabil-clean/</div>
+        </a>
+        <a href="/incarcare-clima-auto-timisoara/" class="site-card">
+          <div class="site-name">Incarcare Clima Auto Timisoara</div>
+          <div class="site-url">/incarcare-clima-auto-timisoara/</div>
+        </a>
+        <a href="/incarcare-freon-auto-timisoara/" class="site-card">
+          <div class="site-name">Incarcare freon auto timisoara</div>
+          <div class="site-url">/incarcare-freon-auto-timisoara/</div>
+        </a>
+        <a href="/indreptari-cu-ventuze-galati/" class="site-card">
+          <div class="site-name">Indreptari cu Ventuze Galati</div>
+          <div class="site-url">/indreptari-cu-ventuze-galati/</div>
+        </a>
+        <a href="/ingerul-pazitor/" class="site-card">
+          <div class="site-name">Ingerul Pazitor</div>
+          <div class="site-url">/ingerul-pazitor/</div>
+        </a>
+        <a href="/inima-deco-art-shop-interior-design-studio/" class="site-card">
+          <div class="site-name">Inima Deco - art shop &amp; interior design studio</div>
+          <div class="site-url">/inima-deco-art-shop-interior-design-studio/</div>
+        </a>
+        <a href="/instalatii-termice-si-sanitare-intreprindere-individuala-stancescu-g-nicolae/" class="site-card">
+          <div class="site-name">Instalatii termice si sanitare- Intreprindere individuala Stancescu G. Nicolae</div>
+          <div class="site-url">/instalatii-termice-si-sanitare-intreprindere-individuala-stancescu-g-nicolae/</div>
+        </a>
+        <a href="/instalterm-proiect/" class="site-card">
+          <div class="site-name">Instalterm Proiect</div>
+          <div class="site-url">/instalterm-proiect/</div>
+        </a>
+        <a href="/interior-exclusive/" class="site-card">
+          <div class="site-name">Interior Exclusive</div>
+          <div class="site-url">/interior-exclusive/</div>
+        </a>
+        <a href="/iokat-2013-llc/" class="site-card">
+          <div class="site-name">IOKAT 2013 LLC</div>
+          <div class="site-url">/iokat-2013-llc/</div>
+        </a>
+        <a href="/isometric-srl/" class="site-card">
+          <div class="site-name">ISOMETRIC SRL</div>
+          <div class="site-url">/isometric-srl/</div>
+        </a>
+        <a href="/itp-service-auto-lcd/" class="site-card">
+          <div class="site-name">ITP + Service Auto LCD</div>
+          <div class="site-url">/itp-service-auto-lcd/</div>
+        </a>
+        <a href="/itp-auto-lali-srl/" class="site-card">
+          <div class="site-name">ITP Auto Lali SRL</div>
+          <div class="site-url">/itp-auto-lali-srl/</div>
+        </a>
+        <a href="/izo-construct-trading/" class="site-card">
+          <div class="site-name">Izo Construct Trading</div>
+          <div class="site-url">/izo-construct-trading/</div>
+        </a>
+        <a href="/jex-detailing-timioara/" class="site-card">
+          <div class="site-name">Jex Detailing Timișoara</div>
+          <div class="site-url">/jex-detailing-timioara/</div>
+        </a>
+        <a href="/kaem-project-srl/" class="site-card">
+          <div class="site-name">Kaem Project SRL</div>
+          <div class="site-url">/kaem-project-srl/</div>
+        </a>
+        <a href="/kaldegaz/" class="site-card">
+          <div class="site-name">KaldeGaz</div>
+          <div class="site-url">/kaldegaz/</div>
+        </a>
+        <a href="/kamina-srl/" class="site-card">
+          <div class="site-name">KAMINA S.R.L</div>
+          <div class="site-url">/kamina-srl/</div>
+        </a>
+        <a href="/kas/" class="site-card">
+          <div class="site-name">KAS</div>
+          <div class="site-url">/kas/</div>
+        </a>
+        <a href="/kayal-service/" class="site-card">
+          <div class="site-name">Kayal Service</div>
+          <div class="site-url">/kayal-service/</div>
+        </a>
+        <a href="/kit-construct/" class="site-card">
+          <div class="site-name">Kit Construct</div>
+          <div class="site-url">/kit-construct/</div>
+        </a>
+        <a href="/kmy-crystal-cleaning-srl/" class="site-card">
+          <div class="site-name">Kmy Crystal Cleaning S.R.L</div>
+          <div class="site-url">/kmy-crystal-cleaning-srl/</div>
+        </a>
+        <a href="/kreativ-art-design-studio-designer-de-interior/" class="site-card">
+          <div class="site-name">Kreativ Art Design Studio - designer de interior</div>
+          <div class="site-url">/kreativ-art-design-studio-designer-de-interior/</div>
+        </a>
+        <a href="/ksk/" class="site-card">
+          <div class="site-name">KsK</div>
+          <div class="site-url">/ksk/</div>
+        </a>
+        <a href="/la-garaj/" class="site-card">
+          <div class="site-name">La Garaj</div>
+          <div class="site-url">/la-garaj/</div>
+        </a>
+        <a href="/lacatusu-marius/" class="site-card">
+          <div class="site-name">Lacatusu Marius</div>
+          <div class="site-url">/lacatusu-marius/</div>
+        </a>
+        <a href="/landscape-experts-sc-facultativ-dezvoltare-srl/" class="site-card">
+          <div class="site-name">Landscape Experts - SC FACULTATIV DEZVOLTARE SRL</div>
+          <div class="site-url">/landscape-experts-sc-facultativ-dezvoltare-srl/</div>
+        </a>
+        <a href="/leoplast-srl/" class="site-card">
+          <div class="site-name">Leoplast Srl</div>
+          <div class="site-url">/leoplast-srl/</div>
+        </a>
+        <a href="/lider1-galati-complete-roofing-systems/" class="site-card">
+          <div class="site-name">Lider1 Galati - complete roofing systems</div>
+          <div class="site-url">/lider1-galati-complete-roofing-systems/</div>
+        </a>
+        <a href="/liviocarpet-spalatorie-covoare-brila/" class="site-card">
+          <div class="site-name">Liviocarpet spalatorie covoare Brăila</div>
+          <div class="site-url">/liviocarpet-spalatorie-covoare-brila/</div>
+        </a>
+        <a href="/llumar-automotive/" class="site-card">
+          <div class="site-name">LLumar automotive</div>
+          <div class="site-url">/llumar-automotive/</div>
+        </a>
+        <a href="/lqs-service-pro-galati/" class="site-card">
+          <div class="site-name">LQS SERVICE PRO GALATI</div>
+          <div class="site-url">/lqs-service-pro-galati/</div>
+        </a>
+        <a href="/luflo-service-auto/" class="site-card">
+          <div class="site-name">Lu&amp;Flo Service Auto</div>
+          <div class="site-url">/luflo-service-auto/</div>
+        </a>
+        <a href="/m-plus-car-srl/" class="site-card">
+          <div class="site-name">M Plus Car S.R.L</div>
+          <div class="site-url">/m-plus-car-srl/</div>
+        </a>
+        <a href="/ml-design/" class="site-card">
+          <div class="site-name">M&amp;L Design</div>
+          <div class="site-url">/ml-design/</div>
+        </a>
+        <a href="/magazin-climaserv/" class="site-card">
+          <div class="site-name">Magazin Climaserv</div>
+          <div class="site-url">/magazin-climaserv/</div>
+        </a>
+        <a href="/marc-detailing/" class="site-card">
+          <div class="site-name">Marc Detailing</div>
+          <div class="site-url">/marc-detailing/</div>
+        </a>
+        <a href="/mari-marc-srl/" class="site-card">
+          <div class="site-name">MARI MARC S.R.L</div>
+          <div class="site-url">/mari-marc-srl/</div>
+        </a>
+        <a href="/marius-clean-house-servicii-curatenie-timisoaracuratenie-casedupa-constructorind/" class="site-card">
+          <div class="site-name">Marius Clean House Servicii Curatenie Timisoara,Curatenie Case,dupa Constructor,Industriala</div>
+          <div class="site-url">/marius-clean-house-servicii-curatenie-timisoaracuratenie-casedupa-constructorind/</div>
+        </a>
+        <a href="/maxi-paint-service/" class="site-card">
+          <div class="site-name">Maxi Paint Service</div>
+          <div class="site-url">/maxi-paint-service/</div>
+        </a>
+        <a href="/medic-stomatolog-andreea-alexe/" class="site-card">
+          <div class="site-name">Medic Stomatolog Andreea Alexe</div>
+          <div class="site-url">/medic-stomatolog-andreea-alexe/</div>
+        </a>
+        <a href="/medic-stomatolog-cristina-bobocea/" class="site-card">
+          <div class="site-name">Medic Stomatolog Cristina Bobocea</div>
+          <div class="site-url">/medic-stomatolog-cristina-bobocea/</div>
+        </a>
+        <a href="/medic-stomatolog-ramona-lucaci/" class="site-card">
+          <div class="site-name">Medic Stomatolog Ramona Lucaci</div>
+          <div class="site-url">/medic-stomatolog-ramona-lucaci/</div>
+        </a>
+        <a href="/mej-garage-cosmetizare-auto-detailing/" class="site-card">
+          <div class="site-name">Mej Garage- Cosmetizare auto (Detailing)</div>
+          <div class="site-url">/mej-garage-cosmetizare-auto-detailing/</div>
+        </a>
+        <a href="/melian-clinical-center/" class="site-card">
+          <div class="site-name">Melian Clinical Center</div>
+          <div class="site-url">/melian-clinical-center/</div>
+        </a>
+        <a href="/menkar/" class="site-card">
+          <div class="site-name">MENKAR</div>
+          <div class="site-url">/menkar/</div>
+        </a>
+        <a href="/meteor-auto-srl/" class="site-card">
+          <div class="site-name">Meteor Auto S.R.L</div>
+          <div class="site-url">/meteor-auto-srl/</div>
+        </a>
+        <a href="/milmarprimconstruct-srl/" class="site-card">
+          <div class="site-name">MilMarPrimConstruct SRL</div>
+          <div class="site-url">/milmarprimconstruct-srl/</div>
+        </a>
+        <a href="/miniexcavator-braov/" class="site-card">
+          <div class="site-name">MiniExcavator Brașov</div>
+          <div class="site-url">/miniexcavator-braov/</div>
+        </a>
+        <a href="/mitrea-serv-srl/" class="site-card">
+          <div class="site-name">Mitrea Serv srl</div>
+          <div class="site-url">/mitrea-serv-srl/</div>
+        </a>
+        <a href="/mondasara-concept/" class="site-card">
+          <div class="site-name">Mondasara Concept</div>
+          <div class="site-url">/mondasara-concept/</div>
+        </a>
+        <a href="/mondo-instal/" class="site-card">
+          <div class="site-name">Mondo Instal</div>
+          <div class="site-url">/mondo-instal/</div>
+        </a>
+        <a href="/mondoted-srl/" class="site-card">
+          <div class="site-name">MONDOTED SRL</div>
+          <div class="site-url">/mondoted-srl/</div>
+        </a>
+        <a href="/monex-group-srl/" class="site-card">
+          <div class="site-name">Monex Group S.R.L</div>
+          <div class="site-url">/monex-group-srl/</div>
+        </a>
+        <a href="/montaj-reparatii-acoperisuri-acoperi-braov/" class="site-card">
+          <div class="site-name">Montaj &amp; Reparatii Acoperisuri _ Acoperiş Brașov</div>
+          <div class="site-url">/montaj-reparatii-acoperisuri-acoperi-braov/</div>
+        </a>
+        <a href="/montaj-aer-conditionat-gopro-install/" class="site-card">
+          <div class="site-name">Montaj Aer Conditionat - Gopro Install</div>
+          <div class="site-url">/montaj-aer-conditionat-gopro-install/</div>
+        </a>
+        <a href="/montaj-aer-condiionat-timioara-ovidiu-ovi/" class="site-card">
+          <div class="site-name">Montaj Aer Condiționat Timișoara -Ovidiu Ovi</div>
+          <div class="site-url">/montaj-aer-condiionat-timioara-ovidiu-ovi/</div>
+        </a>
+        <a href="/montaj-gresie-timisoara-finoedil/" class="site-card">
+          <div class="site-name">Montaj gresie Timisoara FINOEDIL</div>
+          <div class="site-url">/montaj-gresie-timisoara-finoedil/</div>
+        </a>
+        <a href="/montaj-instalatii-termice-si-sanitarepanouri-solare-galati/" class="site-card">
+          <div class="site-name">Montaj Instalatii Termice si Sanitare,Panouri Solare Galati</div>
+          <div class="site-url">/montaj-instalatii-termice-si-sanitarepanouri-solare-galati/</div>
+        </a>
+        <a href="/moraru-dent/" class="site-card">
+          <div class="site-name">Moraru Dent</div>
+          <div class="site-url">/moraru-dent/</div>
+        </a>
+        <a href="/moraru-p-delia-alexandracabinet-medical-veterinar/" class="site-card">
+          <div class="site-name">Moraru P. Delia-Alexandra,Cabinet Medical Veterinar</div>
+          <div class="site-url">/moraru-p-delia-alexandracabinet-medical-veterinar/</div>
+        </a>
+        <a href="/mru-home-design/" class="site-card">
+          <div class="site-name">MRU HOME DESIGN</div>
+          <div class="site-url">/mru-home-design/</div>
+        </a>
+        <a href="/mtm-technobau/" class="site-card">
+          <div class="site-name">MTM TECHNOBAU</div>
+          <div class="site-url">/mtm-technobau/</div>
+        </a>
+        <a href="/mtv-auto-armor/" class="site-card">
+          <div class="site-name">MTV Auto Armor</div>
+          <div class="site-url">/mtv-auto-armor/</div>
+        </a>
+        <a href="/natali-dental-care/" class="site-card">
+          <div class="site-name">Natali Dental Care</div>
+          <div class="site-url">/natali-dental-care/</div>
+        </a>
+        <a href="/naty-crystal/" class="site-card">
+          <div class="site-name">Naty Crystal</div>
+          <div class="site-url">/naty-crystal/</div>
+        </a>
+        <a href="/naveso-design-consulting/" class="site-card">
+          <div class="site-name">NAVESO Design &amp; Consulting</div>
+          <div class="site-url">/naveso-design-consulting/</div>
+        </a>
+        <a href="/newton-car-detailing/" class="site-card">
+          <div class="site-name">Newton Car Detailing</div>
+          <div class="site-url">/newton-car-detailing/</div>
+        </a>
+        <a href="/nicoara-vlad-bia/" class="site-card">
+          <div class="site-name">NICOARA VLAD B.I.A</div>
+          <div class="site-url">/nicoara-vlad-bia/</div>
+        </a>
+  </div>
+  <script>
+    const input = document.getElementById("search");
+    const cards = document.querySelectorAll(".site-card");
+    const countEl = document.getElementById("count");
+    function filter() {
+      const q = input.value.toLowerCase();
+      let visible = 0;
+      cards.forEach(c => {
+        const match = c.textContent.toLowerCase().includes(q);
+        c.classList.toggle("hidden", !match);
+        if (match) visible++;
+      });
+      countEl.textContent = q ? visible + " of " + cards.length + " shown" : "";
+    }
+    input.addEventListener("input", filter);
+  </script>
+</body>
+</html>
